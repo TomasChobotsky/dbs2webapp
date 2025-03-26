@@ -1,0 +1,262 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\pages\\userpage\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\pages\\userpage\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\pages\\userpage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\pages\\userpage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\pages\\userpage\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\pages\\userpage\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\pages\\userpage\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\pages\\userpage\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\pages\\userpage\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\pages\\userpage\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\pages\\userpage\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\pages\\userpage\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\pages\\userpage\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\pages\\userpage\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\pages\\userpage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\pages\\userpage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\pages\\userpage\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\pages\\userpage\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\pages\\userpage\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\pages\\userpage\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\models\\dbs2databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\models\\dbs2databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Pages\\UserPage\\Create.cshtml",
+              "RelativeDocumentMoniker": "dbs2webapp\\Pages\\UserPage\\Create.cshtml",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Pages\\UserPage\\Create.cshtml",
+              "RelativeToolTip": "dbs2webapp\\Pages\\UserPage\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T18:04:00.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Controllers\\UsersController.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "dbs2webapp\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T17:56:57.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\appsettings.json",
+              "RelativeDocumentMoniker": "dbs2webapp\\appsettings.json",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\appsettings.json",
+              "RelativeToolTip": "dbs2webapp\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-25T17:55:42.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Program.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Program.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Program.cs",
+              "RelativeToolTip": "dbs2webapp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T17:53:29.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Pages\\UserPage\\Delete.cshtml",
+              "RelativeDocumentMoniker": "dbs2webapp\\Pages\\UserPage\\Delete.cshtml",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Pages\\UserPage\\Delete.cshtml",
+              "RelativeToolTip": "dbs2webapp\\Pages\\UserPage\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T18:04:01.412Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Delete.cshtml.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Pages\\UserPage\\Delete.cshtml.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Pages\\UserPage\\Delete.cshtml.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Pages\\UserPage\\Delete.cshtml.cs",
+              "RelativeToolTip": "dbs2webapp\\Pages\\UserPage\\Delete.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T18:04:01.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Pages\\UserPage\\Index.cshtml",
+              "RelativeDocumentMoniker": "dbs2webapp\\Pages\\UserPage\\Index.cshtml",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Pages\\UserPage\\Index.cshtml",
+              "RelativeToolTip": "dbs2webapp\\Pages\\UserPage\\Index.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAADYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T18:04:01.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Dbs2databaseContext.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\Dbs2databaseContext.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Models\\Dbs2databaseContext.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\Dbs2databaseContext.cs",
+              "RelativeToolTip": "dbs2webapp\\Models\\Dbs2databaseContext.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAADUAAACXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T17:54:23.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Pages\\UserPage\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Pages\\UserPage\\Index.cshtml.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Pages\\UserPage\\Index.cshtml.cs",
+              "RelativeToolTip": "dbs2webapp\\Pages\\UserPage\\Index.cshtml.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAwBgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T18:04:01.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "dbs2webapp\\Pages\\Index.cshtml",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Pages\\Index.cshtml",
+              "RelativeToolTip": "dbs2webapp\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T17:59:39.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Pages\\UserPage\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Pages\\UserPage\\Create.cshtml.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Pages\\UserPage\\Create.cshtml.cs",
+              "RelativeToolTip": "dbs2webapp\\Pages\\UserPage\\Create.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T18:04:00.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Pages\\UserPage\\Edit.cshtml",
+              "RelativeDocumentMoniker": "dbs2webapp\\Pages\\UserPage\\Edit.cshtml",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Pages\\UserPage\\Edit.cshtml",
+              "RelativeToolTip": "dbs2webapp\\Pages\\UserPage\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T18:04:01.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Pages\\UserPage\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Pages\\UserPage\\Edit.cshtml.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Pages\\UserPage\\Edit.cshtml.cs",
+              "RelativeToolTip": "dbs2webapp\\Pages\\UserPage\\Edit.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T18:04:01.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Pages\\UserPage\\Details.cshtml",
+              "RelativeDocumentMoniker": "dbs2webapp\\Pages\\UserPage\\Details.cshtml",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Pages\\UserPage\\Details.cshtml",
+              "RelativeToolTip": "dbs2webapp\\Pages\\UserPage\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T18:04:01.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Details.cshtml.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Pages\\UserPage\\Details.cshtml.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Pages\\UserPage\\Details.cshtml.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Pages\\UserPage\\Details.cshtml.cs",
+              "RelativeToolTip": "dbs2webapp\\Pages\\UserPage\\Details.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T18:04:01.324Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
