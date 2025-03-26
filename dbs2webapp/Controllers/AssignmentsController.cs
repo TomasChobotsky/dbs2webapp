@@ -48,8 +48,8 @@ namespace dbs2webapp.Controllers
         // GET: Assignments/Create
         public IActionResult Create()
         {
-            ViewData["ChapterId"] = new SelectList(_context.Chapters, "Id", "Id");
-            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id");
+            ViewData["ChapterId"] = new SelectList(_context.Chapters, "Id", "Name");
+            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Email");
             return View();
         }
 
@@ -58,16 +58,20 @@ namespace dbs2webapp.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,Description,DueDate,UserId,ChapterId")] Assignment assignment)
+        public async Task<IActionResult> Create([Bind("Title,Description,DueDate,UserId,ChapterId")] Assignment assignment)
         {
             if (ModelState.IsValid)
             {
+                foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
+                {
+                    Console.WriteLine(error.ErrorMessage);
+                }
                 _context.Add(assignment);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ChapterId"] = new SelectList(_context.Chapters, "Id", "Id", assignment.ChapterId);
-            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", assignment.UserId);
+            ViewData["ChapterId"] = new SelectList(_context.Chapters, "Id", "Name", assignment.ChapterId);
+            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Email", assignment.UserId);
             return View(assignment);
         }
 
@@ -84,8 +88,8 @@ namespace dbs2webapp.Controllers
             {
                 return NotFound();
             }
-            ViewData["ChapterId"] = new SelectList(_context.Chapters, "Id", "Id", assignment.ChapterId);
-            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", assignment.UserId);
+            ViewData["ChapterId"] = new SelectList(_context.Chapters, "Id", "Name", assignment.ChapterId);
+            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Email", assignment.UserId);
             return View(assignment);
         }
 
@@ -94,7 +98,7 @@ namespace dbs2webapp.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Description,DueDate,UserId,ChapterId")] Assignment assignment)
+        public async Task<IActionResult> Edit(int id, [Bind("Title,Description,DueDate,UserId,ChapterId")] Assignment assignment)
         {
             if (id != assignment.Id)
             {
@@ -121,8 +125,8 @@ namespace dbs2webapp.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ChapterId"] = new SelectList(_context.Chapters, "Id", "Id", assignment.ChapterId);
-            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", assignment.UserId);
+            ViewData["ChapterId"] = new SelectList(_context.Chapters, "Id", "Name", assignment.ChapterId);
+            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Email", assignment.UserId);
             return View(assignment);
         }
 
