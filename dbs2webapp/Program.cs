@@ -3,10 +3,18 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var connectionString =
+    builder.Configuration.GetConnectionString("DefaultConnection")
+        ?? throw new InvalidOperationException("Connection string"
+        + "'DefaultConnection' not found.");
+
+builder.Services.AddDbContext<Dbs2databaseContext>(options =>
+    options.UseSqlServer(connectionString));
+
+builder.Services.AddControllersWithViews();
+
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddDbContext<Dbs2databaseContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("dbs2database")));
 
 
 var app = builder.Build();
@@ -28,5 +36,9 @@ app.UseAuthorization();
 app.MapStaticAssets();
 app.MapRazorPages()
    .WithStaticAssets();
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

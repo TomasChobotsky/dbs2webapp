@@ -49,10 +49,6 @@ public partial class Dbs2databaseContext : DbContext
 
     public virtual DbSet<VwUsersWithRole> VwUsersWithRoles { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=localhost,1433;Database=dbs2database;User=sa;Password=Asdf1234*;Encrypt=True;TrustServerCertificate=True");
-
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Assignment>(entity =>
@@ -61,7 +57,6 @@ public partial class Dbs2databaseContext : DbContext
 
             entity.ToTable("Assignment");
 
-            entity.Property(e => e.Id).ValueGeneratedNever();
             entity.Property(e => e.DueDate).HasColumnType("datetime");
             entity.Property(e => e.Title).HasMaxLength(255);
 
