@@ -22,123 +22,34 @@ namespace dbs2webapp.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("dbs2webapp.Models.Assignment", b =>
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("ChapterId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Description")
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("DueDate")
-                        .HasColumnType("datetime");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id")
-                        .HasName("PK__Assignme__3214EC072522C8E5");
-
-                    b.HasIndex("ChapterId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Assignment", (string)null);
-                });
-
-            modelBuilder.Entity("dbs2webapp.Models.AssignmentSubmission", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("AssignmentId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("File")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Text")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id")
-                        .HasName("PK__Assignme__3214EC079993DCD9");
-
-                    b.HasIndex("AssignmentId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Assignment_submission", (string)null);
-                });
-
-            modelBuilder.Entity("dbs2webapp.Models.AssignmentUser", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("AssignmentId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id")
-                        .HasName("PK_Assignment_User");
-
-                    b.HasIndex("AssignmentId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Assignment_User", (string)null);
-                });
-
-            modelBuilder.Entity("dbs2webapp.Models.Chapter", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Contents")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("CourseId")
-                        .HasColumnType("int");
 
                     b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
 
-                    b.HasKey("Id")
-                        .HasName("PK__Chapter__3214EC0715667D5C");
+                    b.Property<string>("NormalizedName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
 
-                    b.HasIndex("CourseId");
+                    b.HasKey("Id");
 
-                    b.ToTable("Chapter", (string)null);
+                    b.HasIndex("NormalizedName")
+                        .IsUnique()
+                        .HasDatabaseName("RoleNameIndex")
+                        .HasFilter("[NormalizedName] IS NOT NULL");
+
+                    b.ToTable("AspNetRoles", (string)null);
                 });
 
-            modelBuilder.Entity("dbs2webapp.Models.ChapterContent", b =>
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -146,97 +57,89 @@ namespace dbs2webapp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("ChapterId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("TextFile")
+                    b.Property<string>("ClaimType")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Type")
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RoleId")
                         .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
+                        .HasColumnType("nvarchar(450)");
 
-                    b.HasKey("Id")
-                        .HasName("PK__Chapter___3214EC07967DB6BE");
+                    b.HasKey("Id");
 
-                    b.HasIndex("ChapterId");
+                    b.HasIndex("RoleId");
 
-                    b.ToTable("Chapter_content", (string)null);
+                    b.ToTable("AspNetRoleClaims", (string)null);
                 });
 
-            modelBuilder.Entity("dbs2webapp.Models.Course", b =>
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUser", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("CourseCategoryId")
-                        .HasColumnType("int")
-                        .HasColumnName("Course_categoryId");
+                    b.Property<string>("Email")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.HasKey("Id")
-                        .HasName("PK__Course__3214EC07ADE10529");
-
-                    b.HasIndex("CourseCategoryId");
-
-                    b.ToTable("Course", (string)null);
-                });
-
-            modelBuilder.Entity("dbs2webapp.Models.CourseCategory", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.HasKey("Id")
-                        .HasName("PK__Course_c__3214EC0711D06CA9");
-
-                    b.ToTable("Course_category", (string)null);
-                });
-
-            modelBuilder.Entity("dbs2webapp.Models.Option", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<bool>("IsCorrect")
+                    b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
 
-                    b.Property<int>("QuestionId")
-                        .HasColumnType("int");
+                    b.Property<bool>("LockoutEnabled")
+                        .HasColumnType("bit");
 
-                    b.Property<string>("Text")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
+                    b.Property<DateTimeOffset?>("LockoutEnd")
+                        .HasColumnType("datetimeoffset");
 
-                    b.HasKey("Id")
-                        .HasName("PK__Option__3214EC0720FD934B");
+                    b.Property<string>("NormalizedEmail")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
 
-                    b.HasIndex("QuestionId");
+                    b.Property<string>("NormalizedUserName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
 
-                    b.ToTable("Option", (string)null);
+                    b.Property<string>("PasswordHash")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("PhoneNumberConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("SecurityStamp")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("TwoFactorEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("UserName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedEmail")
+                        .HasDatabaseName("EmailIndex");
+
+                    b.HasIndex("NormalizedUserName")
+                        .IsUnique()
+                        .HasDatabaseName("UserNameIndex")
+                        .HasFilter("[NormalizedUserName] IS NOT NULL");
+
+                    b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("dbs2webapp.Models.Question", b =>
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -244,17 +147,84 @@ namespace dbs2webapp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Content")
-                        .IsRequired()
+                    b.Property<string>("ClaimType")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id")
-                        .HasName("PK__Question__3214EC07BE6F4E22");
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.ToTable("Question", (string)null);
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserClaims", (string)null);
                 });
 
-            modelBuilder.Entity("dbs2webapp.Models.Role", b =>
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
+                {
+                    b.Property<string>("LoginProvider")
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
+
+                    b.Property<string>("ProviderKey")
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
+
+                    b.Property<string>("ProviderDisplayName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("LoginProvider", "ProviderKey");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserLogins", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("RoleId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("UserId", "RoleId");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetUserRoles", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("LoginProvider")
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
+
+                    b.Property<string>("Value")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("UserId", "LoginProvider", "Name");
+
+                    b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("dbs2webapp.Models.AccountRole", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -268,96 +238,29 @@ namespace dbs2webapp.Migrations
                         .HasColumnType("nvarchar(255)");
 
                     b.HasKey("Id")
-                        .HasName("PK__Role__3214EC0757F8FBB8");
+                        .HasName("PK__AccountRole__3214EC0757F8FBB8");
 
-                    b.ToTable("Role", (string)null);
+                    b.ToTable("AccountRole", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Student"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Učitel"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Administrátor"
+                        });
                 });
 
-            modelBuilder.Entity("dbs2webapp.Models.Test", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("ChapterId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("MaxAttempts")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.HasKey("Id")
-                        .HasName("PK__Test__3214EC077FA06AA2");
-
-                    b.HasIndex("ChapterId");
-
-                    b.ToTable("Test", (string)null);
-                });
-
-            modelBuilder.Entity("dbs2webapp.Models.TestInstance", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("Attempt")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("StartedAt")
-                        .HasColumnType("datetime");
-
-                    b.Property<int>("TestId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id")
-                        .HasName("PK__Test_ins__3214EC07C1C5D6D4");
-
-                    b.HasIndex("TestId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Test_instance", (string)null);
-                });
-
-            modelBuilder.Entity("dbs2webapp.Models.TestQuestion", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("QuestionId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("TestId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id")
-                        .HasName("PK__Test_Que__3214EC076A260717");
-
-                    b.HasIndex("QuestionId");
-
-                    b.HasIndex("TestId");
-
-                    b.ToTable("Test_Question", (string)null);
-                });
-
-            modelBuilder.Entity("dbs2webapp.Models.User", b =>
+            modelBuilder.Entity("dbs2webapp.Models.AppUser", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -391,14 +294,555 @@ namespace dbs2webapp.Migrations
                         .HasColumnType("nvarchar(255)");
 
                     b.HasKey("Id")
-                        .HasName("PK__User__3214EC07C0C0ECF6");
+                        .HasName("PK__AppUser__3214EC07C0C0ECF6");
 
                     b.HasIndex("RoleId");
 
-                    b.HasIndex(new[] { "Email" }, "UQ__User__A9D10534C2FFE62C")
+                    b.HasIndex(new[] { "Email" }, "UQ__AppUser__A9D10534C2FFE62C")
                         .IsUnique();
 
-                    b.ToTable("User", (string)null);
+                    b.ToTable("AppUser", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Email = "student1@example.com",
+                            Firstname = "Jan",
+                            Password = "hashed_password1",
+                            RoleId = 1,
+                            Surname = "Novák"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Email = "ucitel1@example.com",
+                            Firstname = "Petr",
+                            Password = "hashed_password2",
+                            RoleId = 2,
+                            Surname = "Dvořák"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Email = "admin1@example.com",
+                            Firstname = "Karel",
+                            Password = "hashed_password3",
+                            RoleId = 3,
+                            Surname = "Svoboda"
+                        });
+                });
+
+            modelBuilder.Entity("dbs2webapp.Models.Assignment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ChapterId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("DueDate")
+                        .HasColumnType("datetime");
+
+                    b.Property<int>("TeacherId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.HasKey("Id")
+                        .HasName("PK__Assignme__3214EC072522C8E5");
+
+                    b.HasIndex("ChapterId");
+
+                    b.HasIndex("TeacherId");
+
+                    b.ToTable("Assignment", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            ChapterId = 1,
+                            Description = "Vytvořte jednoduchou SQL tabulku.",
+                            DueDate = new DateTime(2025, 3, 30, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            TeacherId = 2,
+                            Title = "Domácí úkol 1"
+                        });
+                });
+
+            modelBuilder.Entity("dbs2webapp.Models.AssignmentSubmission", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("AssignmentId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("File")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Text")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id")
+                        .HasName("PK__Assignme__3214EC079993DCD9");
+
+                    b.HasIndex("AssignmentId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Assignment_submission", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            AssignmentId = 1,
+                            File = "users_script.sql",
+                            Text = "Vytvořil jsem tabulku users.",
+                            UserId = 1
+                        });
+                });
+
+            modelBuilder.Entity("dbs2webapp.Models.AssignmentUser", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("AssignmentId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id")
+                        .HasName("PK_Assignment_User");
+
+                    b.HasIndex("AssignmentId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Assignment_User", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            AssignmentId = 1,
+                            UserId = 1
+                        });
+                });
+
+            modelBuilder.Entity("dbs2webapp.Models.Chapter", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Contents")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.HasKey("Id")
+                        .HasName("PK__Chapter__3214EC0715667D5C");
+
+                    b.HasIndex("CourseId");
+
+                    b.ToTable("Chapter", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Contents = "Tato kapitola se věnuje základům SQL.",
+                            CourseId = 1,
+                            Name = "Úvod do SQL"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Contents = "Jak správně psát SELECT dotazy.",
+                            CourseId = 1,
+                            Name = "SELECT příkazy"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Contents = "Začínáme s programováním v C#.",
+                            CourseId = 2,
+                            Name = "Úvod do C#"
+                        });
+                });
+
+            modelBuilder.Entity("dbs2webapp.Models.ChapterContent", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ChapterId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TextFile")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Type")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.HasKey("Id")
+                        .HasName("PK__Chapter___3214EC07967DB6BE");
+
+                    b.HasIndex("ChapterId");
+
+                    b.ToTable("Chapter_content", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            ChapterId = 1,
+                            TextFile = "uvod_sql.pdf",
+                            Type = "Text"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            ChapterId = 2,
+                            TextFile = "select_prikazy.mp4",
+                            Type = "Video"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            ChapterId = 3,
+                            TextFile = "uvod_csharp.pdf",
+                            Type = "Text"
+                        });
+                });
+
+            modelBuilder.Entity("dbs2webapp.Models.Course", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CourseCategoryId")
+                        .HasColumnType("int")
+                        .HasColumnName("Course_categoryId");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.HasKey("Id")
+                        .HasName("PK__Course__3214EC07ADE10529");
+
+                    b.HasIndex("CourseCategoryId");
+
+                    b.ToTable("Course", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CourseCategoryId = 2,
+                            Name = "SQL pro začátečníky"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CourseCategoryId = 1,
+                            Name = "C# pokročilé techniky"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CourseCategoryId = 3,
+                            Name = "Základy kybernetické bezpečnosti"
+                        });
+                });
+
+            modelBuilder.Entity("dbs2webapp.Models.CourseCategory", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.HasKey("Id")
+                        .HasName("PK__Course_c__3214EC0711D06CA9");
+
+                    b.ToTable("Course_category", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Programování"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Databáze"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Kybernetická bezpečnost"
+                        });
+                });
+
+            modelBuilder.Entity("dbs2webapp.Models.Option", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("IsCorrect")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("QuestionId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Text")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.HasKey("Id")
+                        .HasName("PK__Option__3214EC0720FD934B");
+
+                    b.HasIndex("QuestionId");
+
+                    b.ToTable("Option", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            IsCorrect = true,
+                            QuestionId = 1,
+                            Text = "Structured Query Language"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            IsCorrect = false,
+                            QuestionId = 1,
+                            Text = "System Query List"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            IsCorrect = true,
+                            QuestionId = 2,
+                            Text = "SELECT * FROM tabulka;"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            IsCorrect = false,
+                            QuestionId = 2,
+                            Text = "GET ALL FROM tabulka;"
+                        });
+                });
+
+            modelBuilder.Entity("dbs2webapp.Models.Question", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id")
+                        .HasName("PK__Question__3214EC07BE6F4E22");
+
+                    b.ToTable("Question", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Content = "Co znamená SQL?"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Content = "Který příkaz získává všechna data z tabulky?"
+                        });
+                });
+
+            modelBuilder.Entity("dbs2webapp.Models.Test", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ChapterId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("MaxAttempts")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.HasKey("Id")
+                        .HasName("PK__Test__3214EC077FA06AA2");
+
+                    b.HasIndex("ChapterId");
+
+                    b.ToTable("Test", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            ChapterId = 1,
+                            Description = "Ověření znalostí základních SQL příkazů.",
+                            MaxAttempts = 3,
+                            Title = "Test základů SQL"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            ChapterId = 2,
+                            Description = "Test zaměřený na SELECT příkazy.",
+                            MaxAttempts = 3,
+                            Title = "Test SELECT"
+                        });
+                });
+
+            modelBuilder.Entity("dbs2webapp.Models.TestInstance", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Attempt")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("StartedAt")
+                        .HasColumnType("datetime");
+
+                    b.Property<int>("TestId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id")
+                        .HasName("PK__Test_ins__3214EC07C1C5D6D4");
+
+                    b.HasIndex("TestId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Test_instance", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Attempt = 1,
+                            StartedAt = new DateTime(2025, 3, 18, 10, 0, 0, 0, DateTimeKind.Unspecified),
+                            TestId = 1,
+                            UserId = 1
+                        });
+                });
+
+            modelBuilder.Entity("dbs2webapp.Models.TestQuestion", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("QuestionId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TestId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id")
+                        .HasName("PK__Test_Que__3214EC076A260717");
+
+                    b.HasIndex("QuestionId");
+
+                    b.HasIndex("TestId");
+
+                    b.ToTable("Test_Question", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            QuestionId = 1,
+                            TestId = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            QuestionId = 2,
+                            TestId = 2
+                        });
                 });
 
             modelBuilder.Entity("dbs2webapp.Models.UserCourse", b =>
@@ -423,6 +867,88 @@ namespace dbs2webapp.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("User_Course", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CourseId = 1,
+                            UserId = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CourseId = 3,
+                            UserId = 1
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CourseId = 1,
+                            UserId = 2
+                        });
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("dbs2webapp.Models.AppUser", b =>
+                {
+                    b.HasOne("dbs2webapp.Models.AccountRole", "Role")
+                        .WithMany("Users")
+                        .HasForeignKey("RoleId")
+                        .IsRequired()
+                        .HasConstraintName("FK__AppUser__RoleId__3A81B327");
+
+                    b.Navigation("Role");
                 });
 
             modelBuilder.Entity("dbs2webapp.Models.Assignment", b =>
@@ -433,15 +959,15 @@ namespace dbs2webapp.Migrations
                         .IsRequired()
                         .HasConstraintName("FK__Assignmen__Chapt__5BE2A6F2");
 
-                    b.HasOne("dbs2webapp.Models.User", "User")
+                    b.HasOne("dbs2webapp.Models.AppUser", "Teacher")
                         .WithMany("Assignments")
-                        .HasForeignKey("UserId")
+                        .HasForeignKey("TeacherId")
                         .IsRequired()
                         .HasConstraintName("FK__Assignmen__UserI__5AEE82B9");
 
                     b.Navigation("Chapter");
 
-                    b.Navigation("User");
+                    b.Navigation("Teacher");
                 });
 
             modelBuilder.Entity("dbs2webapp.Models.AssignmentSubmission", b =>
@@ -452,7 +978,7 @@ namespace dbs2webapp.Migrations
                         .IsRequired()
                         .HasConstraintName("FK__Assignmen__Assig__5EBF139D");
 
-                    b.HasOne("dbs2webapp.Models.User", "User")
+                    b.HasOne("dbs2webapp.Models.AppUser", "User")
                         .WithMany("AssignmentSubmissions")
                         .HasForeignKey("UserId")
                         .IsRequired()
@@ -471,7 +997,7 @@ namespace dbs2webapp.Migrations
                         .IsRequired()
                         .HasConstraintName("FK_Assignment_User_Assignment");
 
-                    b.HasOne("dbs2webapp.Models.User", "User")
+                    b.HasOne("dbs2webapp.Models.AppUser", "User")
                         .WithMany("AssignmentUsers")
                         .HasForeignKey("UserId")
                         .IsRequired()
@@ -545,7 +1071,7 @@ namespace dbs2webapp.Migrations
                         .IsRequired()
                         .HasConstraintName("FK__Test_inst__TestI__4E88ABD4");
 
-                    b.HasOne("dbs2webapp.Models.User", "User")
+                    b.HasOne("dbs2webapp.Models.AppUser", "User")
                         .WithMany("TestInstances")
                         .HasForeignKey("UserId")
                         .IsRequired()
@@ -575,17 +1101,6 @@ namespace dbs2webapp.Migrations
                     b.Navigation("Test");
                 });
 
-            modelBuilder.Entity("dbs2webapp.Models.User", b =>
-                {
-                    b.HasOne("dbs2webapp.Models.Role", "Role")
-                        .WithMany("Users")
-                        .HasForeignKey("RoleId")
-                        .IsRequired()
-                        .HasConstraintName("FK__User__RoleId__3A81B327");
-
-                    b.Navigation("Role");
-                });
-
             modelBuilder.Entity("dbs2webapp.Models.UserCourse", b =>
                 {
                     b.HasOne("dbs2webapp.Models.Course", "Course")
@@ -594,7 +1109,7 @@ namespace dbs2webapp.Migrations
                         .IsRequired()
                         .HasConstraintName("FK__User_Cour__Cours__4316F928");
 
-                    b.HasOne("dbs2webapp.Models.User", "User")
+                    b.HasOne("dbs2webapp.Models.AppUser", "User")
                         .WithMany("UserCourses")
                         .HasForeignKey("UserId")
                         .IsRequired()
@@ -603,6 +1118,24 @@ namespace dbs2webapp.Migrations
                     b.Navigation("Course");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("dbs2webapp.Models.AccountRole", b =>
+                {
+                    b.Navigation("Users");
+                });
+
+            modelBuilder.Entity("dbs2webapp.Models.AppUser", b =>
+                {
+                    b.Navigation("AssignmentSubmissions");
+
+                    b.Navigation("AssignmentUsers");
+
+                    b.Navigation("Assignments");
+
+                    b.Navigation("TestInstances");
+
+                    b.Navigation("UserCourses");
                 });
 
             modelBuilder.Entity("dbs2webapp.Models.Assignment", b =>
@@ -640,29 +1173,11 @@ namespace dbs2webapp.Migrations
                     b.Navigation("TestQuestions");
                 });
 
-            modelBuilder.Entity("dbs2webapp.Models.Role", b =>
-                {
-                    b.Navigation("Users");
-                });
-
             modelBuilder.Entity("dbs2webapp.Models.Test", b =>
                 {
                     b.Navigation("TestInstances");
 
                     b.Navigation("TestQuestions");
-                });
-
-            modelBuilder.Entity("dbs2webapp.Models.User", b =>
-                {
-                    b.Navigation("AssignmentSubmissions");
-
-                    b.Navigation("AssignmentUsers");
-
-                    b.Navigation("Assignments");
-
-                    b.Navigation("TestInstances");
-
-                    b.Navigation("UserCourses");
                 });
 #pragma warning restore 612, 618
         }

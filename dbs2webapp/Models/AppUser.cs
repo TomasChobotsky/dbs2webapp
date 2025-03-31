@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace dbs2webapp.Models;
 
-public partial class User
+public partial class AppUser
 {
     public int Id { get; set; }
 
@@ -23,7 +23,7 @@ public partial class User
 
     public virtual ICollection<AssignmentUser> AssignmentUsers { get; set; } = new List<AssignmentUser>();
 
-    public virtual Role Role { get; set; } = null!;
+    public virtual AccountRole Role { get; set; } = null!;
 
     public virtual ICollection<TestInstance> TestInstances { get; set; } = new List<TestInstance>();
 

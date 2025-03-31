@@ -16,7 +16,7 @@ public partial class Assignment
 
     public int TeacherId { get; set; }
     [ForeignKey("TeacherId")]
-    public virtual User? Teacher { get; set; }
+    public virtual AppUser? Teacher { get; set; }
 
     public int ChapterId { get; set; }
     [ForeignKey("ChapterId")]
