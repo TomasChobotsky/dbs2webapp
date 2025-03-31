@@ -333,7 +333,7 @@ D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\bin\Debug\net9.0\tr\Mic
 D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
 D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
 D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\obj\Debug\net9.0\dbs2webapp.sourcelink.json
-D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\obj\Debug\net9.0\compressed\eqzf69zc1n-k0eonygerk.gz
 D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\obj\Debug\net9.0\compressed\99vmy1saor-k0eonygerk.gz
+D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

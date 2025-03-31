@@ -17,6 +17,8 @@ public partial class Dbs2databaseContext : DbContext
 
     public virtual DbSet<Assignment> Assignments { get; set; }
 
+    public virtual DbSet<AssignmentUser> AssignmentUsers { get; set; }
+
     public virtual DbSet<AssignmentSubmission> AssignmentSubmissions { get; set; }
 
     public virtual DbSet<Chapter> Chapters { get; set; }
@@ -43,12 +45,6 @@ public partial class Dbs2databaseContext : DbContext
 
     public virtual DbSet<UserCourse> UserCourses { get; set; }
 
-    public virtual DbSet<VwAssignmentSubmission> VwAssignmentSubmissions { get; set; }
-
-    public virtual DbSet<VwCourseDetail> VwCourseDetails { get; set; }
-
-    public virtual DbSet<VwUsersWithRole> VwUsersWithRoles { get; set; }
-
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Assignment>(entity =>
@@ -65,11 +61,30 @@ public partial class Dbs2databaseContext : DbContext
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__Assignmen__Chapt__5BE2A6F2");
 
-            entity.HasOne(d => d.User).WithMany(p => p.Assignments)
-                .HasForeignKey(d => d.UserId)
+            entity.HasOne(d => d.Teacher).WithMany(p => p.Assignments)
+                .HasForeignKey(d => d.TeacherId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__Assignmen__UserI__5AEE82B9");
         });
+
+        modelBuilder.Entity<AssignmentUser>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK_Assignment_User");
+
+            entity.ToTable("Assignment_User");
+
+            entity.HasOne(d => d.Assignment).WithMany(p => p.AssignmentUsers)
+                .HasForeignKey(d => d.AssignmentId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Assignment_User_Assignment");
+
+            entity.HasOne(d => d.User).WithMany(p => p.AssignmentUsers)
+                .HasForeignKey(d => d.UserId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Assignment_User");
+        });
+
+
 
         modelBuilder.Entity<AssignmentSubmission>(entity =>
         {
@@ -259,40 +274,6 @@ public partial class Dbs2databaseContext : DbContext
                 .HasConstraintName("FK__User_Cour__UserI__4222D4EF");
         });
 
-        modelBuilder.Entity<VwAssignmentSubmission>(entity =>
-        {
-            entity
-                .HasNoKey()
-                .ToView("vw_AssignmentSubmissions");
-
-            entity.Property(e => e.AssignmentTitle).HasMaxLength(255);
-            entity.Property(e => e.CourseName).HasMaxLength(255);
-            entity.Property(e => e.Firstname).HasMaxLength(255);
-            entity.Property(e => e.Surname).HasMaxLength(255);
-        });
-
-        modelBuilder.Entity<VwCourseDetail>(entity =>
-        {
-            entity
-                .HasNoKey()
-                .ToView("vw_CourseDetails");
-
-            entity.Property(e => e.ChapterName).HasMaxLength(255);
-            entity.Property(e => e.CourseName).HasMaxLength(255);
-            entity.Property(e => e.TestTitle).HasMaxLength(255);
-        });
-
-        modelBuilder.Entity<VwUsersWithRole>(entity =>
-        {
-            entity
-                .HasNoKey()
-                .ToView("vw_UsersWithRoles");
-
-            entity.Property(e => e.Email).HasMaxLength(255);
-            entity.Property(e => e.Firstname).HasMaxLength(255);
-            entity.Property(e => e.RoleName).HasMaxLength(255);
-            entity.Property(e => e.Surname).HasMaxLength(255);
-        });
 
         OnModelCreatingPartial(modelBuilder);
     }

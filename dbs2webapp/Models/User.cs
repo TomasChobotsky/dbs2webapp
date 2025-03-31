@@ -21,6 +21,8 @@ public partial class User
 
     public virtual ICollection<Assignment> Assignments { get; set; } = new List<Assignment>();
 
+    public virtual ICollection<AssignmentUser> AssignmentUsers { get; set; } = new List<AssignmentUser>();
+
     public virtual Role Role { get; set; } = null!;
 
     public virtual ICollection<TestInstance> TestInstances { get; set; } = new List<TestInstance>();

@@ -25,7 +25,10 @@ namespace dbs2webapp.Migrations
             modelBuilder.Entity("dbs2webapp.Models.Assignment", b =>
                 {
                     b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("ChapterId")
                         .HasColumnType("int");
@@ -82,6 +85,30 @@ namespace dbs2webapp.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Assignment_submission", (string)null);
+                });
+
+            modelBuilder.Entity("dbs2webapp.Models.AssignmentUser", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("AssignmentId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id")
+                        .HasName("PK_Assignment_User");
+
+                    b.HasIndex("AssignmentId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Assignment_User", (string)null);
                 });
 
             modelBuilder.Entity("dbs2webapp.Models.Chapter", b =>
@@ -398,110 +425,6 @@ namespace dbs2webapp.Migrations
                     b.ToTable("User_Course", (string)null);
                 });
 
-            modelBuilder.Entity("dbs2webapp.Models.VwAssignmentSubmission", b =>
-                {
-                    b.Property<string>("AssignmentTitle")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.Property<int>("CourseId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("CourseName")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.Property<string>("Firstname")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.Property<string>("SubmissionFile")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("SubmissionId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("SubmissionText")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Surname")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.ToTable((string)null);
-
-                    b.ToView("vw_AssignmentSubmissions", (string)null);
-                });
-
-            modelBuilder.Entity("dbs2webapp.Models.VwCourseDetail", b =>
-                {
-                    b.Property<int?>("ChapterId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ChapterName")
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.Property<int>("CourseId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("CourseName")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.Property<int?>("MaxAttempts")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("TestId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("TestTitle")
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.ToTable((string)null);
-
-                    b.ToView("vw_CourseDetails", (string)null);
-                });
-
-            modelBuilder.Entity("dbs2webapp.Models.VwUsersWithRole", b =>
-                {
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.Property<string>("Firstname")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.Property<string>("RoleName")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.Property<string>("Surname")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.ToTable((string)null);
-
-                    b.ToView("vw_UsersWithRoles", (string)null);
-                });
-
             modelBuilder.Entity("dbs2webapp.Models.Assignment", b =>
                 {
                     b.HasOne("dbs2webapp.Models.Chapter", "Chapter")
@@ -534,6 +457,25 @@ namespace dbs2webapp.Migrations
                         .HasForeignKey("UserId")
                         .IsRequired()
                         .HasConstraintName("FK__Assignmen__UserI__5FB337D6");
+
+                    b.Navigation("Assignment");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("dbs2webapp.Models.AssignmentUser", b =>
+                {
+                    b.HasOne("dbs2webapp.Models.Assignment", "Assignment")
+                        .WithMany("AssignmentUsers")
+                        .HasForeignKey("AssignmentId")
+                        .IsRequired()
+                        .HasConstraintName("FK_Assignment_User_Assignment");
+
+                    b.HasOne("dbs2webapp.Models.User", "User")
+                        .WithMany("AssignmentUsers")
+                        .HasForeignKey("UserId")
+                        .IsRequired()
+                        .HasConstraintName("FK_Assignment_User");
 
                     b.Navigation("Assignment");
 
@@ -666,6 +608,8 @@ namespace dbs2webapp.Migrations
             modelBuilder.Entity("dbs2webapp.Models.Assignment", b =>
                 {
                     b.Navigation("AssignmentSubmissions");
+
+                    b.Navigation("AssignmentUsers");
                 });
 
             modelBuilder.Entity("dbs2webapp.Models.Chapter", b =>
@@ -711,6 +655,8 @@ namespace dbs2webapp.Migrations
             modelBuilder.Entity("dbs2webapp.Models.User", b =>
                 {
                     b.Navigation("AssignmentSubmissions");
+
+                    b.Navigation("AssignmentUsers");
 
                     b.Navigation("Assignments");
 

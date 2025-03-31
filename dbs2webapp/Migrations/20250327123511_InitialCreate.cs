@@ -159,7 +159,8 @@ namespace dbs2webapp.Migrations
                 name: "Assignment",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false),
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     Title = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     DueDate = table.Column<DateTime>(type: "datetime", nullable: false),
@@ -249,6 +250,30 @@ namespace dbs2webapp.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Assignment_User",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    AssignmentId = table.Column<int>(type: "int", nullable: false),
+                    UserId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Assignment_User", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Assignment_User",
+                        column: x => x.UserId,
+                        principalTable: "User",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_Assignment_User_Assignment",
+                        column: x => x.AssignmentId,
+                        principalTable: "Assignment",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Test_instance",
                 columns: table => new
                 {
@@ -316,6 +341,16 @@ namespace dbs2webapp.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_Assignment_submission_UserId",
                 table: "Assignment_submission",
+                column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Assignment_User_AssignmentId",
+                table: "Assignment_User",
+                column: "AssignmentId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Assignment_User_UserId",
+                table: "Assignment_User",
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
@@ -390,6 +425,9 @@ namespace dbs2webapp.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Assignment_submission");
+
+            migrationBuilder.DropTable(
+                name: "Assignment_User");
 
             migrationBuilder.DropTable(
                 name: "Chapter_content");
