@@ -10,6 +10,6 @@
 
         public virtual Assignment Assignment { get; set; } = null!;
 
-        public virtual User User { get; set; } = null!;
+        public virtual AppUser User { get; set; } = null!;
     }
 }

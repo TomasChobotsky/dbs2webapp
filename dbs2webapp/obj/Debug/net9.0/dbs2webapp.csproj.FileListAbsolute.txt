@@ -336,4 +336,13 @@ D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\obj\Debug\net9.0\dbs2we
 D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\obj\Debug\net9.0\compressed\eqzf69zc1n-k0eonygerk.gz
 D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\obj\Debug\net9.0\compressed\99vmy1saor-k0eonygerk.gz
+D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.UI.dll
+D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\bin\Debug\net9.0\Microsoft.Extensions.Identity.Core.dll
+D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\bin\Debug\net9.0\Microsoft.Extensions.Identity.Stores.dll
+D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\obj\Debug\net9.0\dbs2webapp.MvcApplicationPartsAssemblyInfo.cs
 D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

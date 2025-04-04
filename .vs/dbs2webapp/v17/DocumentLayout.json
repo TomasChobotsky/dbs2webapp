@@ -3,12 +3,204 @@
   "WorkspaceRootPath": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\controllers\\assignmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\controllers\\assignmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\models\\usercourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\models\\usercourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\areas\\identity\\pages\\account\\registerconfirmation.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\areas\\identity\\pages\\account\\registerconfirmation.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\areas\\identity\\pages\\account\\registerconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\areas\\identity\\pages\\account\\registerconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\areas\\identity\\pages\\account\\resetpasswordconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\areas\\identity\\pages\\account\\resetpasswordconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\dbs2webapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\dbs2webapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\views\\home\\privacy.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\home\\privacy.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\views\\home\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\home\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\views\\assignments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\assignments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\views\\home\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\home\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\views\\home\\error.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\home\\error.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\models\\dbs2databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\models\\dbs2databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\models\\assignmentsubmission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\models\\assignmentsubmission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\models\\assignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\models\\assignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\controllers\\assignmentsubmissionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\controllers\\assignmentsubmissionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\views\\roles\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\roles\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\views\\roles\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\roles\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\views\\roles\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\roles\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\views\\roles\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\roles\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\views\\roles\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\roles\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\views\\users\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\users\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\views\\users\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\users\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\views\\users\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\users\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\views\\users\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\users\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\models\\chaptercontent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\models\\chaptercontent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\models\\chapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\models\\chapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\models\\assignmentuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\models\\assignmentuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\models\\accountrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\models\\accountrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\models\\option.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\models\\option.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\models\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\models\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\models\\testinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\models\\testinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\models\\testquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\models\\testquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\controllers\\assignmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\controllers\\assignmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\controllers\\assignmentuserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,24 +211,8 @@
       "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\assignments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\views\\assignments\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\assignments\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\views\\assignments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\assignments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\models\\dbs2databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\models\\dbs2databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\views\\assignments\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -47,52 +223,8 @@
       "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\assignments\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\models\\assignmentuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\models\\assignmentuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\migrations\\dbs2databasecontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\migrations\\dbs2databasecontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\migrations\\20250327123511_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\migrations\\20250327123511_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\models\\testquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\models\\testquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\models\\chapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\models\\chapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\models\\testinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\models\\testinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\controllers\\usercoursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -107,16 +239,8 @@
       "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\controllers\\testinstancescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\models\\chaptercontent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\models\\chaptercontent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\controllers\\testscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\controllers\\testscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\controllers\\questionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -141,50 +265,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\controllers\\chapterscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\controllers\\chapterscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\controllers\\assignmentsubmissionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\controllers\\assignmentsubmissionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\models\\assignmentsubmission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\models\\assignmentsubmission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\views\\users\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\users\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\views\\home\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\home\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4199895A-BD7D-4A9D-9D89-7752806520D1}|dbs2webapp\\dbs2webapp.csproj|solutionrelative:dbs2webapp\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -194,221 +274,483 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AssignmentUsersController.cs",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\AssignmentUsersController.cs",
-              "RelativeDocumentMoniker": "dbs2webapp\\Controllers\\AssignmentUsersController.cs",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\AssignmentUsersController.cs",
-              "RelativeToolTip": "dbs2webapp\\Controllers\\AssignmentUsersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T14:04:51.691Z",
+              "DocumentIndex": 15,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Home\\Error.cshtml",
+              "RelativeDocumentMoniker": "dbs2webapp\\Views\\Home\\Error.cshtml",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Home\\Error.cshtml",
+              "RelativeToolTip": "dbs2webapp\\Views\\Home\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T12:22:29.913Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Assignments\\Edit.cshtml",
-              "RelativeDocumentMoniker": "dbs2webapp\\Views\\Assignments\\Edit.cshtml",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Assignments\\Edit.cshtml",
-              "RelativeToolTip": "dbs2webapp\\Views\\Assignments\\Edit.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAgwB8AAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-27T14:03:49.192Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Assignments\\Index.cshtml",
-              "RelativeDocumentMoniker": "dbs2webapp\\Views\\Assignments\\Index.cshtml",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Assignments\\Index.cshtml",
-              "RelativeToolTip": "dbs2webapp\\Views\\Assignments\\Index.cshtml",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAiwBsAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-27T14:03:24.425Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Assignments\\Details.cshtml",
-              "RelativeDocumentMoniker": "dbs2webapp\\Views\\Assignments\\Details.cshtml",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Assignments\\Details.cshtml",
-              "RelativeToolTip": "dbs2webapp\\Views\\Assignments\\Details.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAiwCgAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-27T14:03:17.841Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Assignments\\Delete.cshtml",
-              "RelativeDocumentMoniker": "dbs2webapp\\Views\\Assignments\\Delete.cshtml",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Assignments\\Delete.cshtml",
-              "RelativeToolTip": "dbs2webapp\\Views\\Assignments\\Delete.cshtml",
-              "ViewState": "AgIAABYAAAAAAAAAAAAiwCYAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-27T14:03:13.455Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AssignmentsController.cs",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\AssignmentsController.cs",
-              "RelativeDocumentMoniker": "dbs2webapp\\Controllers\\AssignmentsController.cs",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\AssignmentsController.cs",
-              "RelativeToolTip": "dbs2webapp\\Controllers\\AssignmentsController.cs",
-              "ViewState": "AgIAAHwAAAAAAAAAAAAcwGQAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T14:19:36.521Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\appsettings.json",
-              "RelativeDocumentMoniker": "dbs2webapp\\appsettings.json",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\appsettings.json",
-              "RelativeToolTip": "dbs2webapp\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-25T17:55:42.407Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Dbs2databaseContextModelSnapshot.cs",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Migrations\\Dbs2databaseContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "dbs2webapp\\Migrations\\Dbs2databaseContextModelSnapshot.cs",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Migrations\\Dbs2databaseContextModelSnapshot.cs",
-              "RelativeToolTip": "dbs2webapp\\Migrations\\Dbs2databaseContextModelSnapshot.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T12:38:01.286Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Assignments\\Create.cshtml",
-              "RelativeDocumentMoniker": "dbs2webapp\\Views\\Assignments\\Create.cshtml",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Assignments\\Create.cshtml",
-              "RelativeToolTip": "dbs2webapp\\Views\\Assignments\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAABlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-26T14:39:20.667Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "dbs2webapp\\Views\\Home\\Index.cshtml",
               "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "dbs2webapp\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABNAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-25T17:59:39.229Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Home\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Views\\Home\\Index.cshtml.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Home\\Index.cshtml.cs",
+              "RelativeToolTip": "dbs2webapp\\Views\\Home\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T11:21:53.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "dbs2webapp\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T11:30:57.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Assignments\\Index.cshtml",
+              "RelativeDocumentMoniker": "dbs2webapp\\Views\\Assignments\\Index.cshtml",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Assignments\\Index.cshtml",
+              "RelativeToolTip": "dbs2webapp\\Views\\Assignments\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-27T14:03:24.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegisterConfirmation.cshtml",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
+              "RelativeDocumentMoniker": "dbs2webapp\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
+              "RelativeToolTip": "dbs2webapp\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T12:15:06.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegisterConfirmation.cshtml.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml.cs",
+              "RelativeToolTip": "dbs2webapp\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAqwD4AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T12:15:45.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ResetPasswordConfirmation.cshtml",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Areas\\Identity\\Pages\\Account\\ResetPasswordConfirmation.cshtml",
+              "RelativeDocumentMoniker": "dbs2webapp\\Areas\\Identity\\Pages\\Account\\ResetPasswordConfirmation.cshtml",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Areas\\Identity\\Pages\\Account\\ResetPasswordConfirmation.cshtml",
+              "RelativeToolTip": "dbs2webapp\\Areas\\Identity\\Pages\\Account\\ResetPasswordConfirmation.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T12:57:22.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "UserCourse.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\UserCourse.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Models\\UserCourse.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\UserCourse.cs",
+              "RelativeToolTip": "dbs2webapp\\Models\\UserCourse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T11:33:12.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\AppUser.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Models\\AppUser.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\AppUser.cs",
+              "RelativeToolTip": "dbs2webapp\\Models\\AppUser.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwA0AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T11:06:55.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Privacy.cshtml.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Home\\Privacy.cshtml.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Views\\Home\\Privacy.cshtml.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Home\\Privacy.cshtml.cs",
+              "RelativeToolTip": "dbs2webapp\\Views\\Home\\Privacy.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T12:20:03.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "dbs2webapp\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "dbs2webapp\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T12:20:25.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "dbs2webapp\\Views\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "dbs2webapp\\Views\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-26T11:22:23.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "dbs2webapp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "dbs2webapp\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-26T11:22:28.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "dbs2webapp",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\dbs2webapp.csproj",
+              "RelativeDocumentMoniker": "dbs2webapp\\dbs2webapp.csproj",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\dbs2webapp.csproj",
+              "RelativeToolTip": "dbs2webapp\\dbs2webapp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-31T12:43:53.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Program.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Program.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Program.cs",
+              "RelativeToolTip": "dbs2webapp\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABsAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T17:53:29.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\appsettings.json",
+              "RelativeDocumentMoniker": "dbs2webapp\\appsettings.json",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\appsettings.json",
+              "RelativeToolTip": "dbs2webapp\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-25T17:55:42.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "dbs2webapp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "dbs2webapp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-26T11:20:06.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "dbs2webapp\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "dbs2webapp\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-26T11:20:19.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "dbs2webapp\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "dbs2webapp\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-26T11:20:21.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Dbs2databaseContext.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\Dbs2databaseContext.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Models\\Dbs2databaseContext.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\Dbs2databaseContext.cs",
+              "RelativeToolTip": "dbs2webapp\\Models\\Dbs2databaseContext.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAIwDgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T17:54:23.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Users\\Create.cshtml",
+              "RelativeDocumentMoniker": "dbs2webapp\\Views\\Users\\Create.cshtml",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Users\\Create.cshtml",
+              "RelativeToolTip": "dbs2webapp\\Views\\Users\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T11:39:41.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "dbs2webapp\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "dbs2webapp\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T12:23:54.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Users\\Delete.cshtml",
+              "RelativeDocumentMoniker": "dbs2webapp\\Views\\Users\\Delete.cshtml",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Users\\Delete.cshtml",
+              "RelativeToolTip": "dbs2webapp\\Views\\Users\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T11:39:58.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "dbs2webapp\\ScaffoldingReadMe.txt",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "dbs2webapp\\ScaffoldingReadMe.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-03-31T11:47:50.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Error.cshtml.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Home\\Error.cshtml.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Views\\Home\\Error.cshtml.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Home\\Error.cshtml.cs",
+              "RelativeToolTip": "dbs2webapp\\Views\\Home\\Error.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T12:20:53.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "Assignment.cs",
               "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\Assignment.cs",
               "RelativeDocumentMoniker": "dbs2webapp\\Models\\Assignment.cs",
               "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\Assignment.cs",
               "RelativeToolTip": "dbs2webapp\\Models\\Assignment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-26T11:13:21.675Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "dbs2webapp\\Properties\\launchSettings.json",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Properties\\launchSettings.json",
-              "RelativeToolTip": "dbs2webapp\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-26T11:24:12.438Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Dbs2databaseContext.cs",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\Dbs2databaseContext.cs",
-              "RelativeDocumentMoniker": "dbs2webapp\\Models\\Dbs2databaseContext.cs",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\Dbs2databaseContext.cs",
-              "RelativeToolTip": "dbs2webapp\\Models\\Dbs2databaseContext.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAiwEAAAAAtAAAAAAAAAA==",
+              "DocumentIndex": 26,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Controllers\\UsersController.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "dbs2webapp\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T17:54:23.609Z"
+              "WhenOpened": "2025-03-25T17:56:57.964Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "dbs2webapp\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "dbs2webapp\\Controllers\\HomeController.cs",
+              "DocumentIndex": 25,
+              "Title": "AssignmentSubmissionsController.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\AssignmentSubmissionsController.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Controllers\\AssignmentSubmissionsController.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\AssignmentSubmissionsController.cs",
+              "RelativeToolTip": "dbs2webapp\\Controllers\\AssignmentSubmissionsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T11:30:57.446Z"
+              "WhenOpened": "2025-03-26T14:21:04.366Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\User.cs",
-              "RelativeDocumentMoniker": "dbs2webapp\\Models\\User.cs",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\User.cs",
-              "RelativeToolTip": "dbs2webapp\\Models\\User.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 23,
+              "Title": "AssignmentSubmission.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\AssignmentSubmission.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Models\\AssignmentSubmission.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\AssignmentSubmission.cs",
+              "RelativeToolTip": "dbs2webapp\\Models\\AssignmentSubmission.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T11:06:55.778Z"
+              "WhenOpened": "2025-03-26T11:51:43.539Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Program.cs",
-              "RelativeDocumentMoniker": "dbs2webapp\\Program.cs",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Program.cs",
-              "RelativeToolTip": "dbs2webapp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T17:53:29.597Z"
+              "DocumentIndex": 35,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Users\\Details.cshtml",
+              "RelativeDocumentMoniker": "dbs2webapp\\Views\\Users\\Details.cshtml",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Users\\Details.cshtml",
+              "RelativeToolTip": "dbs2webapp\\Views\\Users\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T11:40:03.883Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 32,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Roles\\Index.cshtml",
+              "RelativeDocumentMoniker": "dbs2webapp\\Views\\Roles\\Index.cshtml",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Roles\\Index.cshtml",
+              "RelativeToolTip": "dbs2webapp\\Views\\Roles\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T11:40:14.43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Roles\\Edit.cshtml",
+              "RelativeDocumentMoniker": "dbs2webapp\\Views\\Roles\\Edit.cshtml",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Roles\\Edit.cshtml",
+              "RelativeToolTip": "dbs2webapp\\Views\\Roles\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T11:40:17.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Roles\\Details.cshtml",
+              "RelativeDocumentMoniker": "dbs2webapp\\Views\\Roles\\Details.cshtml",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Roles\\Details.cshtml",
+              "RelativeToolTip": "dbs2webapp\\Views\\Roles\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T11:40:17.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Roles\\Delete.cshtml",
+              "RelativeDocumentMoniker": "dbs2webapp\\Views\\Roles\\Delete.cshtml",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Roles\\Delete.cshtml",
+              "RelativeToolTip": "dbs2webapp\\Views\\Roles\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T11:40:18.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Roles\\Create.cshtml",
+              "RelativeDocumentMoniker": "dbs2webapp\\Views\\Roles\\Create.cshtml",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Roles\\Create.cshtml",
+              "RelativeToolTip": "dbs2webapp\\Views\\Roles\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T11:40:18.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
               "Title": "AssignmentUser.cs",
               "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\AssignmentUser.cs",
               "RelativeDocumentMoniker": "dbs2webapp\\Models\\AssignmentUser.cs",
               "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\AssignmentUser.cs",
               "RelativeToolTip": "dbs2webapp\\Models\\AssignmentUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-27T12:24:33.872Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 40,
               "Title": "Chapter.cs",
               "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\Chapter.cs",
               "RelativeDocumentMoniker": "dbs2webapp\\Models\\Chapter.cs",
@@ -420,127 +762,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "TestQuestion.cs",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\TestQuestion.cs",
-              "RelativeDocumentMoniker": "dbs2webapp\\Models\\TestQuestion.cs",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\TestQuestion.cs",
-              "RelativeToolTip": "dbs2webapp\\Models\\TestQuestion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T12:23:47.13Z"
+              "DocumentIndex": 34,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Users\\Edit.cshtml",
+              "RelativeDocumentMoniker": "dbs2webapp\\Views\\Users\\Edit.cshtml",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Users\\Edit.cshtml",
+              "RelativeToolTip": "dbs2webapp\\Views\\Users\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-26T11:38:56.282Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "20250327123511_InitialCreate.cs",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Migrations\\20250327123511_InitialCreate.cs",
-              "RelativeDocumentMoniker": "dbs2webapp\\Migrations\\20250327123511_InitialCreate.cs",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Migrations\\20250327123511_InitialCreate.cs",
-              "RelativeToolTip": "dbs2webapp\\Migrations\\20250327123511_InitialCreate.cs",
+              "DocumentIndex": 33,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Users\\Index.cshtml",
+              "RelativeDocumentMoniker": "dbs2webapp\\Views\\Users\\Index.cshtml",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Users\\Index.cshtml",
+              "RelativeToolTip": "dbs2webapp\\Views\\Users\\Index.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-26T11:19:55.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "AccountRole.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\AccountRole.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Models\\AccountRole.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\AccountRole.cs",
+              "RelativeToolTip": "dbs2webapp\\Models\\AccountRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T11:32:41.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Option.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\Option.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Models\\Option.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\Option.cs",
+              "RelativeToolTip": "dbs2webapp\\Models\\Option.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T12:37:50.159Z"
+              "WhenOpened": "2025-03-31T11:33:27.409Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "TestInstance.cs",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\TestInstance.cs",
-              "RelativeDocumentMoniker": "dbs2webapp\\Models\\TestInstance.cs",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\TestInstance.cs",
-              "RelativeToolTip": "dbs2webapp\\Models\\TestInstance.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T12:23:50.8Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Question.cs",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\Question.cs",
-              "RelativeDocumentMoniker": "dbs2webapp\\Models\\Question.cs",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\Question.cs",
-              "RelativeToolTip": "dbs2webapp\\Models\\Question.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T12:31:30.404Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "TestInstancesController.cs",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\TestInstancesController.cs",
-              "RelativeDocumentMoniker": "dbs2webapp\\Controllers\\TestInstancesController.cs",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\TestInstancesController.cs",
-              "RelativeToolTip": "dbs2webapp\\Controllers\\TestInstancesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T14:28:15.788Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "RolesController.cs",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\RolesController.cs",
-              "RelativeDocumentMoniker": "dbs2webapp\\Controllers\\RolesController.cs",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\RolesController.cs",
-              "RelativeToolTip": "dbs2webapp\\Controllers\\RolesController.cs",
-              "ViewState": "AgIAAHcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T14:26:46.748Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "TestQuestionsController.cs",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\TestQuestionsController.cs",
-              "RelativeDocumentMoniker": "dbs2webapp\\Controllers\\TestQuestionsController.cs",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\TestQuestionsController.cs",
-              "RelativeToolTip": "dbs2webapp\\Controllers\\TestQuestionsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T14:28:41.3Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "dbs2webapp\\Controllers\\UsersController.cs",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "dbs2webapp\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAwwBgAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T17:56:57.964Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "QuestionsController.cs",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\QuestionsController.cs",
-              "RelativeDocumentMoniker": "dbs2webapp\\Controllers\\QuestionsController.cs",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\QuestionsController.cs",
-              "RelativeToolTip": "dbs2webapp\\Controllers\\QuestionsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T14:26:16.436Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "TestsController.cs",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\TestsController.cs",
-              "RelativeDocumentMoniker": "dbs2webapp\\Controllers\\TestsController.cs",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\TestsController.cs",
-              "RelativeToolTip": "dbs2webapp\\Controllers\\TestsController.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T14:27:39.838Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 39,
               "Title": "ChapterContent.cs",
               "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\ChapterContent.cs",
               "RelativeDocumentMoniker": "dbs2webapp\\Models\\ChapterContent.cs",
@@ -552,115 +822,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "UserCoursesController.cs",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\UserCoursesController.cs",
-              "RelativeDocumentMoniker": "dbs2webapp\\Controllers\\UserCoursesController.cs",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\UserCoursesController.cs",
-              "RelativeToolTip": "dbs2webapp\\Controllers\\UserCoursesController.cs",
+              "DocumentIndex": 38,
+              "Title": "RolesController.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\RolesController.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Controllers\\RolesController.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\RolesController.cs",
+              "RelativeToolTip": "dbs2webapp\\Controllers\\RolesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T14:26:46.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Question.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\Question.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Models\\Question.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\Question.cs",
+              "RelativeToolTip": "dbs2webapp\\Models\\Question.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T14:29:14.869Z"
+              "WhenOpened": "2025-03-27T12:31:30.404Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "OptionsController.cs",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\OptionsController.cs",
-              "RelativeDocumentMoniker": "dbs2webapp\\Controllers\\OptionsController.cs",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\OptionsController.cs",
-              "RelativeToolTip": "dbs2webapp\\Controllers\\OptionsController.cs",
+              "DocumentIndex": 45,
+              "Title": "Test.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\Test.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Models\\Test.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\Test.cs",
+              "RelativeToolTip": "dbs2webapp\\Models\\Test.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T14:25:15.456Z"
+              "WhenOpened": "2025-03-31T11:33:23.312Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "CourseCategoriesController.cs",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\CourseCategoriesController.cs",
-              "RelativeDocumentMoniker": "dbs2webapp\\Controllers\\CourseCategoriesController.cs",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\CourseCategoriesController.cs",
-              "RelativeToolTip": "dbs2webapp\\Controllers\\CourseCategoriesController.cs",
+              "DocumentIndex": 46,
+              "Title": "TestInstance.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\TestInstance.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Models\\TestInstance.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\TestInstance.cs",
+              "RelativeToolTip": "dbs2webapp\\Models\\TestInstance.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T14:24:42.939Z"
+              "WhenOpened": "2025-03-27T12:23:50.8Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "CoursesController.cs",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\CoursesController.cs",
-              "RelativeDocumentMoniker": "dbs2webapp\\Controllers\\CoursesController.cs",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\CoursesController.cs",
-              "RelativeToolTip": "dbs2webapp\\Controllers\\CoursesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 47,
+              "Title": "TestQuestion.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\TestQuestion.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Models\\TestQuestion.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\TestQuestion.cs",
+              "RelativeToolTip": "dbs2webapp\\Models\\TestQuestion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T14:24:00.831Z"
+              "WhenOpened": "2025-03-27T12:23:47.13Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "ChapterContentsController.cs",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\ChapterContentsController.cs",
-              "RelativeDocumentMoniker": "dbs2webapp\\Controllers\\ChapterContentsController.cs",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\ChapterContentsController.cs",
-              "RelativeToolTip": "dbs2webapp\\Controllers\\ChapterContentsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T14:23:32.554Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "ChaptersController.cs",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\ChaptersController.cs",
-              "RelativeDocumentMoniker": "dbs2webapp\\Controllers\\ChaptersController.cs",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\ChaptersController.cs",
-              "RelativeToolTip": "dbs2webapp\\Controllers\\ChaptersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T14:23:04.364Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "AssignmentSubmissionsController.cs",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\AssignmentSubmissionsController.cs",
-              "RelativeDocumentMoniker": "dbs2webapp\\Controllers\\AssignmentSubmissionsController.cs",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\AssignmentSubmissionsController.cs",
-              "RelativeToolTip": "dbs2webapp\\Controllers\\AssignmentSubmissionsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T14:21:04.366Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Users\\Index.cshtml",
-              "RelativeDocumentMoniker": "dbs2webapp\\Views\\Users\\Index.cshtml",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Users\\Index.cshtml",
-              "RelativeToolTip": "dbs2webapp\\Views\\Users\\Index.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-26T11:19:55.113Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "dbs2webapp\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "dbs2webapp\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-26T11:22:28.879Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 48,
               "Title": "Dockerfile",
               "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Dockerfile",
               "RelativeDocumentMoniker": "dbs2webapp\\Dockerfile",
@@ -672,87 +894,207 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "AssignmentSubmission.cs",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\AssignmentSubmission.cs",
-              "RelativeDocumentMoniker": "dbs2webapp\\Models\\AssignmentSubmission.cs",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Models\\AssignmentSubmission.cs",
-              "RelativeToolTip": "dbs2webapp\\Models\\AssignmentSubmission.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 49,
+              "Title": "AssignmentsController.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\AssignmentsController.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Controllers\\AssignmentsController.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\AssignmentsController.cs",
+              "RelativeToolTip": "dbs2webapp\\Controllers\\AssignmentsController.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAcwGQAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T11:51:43.539Z"
+              "WhenOpened": "2025-03-26T14:19:36.521Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Home\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "dbs2webapp\\Views\\Home\\Index.cshtml.cs",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Home\\Index.cshtml.cs",
-              "RelativeToolTip": "dbs2webapp\\Views\\Home\\Index.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T11:21:53.813Z"
+              "DocumentIndex": 51,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Assignments\\Create.cshtml",
+              "RelativeDocumentMoniker": "dbs2webapp\\Views\\Assignments\\Create.cshtml",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Assignments\\Create.cshtml",
+              "RelativeToolTip": "dbs2webapp\\Views\\Assignments\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAABlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-26T14:39:20.667Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "_Layout.cshtml.css",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Shared\\_Layout.cshtml.css",
-              "RelativeDocumentMoniker": "dbs2webapp\\Views\\Shared\\_Layout.cshtml.css",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Shared\\_Layout.cshtml.css",
-              "RelativeToolTip": "dbs2webapp\\Views\\Shared\\_Layout.cshtml.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-03-26T11:22:23.152Z"
+              "DocumentIndex": 52,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Assignments\\Delete.cshtml",
+              "RelativeDocumentMoniker": "dbs2webapp\\Views\\Assignments\\Delete.cshtml",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Assignments\\Delete.cshtml",
+              "RelativeToolTip": "dbs2webapp\\Views\\Assignments\\Delete.cshtml",
+              "ViewState": "AgIAABYAAAAAAAAAAAAiwCYAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-27T14:03:13.455Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 54,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Assignments\\Details.cshtml",
+              "RelativeDocumentMoniker": "dbs2webapp\\Views\\Assignments\\Details.cshtml",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Assignments\\Details.cshtml",
+              "RelativeToolTip": "dbs2webapp\\Views\\Assignments\\Details.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAiwCgAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-27T14:03:17.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
               "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Users\\Edit.cshtml",
-              "RelativeDocumentMoniker": "dbs2webapp\\Views\\Users\\Edit.cshtml",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Users\\Edit.cshtml",
-              "RelativeToolTip": "dbs2webapp\\Views\\Users\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Assignments\\Edit.cshtml",
+              "RelativeDocumentMoniker": "dbs2webapp\\Views\\Assignments\\Edit.cshtml",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Assignments\\Edit.cshtml",
+              "RelativeToolTip": "dbs2webapp\\Views\\Assignments\\Edit.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAgwB8AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-26T11:38:56.282Z"
+              "WhenOpened": "2025-03-27T14:03:49.192Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "dbs2webapp\\Views\\_ViewImports.cshtml",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "dbs2webapp\\Views\\_ViewImports.cshtml",
+              "DocumentIndex": 50,
+              "Title": "AssignmentUsersController.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\AssignmentUsersController.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Controllers\\AssignmentUsersController.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\AssignmentUsersController.cs",
+              "RelativeToolTip": "dbs2webapp\\Controllers\\AssignmentUsersController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-26T11:20:19.511Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T14:04:51.691Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "dbs2webapp\\Views\\_ViewStart.cshtml",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "dbs2webapp\\Views\\_ViewStart.cshtml",
+              "DocumentIndex": 55,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "dbs2webapp\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Properties\\launchSettings.json",
+              "RelativeToolTip": "dbs2webapp\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-26T11:20:21.684Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-26T11:24:12.438Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeDocumentMoniker": "dbs2webapp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeToolTip": "dbs2webapp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "DocumentIndex": 58,
+              "Title": "TestInstancesController.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\TestInstancesController.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Controllers\\TestInstancesController.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\TestInstancesController.cs",
+              "RelativeToolTip": "dbs2webapp\\Controllers\\TestInstancesController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-26T11:20:06.344Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T14:28:15.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "TestQuestionsController.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\TestQuestionsController.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Controllers\\TestQuestionsController.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\TestQuestionsController.cs",
+              "RelativeToolTip": "dbs2webapp\\Controllers\\TestQuestionsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T14:28:41.3Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "QuestionsController.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\QuestionsController.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Controllers\\QuestionsController.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\QuestionsController.cs",
+              "RelativeToolTip": "dbs2webapp\\Controllers\\QuestionsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T14:26:16.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "TestsController.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\TestsController.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Controllers\\TestsController.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\TestsController.cs",
+              "RelativeToolTip": "dbs2webapp\\Controllers\\TestsController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T14:27:39.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "UserCoursesController.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\UserCoursesController.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Controllers\\UserCoursesController.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\UserCoursesController.cs",
+              "RelativeToolTip": "dbs2webapp\\Controllers\\UserCoursesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T14:29:14.869Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "OptionsController.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\OptionsController.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Controllers\\OptionsController.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\OptionsController.cs",
+              "RelativeToolTip": "dbs2webapp\\Controllers\\OptionsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T14:25:15.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "CourseCategoriesController.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\CourseCategoriesController.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Controllers\\CourseCategoriesController.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\CourseCategoriesController.cs",
+              "RelativeToolTip": "dbs2webapp\\Controllers\\CourseCategoriesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T14:24:42.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "CoursesController.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\CoursesController.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Controllers\\CoursesController.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\CoursesController.cs",
+              "RelativeToolTip": "dbs2webapp\\Controllers\\CoursesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T14:24:00.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "ChapterContentsController.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\ChapterContentsController.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Controllers\\ChapterContentsController.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\ChapterContentsController.cs",
+              "RelativeToolTip": "dbs2webapp\\Controllers\\ChapterContentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T14:23:32.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "ChaptersController.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\ChaptersController.cs",
+              "RelativeDocumentMoniker": "dbs2webapp\\Controllers\\ChaptersController.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\Controllers\\ChaptersController.cs",
+              "RelativeToolTip": "dbs2webapp\\Controllers\\ChaptersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T14:23:04.364Z"
             }
           ]
         }

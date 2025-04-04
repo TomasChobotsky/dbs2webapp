@@ -21,7 +21,7 @@ namespace dbs2webapp.Controllers
         // GET: Users
         public async Task<IActionResult> Index()
         {
-            var dbs2databaseContext = _context.Users.Include(u => u.Role);
+            var dbs2databaseContext = _context.AppUsers.Include(u => u.Role);
             return View(await dbs2databaseContext.ToListAsync());
         }
 
@@ -33,7 +33,7 @@ namespace dbs2webapp.Controllers
                 return NotFound();
             }
 
-            var user = await _context.Users
+            var user = await _context.AppUsers
                 .Include(u => u.Role)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (user == null)
@@ -56,11 +56,11 @@ namespace dbs2webapp.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Email,Password,Firstname,Surname,RoleId")] User user)
+        public async Task<IActionResult> Create([Bind("Id,Email,Password,Firstname,Surname,RoleId")] AppUser user)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(user);
+                _context.AppUsers.Add(user);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
@@ -76,7 +76,7 @@ namespace dbs2webapp.Controllers
                 return NotFound();
             }
 
-            var user = await _context.Users.FindAsync(id);
+            var user = await _context.AppUsers.FindAsync(id);
             if (user == null)
             {
                 return NotFound();
@@ -90,7 +90,7 @@ namespace dbs2webapp.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Email,Password,Firstname,Surname,RoleId")] User user)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Email,Password,Firstname,Surname,RoleId")] AppUser user)
         {
             if (id != user.Id)
             {
@@ -101,7 +101,7 @@ namespace dbs2webapp.Controllers
             {
                 try
                 {
-                    _context.Update(user);
+                    _context.AppUsers.Update(user);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -129,7 +129,7 @@ namespace dbs2webapp.Controllers
                 return NotFound();
             }
 
-            var user = await _context.Users
+            var user = await _context.AppUsers
                 .Include(u => u.Role)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (user == null)
@@ -145,10 +145,10 @@ namespace dbs2webapp.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var user = await _context.Users.FindAsync(id);
+            var user = await _context.AppUsers.FindAsync(id);
             if (user != null)
             {
-                _context.Users.Remove(user);
+                _context.AppUsers.Remove(user);
             }
 
             await _context.SaveChangesAsync();
@@ -157,7 +157,7 @@ namespace dbs2webapp.Controllers
 
         private bool UserExists(int id)
         {
-            return _context.Users.Any(e => e.Id == id);
+            return _context.AppUsers.Any(e => e.Id == id);
         }
     }
 }

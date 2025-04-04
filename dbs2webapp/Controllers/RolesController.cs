@@ -21,7 +21,7 @@ namespace dbs2webapp.Controllers
         // GET: Roles
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Roles.ToListAsync());
+            return View(await _context.AccountRoles.ToListAsync());
         }
 
         // GET: Roles/Details/5
@@ -32,7 +32,7 @@ namespace dbs2webapp.Controllers
                 return NotFound();
             }
 
-            var role = await _context.Roles
+            var role = await _context.AccountRoles
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (role == null)
             {
@@ -53,11 +53,11 @@ namespace dbs2webapp.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name")] Role role)
+        public async Task<IActionResult> Create([Bind("Id,Name")] AccountRole role)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(role);
+                _context.AccountRoles.Add(role);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
@@ -72,7 +72,7 @@ namespace dbs2webapp.Controllers
                 return NotFound();
             }
 
-            var role = await _context.Roles.FindAsync(id);
+            var role = await _context.AccountRoles.FindAsync(id);
             if (role == null)
             {
                 return NotFound();
@@ -85,7 +85,7 @@ namespace dbs2webapp.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name")] Role role)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name")] AccountRole role)
         {
             if (id != role.Id)
             {
@@ -96,7 +96,7 @@ namespace dbs2webapp.Controllers
             {
                 try
                 {
-                    _context.Update(role);
+                    _context.AccountRoles.Update(role);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -123,7 +123,7 @@ namespace dbs2webapp.Controllers
                 return NotFound();
             }
 
-            var role = await _context.Roles
+            var role = await _context.AccountRoles
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (role == null)
             {
@@ -138,10 +138,10 @@ namespace dbs2webapp.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var role = await _context.Roles.FindAsync(id);
+            var role = await _context.AccountRoles.FindAsync(id);
             if (role != null)
             {
-                _context.Roles.Remove(role);
+                _context.AccountRoles.Remove(role);
             }
 
             await _context.SaveChangesAsync();
@@ -150,7 +150,7 @@ namespace dbs2webapp.Controllers
 
         private bool RoleExists(int id)
         {
-            return _context.Roles.Any(e => e.Id == id);
+            return _context.AccountRoles.Any(e => e.Id == id);
         }
     }
 }

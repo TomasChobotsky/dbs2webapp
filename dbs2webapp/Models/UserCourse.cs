@@ -13,5 +13,5 @@ public partial class UserCourse
 
     public virtual Course Course { get; set; } = null!;
 
-    public virtual User User { get; set; } = null!;
+    public virtual AppUser User { get; set; } = null!;
 }
