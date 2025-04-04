@@ -2979,6 +2979,35 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
+      },
+      "ApplicationCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.3",
+          "Microsoft.Extensions.Identity.Core": "9.0.3"
+        },
+        "compile": {
+          "bin/placeholder/ApplicationCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ApplicationCore.dll": {}
+        }
+      },
+      "Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "ApplicationCore": "1.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.3",
+          "Microsoft.Extensions.Identity.Core": "9.0.3"
+        },
+        "compile": {
+          "bin/placeholder/Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -8164,10 +8193,21 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "ApplicationCore/1.0.0": {
+      "type": "project",
+      "path": "../ApplicationCore/ApplicationCore.csproj",
+      "msbuildProject": "../ApplicationCore/ApplicationCore.csproj"
+    },
+    "Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Infrastructure/Infrastructure.csproj",
+      "msbuildProject": "../Infrastructure/Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 9.0.3",
       "Microsoft.AspNetCore.Identity.UI >= 9.0.3",
       "Microsoft.EntityFrameworkCore >= 9.0.3",
@@ -8178,23 +8218,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tomas\\.nuget\\packages\\": {},
+    "C:\\Users\\TomasChobotsky\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\dbs2webapp.csproj",
-      "projectName": "dbs2webapp",
-      "projectPath": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\dbs2webapp.csproj",
-      "packagesPath": "C:\\Users\\tomas\\.nuget\\packages\\",
-      "outputPath": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\obj\\",
+      "projectUniqueName": "C:\\Users\\TomasChobotsky\\Desktop\\Programming\\dbs2webapp\\dbs2webapp\\WebApp.csproj",
+      "projectName": "WebApp",
+      "projectPath": "C:\\Users\\TomasChobotsky\\Desktop\\Programming\\dbs2webapp\\dbs2webapp\\WebApp.csproj",
+      "packagesPath": "C:\\Users\\TomasChobotsky\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\TomasChobotsky\\Desktop\\Programming\\dbs2webapp\\dbs2webapp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\tomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\TomasChobotsky\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -8208,7 +8248,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\TomasChobotsky\\Desktop\\Programming\\dbs2webapp\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\TomasChobotsky\\Desktop\\Programming\\dbs2webapp\\Infrastructure\\Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -2,27 +2,31 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ApplicationCore.Models;
+using Infrastructure.Interfaces;
+using Infrastructure.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using dbs2webapp.Models;
 
 namespace dbs2webapp.Controllers
 {
     public class CoursesController : Controller
     {
-        private readonly Dbs2databaseContext _context;
+        private readonly IAsyncRepository<Course> _courseRepo;
+        private readonly ICourseRepository _customCourseRepo;
 
-        public CoursesController(Dbs2databaseContext context)
+        public CoursesController(IAsyncRepository<Course> courseRepo, ICourseRepository customCourseRepo)
         {
-            _context = context;
+            _courseRepo = courseRepo;
+            _customCourseRepo = customCourseRepo;
         }
 
         // GET: Courses
         public async Task<IActionResult> Index()
         {
-            var dbs2databaseContext = _context.Courses.Include(c => c.CourseCategory);
-            return View(await dbs2databaseContext.ToListAsync());
+            var courses = await _courseRepo.ListAllAsync();
+            return View(courses);
         }
 
         // GET: Courses/Details/5

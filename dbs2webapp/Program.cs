@@ -1,6 +1,10 @@
-using dbs2webapp.Models;
+using ApplicationCore.Models;
+using Infrastructure.Data;
+using Infrastructure.Interfaces;
+using Infrastructure.Repositories;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using NuGet.Protocol.Core.Types;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,8 +16,15 @@ var connectionString =
 builder.Services.AddDbContext<Dbs2databaseContext>(options =>
     options.UseSqlServer(connectionString));
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddEntityFrameworkStores<Dbs2databaseContext>();
+builder.Services.AddIdentity<AppUser, IdentityRole>()
+        .AddEntityFrameworkStores<Dbs2databaseContext>()
+        .AddDefaultUI()
+        .AddDefaultTokenProviders();
+
+// Add repository services
+builder.Services.AddScoped(typeof(IAsyncRepository<>), typeof(EfRepository<>));
+
+builder.Services.AddScoped<ICourseRepository, CourseRepository>();
 
 builder.Services.AddControllersWithViews();
 
