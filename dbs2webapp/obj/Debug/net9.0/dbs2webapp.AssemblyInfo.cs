@@ -11,11 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("85324495-a4c2-49d9-86ac-d0753e3b90cd")]
+[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-dbs2webapp-a19afcf6-fcfd-441c-a8cd-eae023105dd9")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("dbs2webapp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+273442f088c7b602561f0341be5648fa21759323")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e3c7bf746472bea96cc9f8671762a01c4dcba481")]
 [assembly: System.Reflection.AssemblyProductAttribute("dbs2webapp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("dbs2webapp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -29,3 +29,66 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+
+.card {
+    transition: transform 0.3s;
+    height: 100%;
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text {
+    flex-grow: 1;
+}
+
+.list-group-item {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.list-group-item:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+.options-container {
+    margin-left: 20px;
+}
+
+.form-check {
+    margin-bottom: 8px;
+}
+
+.form-check-input {
+    margin-top: 0.3rem;
+}
+
+.question-result {
+    border-radius: 5px;
+    border-left: 4px solid;
+}
+
+.bg-success.bg-opacity-10 {
+    border-left-color: #198754;
+}
+
+.bg-danger.bg-opacity-10 {
+    border-left-color: #dc3545;
+}
+
+.options-result {
+    margin-left: 20px;
+}
+
+.form-check {
+    margin-bottom: 8px;
+}

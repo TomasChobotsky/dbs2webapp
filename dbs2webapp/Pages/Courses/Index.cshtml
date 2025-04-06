@@ -1,0 +1,54 @@
+﻿@page
+@model dbs2webapp.Pages.Courses.IndexModel
+@{
+    ViewData["Title"] = "All Courses";
+}
+
+<div class="container">
+    <h1>@ViewData["Title"]</h1>
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+    }
+    @if (TempData["InfoMessage"] != null)
+    {
+        <div class="alert alert-info">@TempData["InfoMessage"]</div>
+    }
+
+    <div class="row">
+        @foreach (var course in Model.Courses)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">@course.Name</h5>
+                        <p class="card-text">
+                            Chapters: @course.Chapters?.Count
+                        </p>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            if (Model.UserEnrollments.ContainsKey(course.Id) && Model.UserEnrollments[course.Id])
+                            {
+                                <span class="badge bg-success">Enrolled</span>
+                                <a asp-page="/Chapters/Index" asp-route-courseId="@course.Id" class="btn btn-secondary mt-2">
+                                    View Course
+                                </a>
+                            }
+                            else
+                            {
+                                <form method="post" asp-page-handler="Enroll" asp-route-courseId="@course.Id">
+                                    <button type="submit" class="btn btn-primary">Enroll Now</button>
+                                </form>
+                            }
+                        }
+                        else
+                        {
+                            <a asp-area="Identity" asp-page="/Account/Login" class="btn btn-primary">Login to Enroll</a>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
