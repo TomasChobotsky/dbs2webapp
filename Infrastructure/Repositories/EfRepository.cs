@@ -1,4 +1,5 @@
-﻿using Infrastructure.Data;
+﻿using ApplicationCore.Interfaces;
+using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -18,17 +19,7 @@ namespace Infrastructure.Repositories
             _dbContext = dbContext;
         }
 
-        public Task<T> AddAsync(T entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task DeleteAsync(T entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public async Task<T> GetByIdAsync(int id)
+        public virtual async Task<T> GetByIdAsync(int id)
         {
             return await _dbContext.Set<T>().FindAsync(id);
         }
@@ -38,14 +29,23 @@ namespace Infrastructure.Repositories
             return await _dbContext.Set<T>().ToListAsync();
         }
 
-        public Task<IReadOnlyList<T>> ListAsync(Expression<Func<T, bool>> predicate)
+        public async Task<T> AddAsync(T entity)
         {
-            throw new NotImplementedException();
+            await _dbContext.Set<T>().AddAsync(entity);
+            await _dbContext.SaveChangesAsync();
+            return entity;
         }
 
-        public Task UpdateAsync(T entity)
+        public async Task UpdateAsync(T entity)
         {
-            throw new NotImplementedException();
+            _dbContext.Entry(entity).State = EntityState.Modified;
+            await _dbContext.SaveChangesAsync();
+        }
+
+        public async Task DeleteAsync(T entity)
+        {
+            _dbContext.Set<T>().Remove(entity);
+            await _dbContext.SaveChangesAsync();
         }
     }
 }

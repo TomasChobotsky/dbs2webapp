@@ -2,34 +2,41 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ApplicationCore.Interfaces;
 using ApplicationCore.Models;
-using Infrastructure.Interfaces;
 using Infrastructure.Repositories;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace dbs2webapp.Controllers
 {
+    [Authorize]
     public class CoursesController : Controller
     {
-        private readonly IAsyncRepository<Course> _courseRepo;
-        private readonly ICourseRepository _customCourseRepo;
+        private readonly ICourseRepository _courseRepository;
+        private readonly UserManager<AppUser> _userManager;
 
-        public CoursesController(IAsyncRepository<Course> courseRepo, ICourseRepository customCourseRepo)
+        public CoursesController(
+            ICourseRepository courseRepository,
+            UserManager<AppUser> userManager)
         {
-            _courseRepo = courseRepo;
-            _customCourseRepo = customCourseRepo;
+            _courseRepository = courseRepository;
+            _userManager = userManager;
         }
 
         // GET: Courses
+        [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
-            var courses = await _courseRepo.ListAllAsync();
+            var courses = await _courseRepository.ListAllAsync();
             return View(courses);
         }
 
         // GET: Courses/Details/5
+        [AllowAnonymous]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -37,9 +44,7 @@ namespace dbs2webapp.Controllers
                 return NotFound();
             }
 
-            var course = await _context.Courses
-                .Include(c => c.CourseCategory)
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var course = await _courseRepository.GetByIdAsync(id.Value);
             if (course == null)
             {
                 return NotFound();
@@ -49,27 +54,33 @@ namespace dbs2webapp.Controllers
         }
 
         // GET: Courses/Create
+        [Authorize(Roles = "Admin,Teacher")]
         public IActionResult Create()
         {
-            ViewData["CourseCategoryId"] = new SelectList(_context.CourseCategories, "Id", "Id");
             return View();
         }
 
         // POST: Courses/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,CourseCategoryId")] Course course)
+        [Authorize(Roles = "Admin,Teacher")]
+        public async Task<IActionResult> Create(CourseViewModel model)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(course);
-                await _context.SaveChangesAsync();
+                var user = await _userManager.GetUserAsync(User);
+
+                var course = new Course
+                {
+                    Name = model.Name,
+                    CourseCategoryId = model.CourseCategoryId,
+                    TeacherId = user.Id
+                };
+
+                await _courseRepository.AddAsync(course);
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CourseCategoryId"] = new SelectList(_context.CourseCategories, "Id", "Id", course.CourseCategoryId);
-            return View(course);
+            return View(model);
         }
 
         // GET: Courses/Edit/5
@@ -80,52 +91,73 @@ namespace dbs2webapp.Controllers
                 return NotFound();
             }
 
-            var course = await _context.Courses.FindAsync(id);
+            var course = await _courseRepository.GetByIdAsync(id.Value);
             if (course == null)
             {
                 return NotFound();
             }
-            ViewData["CourseCategoryId"] = new SelectList(_context.CourseCategories, "Id", "Id", course.CourseCategoryId);
-            return View(course);
+
+            // Only allow teacher who created the course or admin to edit
+            if (!await IsAuthorizedToEdit(course))
+            {
+                return Forbid();
+            }
+
+            var model = new CourseViewModel
+            {
+                Id = course.Id,
+                Name = course.Name,
+                CourseCategoryId = course.CourseCategoryId
+            };
+
+            return View(model);
         }
 
         // POST: Courses/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,CourseCategoryId")] Course course)
+        public async Task<IActionResult> Edit(int id, CourseViewModel model)
         {
-            if (id != course.Id)
+            if (id != model.Id)
             {
                 return NotFound();
             }
 
             if (ModelState.IsValid)
             {
+                var course = await _courseRepository.GetByIdAsync(id);
+                if (course == null)
+                {
+                    return NotFound();
+                }
+
+                if (!await IsAuthorizedToEdit(course))
+                {
+                    return Forbid();
+                }
+
+                course.Name = model.Name;
+                course.CourseCategoryId = model.CourseCategoryId;
+
                 try
                 {
-                    _context.Update(course);
-                    await _context.SaveChangesAsync();
+                    await _courseRepository.UpdateAsync(course);
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!CourseExists(course.Id))
+                    if (!await CourseExists(course.Id))
                     {
                         return NotFound();
                     }
-                    else
-                    {
-                        throw;
-                    }
+                    throw;
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CourseCategoryId"] = new SelectList(_context.CourseCategories, "Id", "Id", course.CourseCategoryId);
-            return View(course);
+            return View(model);
         }
 
         // GET: Courses/Delete/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -133,9 +165,7 @@ namespace dbs2webapp.Controllers
                 return NotFound();
             }
 
-            var course = await _context.Courses
-                .Include(c => c.CourseCategory)
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var course = await _courseRepository.GetByIdAsync(id.Value);
             if (course == null)
             {
                 return NotFound();
@@ -147,21 +177,26 @@ namespace dbs2webapp.Controllers
         // POST: Courses/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var course = await _context.Courses.FindAsync(id);
+            var course = await _courseRepository.GetByIdAsync(id);
             if (course != null)
             {
-                _context.Courses.Remove(course);
+                await _courseRepository.DeleteAsync(course);
             }
-
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool CourseExists(int id)
+        private async Task<bool> CourseExists(int id)
         {
-            return _context.Courses.Any(e => e.Id == id);
+            return (await _courseRepository.GetByIdAsync(id)) != null;
+        }
+
+        private async Task<bool> IsAuthorizedToEdit(Course course)
+        {
+            var user = await _userManager.GetUserAsync(User);
+            return User.IsInRole("Admin") || course.TeacherId == user.Id;
         }
     }
 }

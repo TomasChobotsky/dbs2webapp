@@ -1,12 +1,11 @@
 ﻿using ApplicationCore.Models;
-using Infrastructure.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Infrastructure.Interfaces
+namespace ApplicationCore.Interfaces
 {
     /// <summary>
     /// Currently just a example, in case custom repositories are needed in the future

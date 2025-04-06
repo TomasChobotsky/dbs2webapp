@@ -1,22 +1,17 @@
-﻿using ApplicationCore.Models;
+﻿using ApplicationCore.Interfaces;
+using ApplicationCore.Models;
 using Infrastructure.Data;
-using Infrastructure.Interfaces;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Infrastructure.Repositories
 {
-    public class CourseRepository : EfRepository<CourseRepository>, ICourseRepository
+    public class CourseRepository : EfRepository<Course>, ICourseRepository
     {
         public CourseRepository(Dbs2databaseContext dbContext) : base(dbContext)
         {
         }
 
-        public async Task<List<Course>> GetCoursesWithStudentsAsync()
+        public async Task<List<Course>> GetCourseWithStudentsAsync()
         {
             return await _dbContext.Courses
                 .Include(c => c.UserCourses)

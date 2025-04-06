@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\TomasChobotsky\\Desktop\\Programming\\dbs2webapp\\dbs2webapp\\WebApp.csproj": {}
+    "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\WebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\TomasChobotsky\\Desktop\\Programming\\dbs2webapp\\ApplicationCore\\ApplicationCore.csproj": {
+    "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\ApplicationCore\\ApplicationCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TomasChobotsky\\Desktop\\Programming\\dbs2webapp\\ApplicationCore\\ApplicationCore.csproj",
+        "projectUniqueName": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\ApplicationCore\\ApplicationCore.csproj",
         "projectName": "ApplicationCore",
-        "projectPath": "C:\\Users\\TomasChobotsky\\Desktop\\Programming\\dbs2webapp\\ApplicationCore\\ApplicationCore.csproj",
-        "packagesPath": "C:\\Users\\TomasChobotsky\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TomasChobotsky\\Desktop\\Programming\\dbs2webapp\\ApplicationCore\\obj\\",
+        "projectPath": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\ApplicationCore\\ApplicationCore.csproj",
+        "packagesPath": "C:\\Users\\tomas\\.nuget\\packages\\",
+        "outputPath": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\ApplicationCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\TomasChobotsky\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -79,20 +79,20 @@
         }
       }
     },
-    "C:\\Users\\TomasChobotsky\\Desktop\\Programming\\dbs2webapp\\dbs2webapp\\WebApp.csproj": {
+    "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TomasChobotsky\\Desktop\\Programming\\dbs2webapp\\dbs2webapp\\WebApp.csproj",
+        "projectUniqueName": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\WebApp.csproj",
         "projectName": "WebApp",
-        "projectPath": "C:\\Users\\TomasChobotsky\\Desktop\\Programming\\dbs2webapp\\dbs2webapp\\WebApp.csproj",
-        "packagesPath": "C:\\Users\\TomasChobotsky\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TomasChobotsky\\Desktop\\Programming\\dbs2webapp\\dbs2webapp\\obj\\",
+        "projectPath": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\WebApp.csproj",
+        "packagesPath": "C:\\Users\\tomas\\.nuget\\packages\\",
+        "outputPath": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\TomasChobotsky\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -107,8 +107,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\TomasChobotsky\\Desktop\\Programming\\dbs2webapp\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\TomasChobotsky\\Desktop\\Programming\\dbs2webapp\\Infrastructure\\Infrastructure.csproj"
+              "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -183,20 +183,20 @@
         }
       }
     },
-    "C:\\Users\\TomasChobotsky\\Desktop\\Programming\\dbs2webapp\\Infrastructure\\Infrastructure.csproj": {
+    "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TomasChobotsky\\Desktop\\Programming\\dbs2webapp\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\TomasChobotsky\\Desktop\\Programming\\dbs2webapp\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\TomasChobotsky\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TomasChobotsky\\Desktop\\Programming\\dbs2webapp\\Infrastructure\\obj\\",
+        "projectPath": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\tomas\\.nuget\\packages\\",
+        "outputPath": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\TomasChobotsky\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -211,8 +211,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\TomasChobotsky\\Desktop\\Programming\\dbs2webapp\\ApplicationCore\\ApplicationCore.csproj": {
-                "projectPath": "C:\\Users\\TomasChobotsky\\Desktop\\Programming\\dbs2webapp\\ApplicationCore\\ApplicationCore.csproj"
+              "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\ApplicationCore\\ApplicationCore.csproj": {
+                "projectPath": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\ApplicationCore\\ApplicationCore.csproj"
               }
             }
           }
