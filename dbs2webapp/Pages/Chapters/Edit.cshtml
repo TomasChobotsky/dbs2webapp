@@ -1,0 +1,58 @@
+﻿@page
+@model EditModel
+@{
+    ViewData["Title"] = "Edit Chapter";
+}
+
+<div class="container mt-4">
+    <div class="card shadow">
+        <div class="card-header bg-primary text-white">
+            <div class="d-flex justify-content-between align-items-center">
+                <h3>@ViewData["Title"]</h3>
+                <a asp-page="/TeacherPanel"
+                   class="btn btn-light btn-sm">
+					<i class="fas fa-arrow-left"></i> Back to Teachers Panel
+                </a>
+            </div>
+            <h5 class="mt-2">Course: @Model.Course.Name</h5>
+        </div>
+        <div class="card-body">
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Chapter.Id" />
+                <input type="hidden" asp-for="Chapter.CourseId" />
+
+                <div class="form-group mb-3">
+                    <label asp-for="Chapter.Name" class="form-label"></label>
+                    <input asp-for="Chapter.Name" class="form-control" />
+                    <span asp-validation-for="Chapter.Name" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Chapter.Description" class="form-label"></label>
+                    <textarea asp-for="Chapter.Description" class="form-control" rows="4"></textarea>
+                    <span asp-validation-for="Chapter.Description" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Chapter.Order" class="form-label"></label>
+                    <input asp-for="Chapter.Order" class="form-control" type="number" min="1" />
+                    <span asp-validation-for="Chapter.Order" class="text-danger"></span>
+                    <small class="text-muted">Lower numbers appear first</small>
+                </div>
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-save me-1"></i> Save Changes
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

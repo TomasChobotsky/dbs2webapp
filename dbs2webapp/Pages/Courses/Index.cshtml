@@ -20,32 +20,51 @@
         @foreach (var course in Model.Courses)
         {
             <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">@course.Name</h5>
-                        <p class="card-text">
-                            Chapters: @course.Chapters?.Count
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body d-flex flex-column">
+                        <p class="card-text text-muted mb-2">
+                            <small>Created by: @course.Teacher?.Email</small>
                         </p>
-                        @if (User.Identity.IsAuthenticated)
-                        {
-                            if (Model.UserEnrollments.ContainsKey(course.Id) && Model.UserEnrollments[course.Id])
+                        <p class="card-text">
+                            @course.Description
+                        </p>
+                        <p class="card-text">
+                            <span class="badge bg-primary">
+                                <i class="fas fa-book-open me-1"></i> @course.Chapters?.Count Chapters
+                            </span>
+                        </p>
+
+                        <div class="mt-auto">
+                            @if (User.Identity.IsAuthenticated && User.IsInRole("Student"))
                             {
-                                <span class="badge bg-success">Enrolled</span>
-                                <a asp-page="/Chapters/Index" asp-route-courseId="@course.Id" class="btn btn-secondary mt-2">
-                                    View Course
+                                if (Model.UserEnrollments.ContainsKey(course.Id) && Model.UserEnrollments[course.Id])
+                                {
+                                    <div class="d-grid gap-2">
+                                        <span class="badge bg-success mb-2">
+                                            <i class="fas fa-check-circle me-1"></i> Enrolled
+                                        </span>
+                                        <a asp-page="/Chapters/Index" asp-route-courseId="@course.Id"
+                                           class="btn btn-outline-primary">
+                                            <i class="fas fa-play me-1"></i> Continue Learning
+                                        </a>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <form method="post" asp-page-handler="Enroll" asp-route-courseId="@course.Id">
+                                        <button type="submit" class="btn btn-primary w-100">
+                                            <i class="fas fa-user-plus me-1"></i> Enroll Now
+                                        </button>
+                                    </form>
+                                }
+                            }
+                            else if (!User.Identity.IsAuthenticated)
+                            {
+                                <a asp-area="Identity" asp-page="/Account/Login" class="btn btn-primary w-100">
+                                    <i class="fas fa-sign-in-alt me-1"></i> Login to Enroll
                                 </a>
                             }
-                            else
-                            {
-                                <form method="post" asp-page-handler="Enroll" asp-route-courseId="@course.Id">
-                                    <button type="submit" class="btn btn-primary">Enroll Now</button>
-                                </form>
-                            }
-                        }
-                        else
-                        {
-                            <a asp-area="Identity" asp-page="/Account/Login" class="btn btn-primary">Login to Enroll</a>
-                        }
+                        </div>
                     </div>
                 </div>
             </div>

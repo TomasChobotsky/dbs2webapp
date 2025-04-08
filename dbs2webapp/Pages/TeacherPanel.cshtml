@@ -1,0 +1,74 @@
+﻿@page
+@using dbs2webapp.Entities
+@model TeacherPanelModel
+@{
+    ViewData["Title"] = "Teacher Panel";
+}
+
+<div class="container">
+    <h1>📚 Your Courses</h1>
+    <a href="/Courses/Create" class="btn btn-success mb-3">Add New Course</a>
+
+    @foreach (var course in Model.Courses)
+    {
+        <div class="card mb-4">
+            <div class="card-header bg-primary text-white">
+                <h3 class="mb-0">
+                    @course.Name
+                    <div class="float-right">
+                        <a class="btn btn-sm btn-light" asp-page="Courses/Edit" asp-route-id="@course.Id">
+                            <i class="fas fa-edit me-2"></i>Edit
+                        </a>
+                        <a class="btn btn-sm btn-danger" asp-page="Courses/Delete" asp-route-id="@course.Id">
+                            <i class="fas fa-trash me-2"></i>Delete
+                        </a>
+                    </div>
+                </h3>
+            </div>
+            <div class="card-body">
+                <p class="text-muted">@course.Description</p>
+                <a href="/Chapters/Create?courseId=@course.Id" class="btn btn-sm btn-info mb-3">Add Chapter</a>
+
+                @foreach (var chapter in course.Chapters?.OrderBy(c => c.Order) ?? Enumerable.Empty<Chapter>())
+                {
+                    <div class="card mb-3">
+                        <div class="card-header bg-secondary text-white">
+                            <h5 class="mb-0">
+                                @chapter.Name
+                                <div class="float-right">
+                                    <a class="btn btn-sm btn-light" asp-page="Chapters/Edit" asp-route-id="@chapter.Id">
+                                        <i class="fas fa-edit me-2"></i>Edit
+                                    </a>
+                                    <a class="btn btn-sm btn-danger" asp-page="Chapters/Delete" asp-route-id="@chapter.Id">
+                                        <i class="fas fa-trash me-2"></i>Delete
+                                    </a>
+                                </div>
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <p>@chapter.Description</p>
+                            <a href="/Tests/Create?chapterId=@chapter.Id" class="btn btn-sm btn-warning mb-2">Add Test</a>
+
+                            @foreach (var test in chapter.Tests ?? Enumerable.Empty<Test>())
+                            {
+                                <div class="card mb-2">
+                                    <div class="card-body">
+                                        <h6>🧪 @test.Title</h6>
+                                        <div class="float-right">
+                                            <a class="btn btn-sm btn-light" asp-page="Tests/Edit" asp-route-id="@test.Id">
+                                                <i class="fas fa-edit me-2"></i>Edit
+                                            </a>
+                                            <a class="btn btn-sm btn-danger" asp-page="Tests/Delete" asp-route-id="@test.Id">
+                                                <i class="fas fa-trash me-2"></i>Delete
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    }
+</div>

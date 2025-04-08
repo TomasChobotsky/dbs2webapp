@@ -167,12 +167,10 @@ namespace dbs2webapp.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ProviderKey")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ProviderDisplayName")
                         .HasColumnType("nvarchar(max)");
@@ -209,12 +207,10 @@ namespace dbs2webapp.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Name")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Value")
                         .HasColumnType("nvarchar(max)");
@@ -232,47 +228,30 @@ namespace dbs2webapp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Content")
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
                         .IsRequired()
                         .HasMaxLength(1000)
                         .HasColumnType("nvarchar(1000)");
-
-                    b.Property<int>("CourseId")
-                        .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
+                    b.Property<int>("Order")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("CourseId");
 
                     b.ToTable("Chapters");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Content = "Basic syntax and structure...",
-                            CourseId = 1,
-                            Name = "Getting Started with C#"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Content = "Classes, objects, inheritance...",
-                            CourseId = 1,
-                            Name = "Object-Oriented Programming"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Content = "HTML tags and structure...",
-                            CourseId = 2,
-                            Name = "HTML Basics"
-                        });
                 });
 
             modelBuilder.Entity("dbs2webapp.Entities.Course", b =>
@@ -283,26 +262,26 @@ namespace dbs2webapp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
+                    b.Property<string>("TeacherId")
+                        .HasColumnType("nvarchar(450)");
+
                     b.HasKey("Id");
 
-                    b.ToTable("Courses");
+                    b.HasIndex("TeacherId");
 
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Name = "Introduction to Programming"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Name = "Web Development Fundamentals"
-                        });
+                    b.ToTable("Courses");
                 });
 
             modelBuilder.Entity("dbs2webapp.Entities.Option", b =>
@@ -329,43 +308,6 @@ namespace dbs2webapp.Migrations
                     b.HasIndex("QuestionId");
 
                     b.ToTable("Options");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            IsCorrect = true,
-                            QuestionId = 1,
-                            Text = "Main()"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            IsCorrect = false,
-                            QuestionId = 1,
-                            Text = "Start()"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            IsCorrect = false,
-                            QuestionId = 1,
-                            Text = "Init()"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            IsCorrect = true,
-                            QuestionId = 2,
-                            Text = "var"
-                        },
-                        new
-                        {
-                            Id = 5,
-                            IsCorrect = false,
-                            QuestionId = 2,
-                            Text = "variable"
-                        });
                 });
 
             modelBuilder.Entity("dbs2webapp.Entities.Question", b =>
@@ -389,20 +331,6 @@ namespace dbs2webapp.Migrations
                     b.HasIndex("TestId");
 
                     b.ToTable("Questions");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Content = "What is the entry point of a C# program?",
-                            TestId = 1
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Content = "Which keyword is used to declare a variable in C#?",
-                            TestId = 1
-                        });
                 });
 
             modelBuilder.Entity("dbs2webapp.Entities.Test", b =>
@@ -426,20 +354,6 @@ namespace dbs2webapp.Migrations
                     b.HasIndex("ChapterId");
 
                     b.ToTable("Tests");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            ChapterId = 1,
-                            Title = "C# Basics Quiz"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            ChapterId = 2,
-                            Title = "OOP Concepts Test"
-                        });
                 });
 
             modelBuilder.Entity("dbs2webapp.Entities.TestResult", b =>
@@ -561,6 +475,16 @@ namespace dbs2webapp.Migrations
                     b.Navigation("Course");
                 });
 
+            modelBuilder.Entity("dbs2webapp.Entities.Course", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "Teacher")
+                        .WithMany()
+                        .HasForeignKey("TeacherId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.Navigation("Teacher");
+                });
+
             modelBuilder.Entity("dbs2webapp.Entities.Option", b =>
                 {
                     b.HasOne("dbs2webapp.Entities.Question", "Question")
@@ -586,7 +510,7 @@ namespace dbs2webapp.Migrations
             modelBuilder.Entity("dbs2webapp.Entities.Test", b =>
                 {
                     b.HasOne("dbs2webapp.Entities.Chapter", "Chapter")
-                        .WithMany()
+                        .WithMany("Tests")
                         .HasForeignKey("ChapterId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -616,9 +540,9 @@ namespace dbs2webapp.Migrations
             modelBuilder.Entity("dbs2webapp.Entities.UserCourse", b =>
                 {
                     b.HasOne("dbs2webapp.Entities.Course", "Course")
-                        .WithMany()
+                        .WithMany("UserCourses")
                         .HasForeignKey("CourseId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "User")
@@ -632,9 +556,16 @@ namespace dbs2webapp.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("dbs2webapp.Entities.Chapter", b =>
+                {
+                    b.Navigation("Tests");
+                });
+
             modelBuilder.Entity("dbs2webapp.Entities.Course", b =>
                 {
                     b.Navigation("Chapters");
+
+                    b.Navigation("UserCourses");
                 });
 
             modelBuilder.Entity("dbs2webapp.Entities.Question", b =>

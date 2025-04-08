@@ -1,5 +1,6 @@
 using dbs2webapp.Data;
 using dbs2webapp.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -13,6 +14,7 @@ namespace dbs2webapp.Pages.Courses
     {
         private readonly ApplicationDbContext _context;
         private readonly UserManager<IdentityUser> _userManager;
+        public string? CurrentUserId { get; set; }
 
         public IndexModel(ApplicationDbContext context, UserManager<IdentityUser> userManager)
         {
@@ -22,11 +24,14 @@ namespace dbs2webapp.Pages.Courses
 
         public IList<Course> Courses { get; set; }
         public Dictionary<int, bool> UserEnrollments { get; set; } = new Dictionary<int, bool>();
-
+         
         public async Task OnGetAsync()
         {
+            CurrentUserId = _userManager.GetUserId(User);
+
             Courses = await _context.Courses
                 .Include(c => c.Chapters)
+                .Include(c => c.Teacher)
                 .ToListAsync();
 
             if (User.Identity.IsAuthenticated)
@@ -47,7 +52,7 @@ namespace dbs2webapp.Pages.Courses
         {
             if (!User.Identity.IsAuthenticated)
             {
-                return RedirectToPage("/Account/Login", new { area = "Identity" });
+                return RedirectToPage("/Identity/Account/Login", new { area = "Identity" });
             }
 
             var user = await _userManager.GetUserAsync(User);

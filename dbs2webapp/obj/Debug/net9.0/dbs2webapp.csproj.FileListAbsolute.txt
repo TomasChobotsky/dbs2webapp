@@ -291,7 +291,6 @@ D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\obj\Debug\net9.0\dbs2we
 D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\obj\Debug\net9.0\dbs2webapp.genruntimeconfig.cache
 D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\obj\Debug\net9.0\ref\dbs2webapp.dll
 D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\obj\Debug\net9.0\compressed\yhprk1vy7y-o6szub3lnn.gz
-D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\bin\Debug\net9.0\Microsoft.AspNetCore.Razor.Language.dll
 D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\bin\Debug\net9.0\Microsoft.Build.dll
 D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\bin\Debug\net9.0\Microsoft.Build.Framework.dll
@@ -435,3 +434,4 @@ D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\bin\Debug\net9.0\runtim
 D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\bin\Debug\net9.0\runtimes\win-arm64\native\e_sqlite3.dll
 D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\bin\Debug\net9.0\runtimes\win-x64\native\e_sqlite3.dll
 D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\bin\Debug\net9.0\runtimes\win-x86\native\e_sqlite3.dll
+D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

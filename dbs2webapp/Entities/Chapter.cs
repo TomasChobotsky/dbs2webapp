@@ -8,16 +8,25 @@ namespace dbs2webapp.Entities
     {
         [Key]
         public int Id { get; set; }
-        [Required]
+
+        [Required(ErrorMessage = "Chapter name is required")]
         [MaxLength(100)]
         public string? Name { get; set; }
+
         [Required]
         [MaxLength(1000)]
-        public string? Content { get; set; }
-        [Required]
+        public string? Description { get; set; }
+
+        public int Order { get; set; } = 0; // For sorting chapters..
+
+        [DataType(DataType.DateTime)]
+        public DateTime CreatedDate { get; set; } = DateTime.UtcNow;
+
         public int CourseId { get; set; }
         [ForeignKey("CourseId")]
         public Course? Course { get; set; }
+
+        public List<Test>? Tests { get; set; }
     }
 
 }
