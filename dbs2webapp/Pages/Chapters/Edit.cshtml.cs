@@ -53,7 +53,7 @@ namespace dbs2webapp.Pages.Chapters
             return Page();
         }
 
-        public async Task<IActionResult> OnPostAsync()
+        public async Task<IActionResult> OnPostAsync(List<IFormFile> imageFiles)
         {
             if (!ModelState.IsValid)
             {
@@ -62,6 +62,7 @@ namespace dbs2webapp.Pages.Chapters
 
             // Get existing chapter to preserve CourseId
             var existingChapter = await _context.Chapters
+                .Include(c => c.Images)
                 .AsNoTracking()
                 .FirstOrDefaultAsync(c => c.Id == Chapter.Id);
 
@@ -74,6 +75,24 @@ namespace dbs2webapp.Pages.Chapters
             Chapter.CourseId = existingChapter.CourseId;
             Chapter.CreatedDate = existingChapter.CreatedDate;
             Chapter.Order = existingChapter.Order;
+            Chapter.Content = existingChapter.Content;
+
+            if (imageFiles != null && imageFiles.Count > 0)
+            {
+                foreach (var file in imageFiles)
+                {
+                    using var memoryStream = new MemoryStream();
+                    await file.CopyToAsync(memoryStream);
+
+                    existingChapter.Images.Add(new ChapterImage
+                    {
+                        FileName = file.FileName,
+                        ContentType = file.ContentType,
+                        FileSize = file.Length,
+                        Data = memoryStream.ToArray()
+                    });
+                }
+            }
 
             _context.Attach(Chapter).State = EntityState.Modified;
 
@@ -96,6 +115,33 @@ namespace dbs2webapp.Pages.Chapters
         private bool ChapterExists(int id)
         {
             return _context.Chapters.Any(e => e.Id == id);
+        }
+        public async Task<JsonResult> OnPostUploadImage()
+        {
+            var file = Request.Form.Files[0];
+            if (file == null || file.Length == 0)
+            {
+                return new JsonResult(new { error = "No file uploaded" });
+            }
+
+            using var memoryStream = new MemoryStream();
+            await file.CopyToAsync(memoryStream);
+
+            var image = new ChapterImage
+            {
+                FileName = file.FileName,
+                ContentType = file.ContentType,
+                FileSize = file.Length,
+                Data = memoryStream.ToArray()
+            };
+
+            _context.ChapterImages.Add(image);
+            await _context.SaveChangesAsync();
+
+            return new JsonResult(new
+            {
+                location = $"/ChapterImages/{image.Id}"
+            });
         }
     }
 }

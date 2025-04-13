@@ -17,6 +17,9 @@ namespace dbs2webapp.Entities
         [MaxLength(1000)]
         public string? Description { get; set; }
 
+        [Column(TypeName = "nvarchar(MAX)")] // For rich HTML content
+        public string? Content { get; set; }
+
         public int Order { get; set; } = 0; // For sorting chapters..
 
         [DataType(DataType.DateTime)]
@@ -27,6 +30,8 @@ namespace dbs2webapp.Entities
         public Course? Course { get; set; }
 
         public List<Test>? Tests { get; set; }
+
+        public List<ChapterImage> Images { get; set; } = new();
     }
 
 }

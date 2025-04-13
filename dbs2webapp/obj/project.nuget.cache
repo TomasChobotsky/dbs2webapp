@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KfAsSWPJsW0=",
+  "dgSpecHash": "OBY3hOgRjJg=",
   "success": true,
   "projectFilePath": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\dbs2webapp.csproj",
   "expectedPackageFiles": [
@@ -61,6 +61,8 @@
     "C:\\Users\\tomas\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\9.0.3\\microsoft.aspnetcore.diagnostics.entityframeworkcore.9.0.3.nupkg.sha512",
     "C:\\Users\\tomas\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\9.0.3\\microsoft.aspnetcore.identity.entityframeworkcore.9.0.3.nupkg.sha512",
     "C:\\Users\\tomas\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\9.0.3\\microsoft.aspnetcore.identity.ui.9.0.3.nupkg.sha512",
+    "C:\\Users\\tomas\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\6.0.0\\microsoft.aspnetcore.mvc.razor.extensions.6.0.0.nupkg.sha512",
+    "C:\\Users\\tomas\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\9.0.3\\microsoft.aspnetcore.mvc.razor.runtimecompilation.9.0.3.nupkg.sha512",
     "C:\\Users\\tomas\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.24\\microsoft.aspnetcore.razor.language.6.0.24.nupkg.sha512",
     "C:\\Users\\tomas\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\tomas\\.nuget\\packages\\microsoft.build\\17.10.4\\microsoft.build.17.10.4.nupkg.sha512",
@@ -176,7 +178,8 @@
     "C:\\Users\\tomas\\.nuget\\packages\\system.text.json\\9.0.3\\system.text.json.9.0.3.nupkg.sha512",
     "C:\\Users\\tomas\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512",
     "C:\\Users\\tomas\\.nuget\\packages\\system.threading.tasks.dataflow\\8.0.0\\system.threading.tasks.dataflow.8.0.0.nupkg.sha512",
-    "C:\\Users\\tomas\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+    "C:\\Users\\tomas\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "C:\\Users\\tomas\\.nuget\\packages\\tinymce\\7.8.0\\tinymce.7.8.0.nupkg.sha512"
   ],
   "logs": []
 }

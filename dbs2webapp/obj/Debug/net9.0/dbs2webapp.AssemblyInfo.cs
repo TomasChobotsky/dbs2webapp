@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("dbs2webapp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+48883cdb5e2984487e517feae74a8587518e188e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d917a20c4ea1ccd5e893ac599d87010725754fa0")]
 [assembly: System.Reflection.AssemblyProductAttribute("dbs2webapp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("dbs2webapp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -228,6 +228,9 @@ namespace dbs2webapp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("Content")
+                        .HasColumnType("nvarchar(MAX)");
+
                     b.Property<int>("CourseId")
                         .HasColumnType("int");
 
@@ -252,6 +255,36 @@ namespace dbs2webapp.Migrations
                     b.HasIndex("CourseId");
 
                     b.ToTable("Chapters");
+                });
+
+            modelBuilder.Entity("dbs2webapp.Entities.ChapterImage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ChapterId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ContentType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<byte[]>("Data")
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<string>("FileName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<long>("FileSize")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ChapterId");
+
+                    b.ToTable("ChapterImages");
                 });
 
             modelBuilder.Entity("dbs2webapp.Entities.Course", b =>
@@ -475,6 +508,17 @@ namespace dbs2webapp.Migrations
                     b.Navigation("Course");
                 });
 
+            modelBuilder.Entity("dbs2webapp.Entities.ChapterImage", b =>
+                {
+                    b.HasOne("dbs2webapp.Entities.Chapter", "Chapter")
+                        .WithMany("Images")
+                        .HasForeignKey("ChapterId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Chapter");
+                });
+
             modelBuilder.Entity("dbs2webapp.Entities.Course", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "Teacher")
@@ -558,6 +602,8 @@ namespace dbs2webapp.Migrations
 
             modelBuilder.Entity("dbs2webapp.Entities.Chapter", b =>
                 {
+                    b.Navigation("Images");
+
                     b.Navigation("Tests");
                 });
 
