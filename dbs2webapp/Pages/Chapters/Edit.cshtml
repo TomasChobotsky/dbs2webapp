@@ -41,13 +41,6 @@
                 </div>
 
                 <div class="form-group mb-3">
-                    <label class="form-label">Upload Images</label>
-                    <input type="file" id="image-upload" name="imageFiles" multiple
-                           accept="image/*" class="form-control" />
-                    <div id="image-preview" class="mt-2 d-flex flex-wrap gap-2"></div>
-                </div>
-
-                <div class="form-group mb-3">
                     <label asp-for="Chapter.Order" class="form-label"></label>
                     <input asp-for="Chapter.Order" class="form-control" type="number" min="1" />
                     <span asp-validation-for="Chapter.Order" class="text-danger"></span>
@@ -66,23 +59,4 @@
 
 @section Scripts {
     @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
-        <script>
-            // Image upload preview
-            document.getElementById('image-upload').addEventListener('change', function(e) {
-                const preview = document.getElementById('image-preview');
-                preview.innerHTML = '';
-
-                Array.from(e.target.files).forEach(file => {
-                    const reader = new FileReader();
-                    reader.onload = function(e) {
-                        const img = document.createElement('img');
-                        img.src = e.target.result;
-                        img.style.maxHeight = '100px';
-                        img.className = 'img-thumbnail';
-                        preview.appendChild(img);
-                    }
-                    reader.readAsDataURL(file);
-                });
-            });
-        </script>
 }

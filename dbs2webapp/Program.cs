@@ -51,14 +51,6 @@ else
     app.UseHsts();
 }
 
-app.MapGet("/ChapterImages/{id}", async (int id, ApplicationDbContext context) =>
-{
-    var image = await context.ChapterImages.FindAsync(id);
-    if (image == null) return Results.NotFound();
-
-    return Results.File(image.Data, image.ContentType);
-});
-
 app.UseHttpsRedirection();
 
 app.UseRouting();

@@ -915,3 +915,4 @@ D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\obj\Debug\net9.0\compre
 D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\obj\Debug\net9.0\compressed\myjax24bh4-n0lu1cdf2i.gz
 D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\obj\Debug\net9.0\compressed\19h2hq8f1g-5nlinglzrs.gz
 D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\obj\Debug\net9.0\compressed\x2xqe84bfl-om8jjyd51r.gz
+D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

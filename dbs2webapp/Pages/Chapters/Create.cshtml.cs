@@ -13,34 +13,29 @@ namespace dbs2webapp.Pages.Chapters
     {
         private readonly ApplicationDbContext _context;
         private readonly UserManager<IdentityUser> _userManager;
+        private readonly IWebHostEnvironment _environment;
 
         public CreateModel(ApplicationDbContext context,
-                         UserManager<IdentityUser> userManager)
+                         UserManager<IdentityUser> userManager,
+                         IWebHostEnvironment environment)
         {
             _context = context;
             _userManager = userManager;
+            _environment = environment;
         }
 
-        [BindProperty]
         public Chapter Chapter { get; set; }
 
-        [BindProperty(SupportsGet = true)]
-        public int CourseId { get; set; }
-
+        [BindProperty]
         public Course Course { get; set; }
 
-        public async Task<IActionResult> OnGetAsync()
+        public async Task<IActionResult> OnGetAsync(int? id)
         {
-            // Verify course exists and user has permission
             Course = await _context.Courses
-                .FirstOrDefaultAsync(c => c.Id == CourseId);
+                .FirstOrDefaultAsync(c => c.Id == id);
 
-            if (Course == null)
-            {
-                return NotFound();
-            }
+            if (Course == null) return NotFound();
 
-            // Check if current user is the course teacher or admin
             var currentUserId = _userManager.GetUserId(User);
             if (Course.TeacherId != currentUserId && !User.IsInRole("Admin"))
             {
@@ -54,16 +49,17 @@ namespace dbs2webapp.Pages.Chapters
         {
             if (!ModelState.IsValid)
             {
+                Course = await _context.Courses.FindAsync(Course.Id);
                 return Page();
             }
 
-            // Set course ID and creation date
-            Chapter.CourseId = CourseId;
+            // Set basic chapter info
+            Chapter.CourseId = Course.Id;
             Chapter.CreatedDate = DateTime.UtcNow;
 
             // Set order (next available number)
             var maxOrder = await _context.Chapters
-                .Where(c => c.CourseId == CourseId)
+                .Where(c => c.CourseId == Course.Id)
                 .MaxAsync(c => (int?)c.Order) ?? 0;
             Chapter.Order = maxOrder + 1;
 

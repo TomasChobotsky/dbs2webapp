@@ -14,7 +14,6 @@ namespace dbs2webapp.Data
 
         public DbSet<Course> Courses { get; set; }
         public DbSet<Chapter> Chapters { get; set; }
-        public DbSet<ChapterImage> ChapterImages { get; set; }
         public DbSet<Test> Tests { get; set; }
         public DbSet<Question> Questions { get; set; }
         public DbSet<Option> Options { get; set; }
@@ -51,12 +50,6 @@ namespace dbs2webapp.Data
                 .WithMany(c => c.Chapters)
                 .HasForeignKey(ch => ch.CourseId)
                 .OnDelete(DeleteBehavior.Cascade); // Cascade delete when course is deleted
-
-            modelBuilder.Entity<ChapterImage>()
-                .HasOne(e => e.Chapter)
-                .WithMany(c => c.Images)
-                .HasForeignKey(e => e.ChapterId)
-                .OnDelete(DeleteBehavior.Cascade); // Cascade delete when chapter is deleted
 
             modelBuilder.Entity<TestResult>()
                 .HasOne(tr => tr.User)

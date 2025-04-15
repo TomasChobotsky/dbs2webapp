@@ -229,29 +229,6 @@ namespace dbs2webapp.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "ChapterImages",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    FileName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ContentType = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    FileSize = table.Column<long>(type: "bigint", nullable: false),
-                    Data = table.Column<byte[]>(type: "varbinary(max)", nullable: true),
-                    ChapterId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_ChapterImages", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_ChapterImages_Chapters_ChapterId",
-                        column: x => x.ChapterId,
-                        principalTable: "Chapters",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Tests",
                 columns: table => new
                 {
@@ -381,11 +358,6 @@ namespace dbs2webapp.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
-                name: "IX_ChapterImages_ChapterId",
-                table: "ChapterImages",
-                column: "ChapterId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Chapters_CourseId",
                 table: "Chapters",
                 column: "CourseId");
@@ -448,9 +420,6 @@ namespace dbs2webapp.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
-
-            migrationBuilder.DropTable(
-                name: "ChapterImages");
 
             migrationBuilder.DropTable(
                 name: "Options");

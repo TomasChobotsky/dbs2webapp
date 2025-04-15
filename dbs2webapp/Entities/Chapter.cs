@@ -30,8 +30,6 @@ namespace dbs2webapp.Entities
         public Course? Course { get; set; }
 
         public List<Test>? Tests { get; set; }
-
-        public List<ChapterImage> Images { get; set; } = new();
     }
 
 }

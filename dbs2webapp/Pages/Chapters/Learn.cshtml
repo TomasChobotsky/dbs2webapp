@@ -1,0 +1,45 @@
+﻿@page "{id:int}"
+@model dbs2webapp.Pages.Chapters.LearnModel
+@using Microsoft.AspNetCore.Identity
+@{
+    ViewData["Title"] = Model.Chapter.Name;
+}
+
+<div class="container mt-4">
+    <h1>@Model.Chapter.Name</h1>
+    <p class="text-muted">@Model.Chapter.Description</p>
+    <hr />
+
+    <div class="chapter-content">
+        @Html.Raw(Model.Chapter.Content)
+    </div>
+
+    @* List all tests below the chapter content *@
+    @if (Model.Tests != null && Model.Tests.Count > 0)
+    {
+        <div class="mt-4">
+            <h2>Available Tests</h2>
+            <ul class="list-group">
+                @foreach (var test in Model.Tests)
+                {
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span>@test.Title</span>
+                        <a asp-page="/Tests/Take" asp-route-testId="@test.Id" class="btn btn-success btn-sm">
+                            Take Test
+                        </a>
+                    </li>
+                }
+            </ul>
+        </div>
+    }
+    else
+    {
+        <div class="mt-4">
+            <p class="text-muted">No tests available for this chapter.</p>
+        </div>
+    }
+
+    <div class="mt-2">
+        <a asp-page="/Chapters/Index" asp-route-courseId="@Model.Chapter.CourseId" class="btn btn-secondary">Back to Chapters</a>
+    </div>
+</div>

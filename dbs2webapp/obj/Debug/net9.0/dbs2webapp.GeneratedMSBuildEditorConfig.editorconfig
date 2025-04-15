@@ -212,6 +212,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hhcHRlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Development/Programming/C\#/dbs2/dbs2webapp/dbs2webapp/Pages/Chapters/Learn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hhcHRlcnNcTGVhcm4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Development/Programming/C\#/dbs2/dbs2webapp/dbs2webapp/Pages/Courses/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -250,6 +254,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Development/Programming/C\#/dbs2/dbs2webapp/dbs2webapp/Pages/TeacherPanel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhY2hlclBhbmVsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Development/Programming/C\#/dbs2/dbs2webapp/dbs2webapp/Pages/Tests/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Development/Programming/C\#/dbs2/dbs2webapp/dbs2webapp/Pages/Tests/History.cshtml]

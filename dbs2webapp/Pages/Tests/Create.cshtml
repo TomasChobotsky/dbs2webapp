@@ -1,0 +1,203 @@
+﻿@page
+@model dbs2webapp.Pages.Tests.CreateModel
+@{
+    ViewData["Title"] = "Create Test";
+}
+
+<div class="container mt-4">
+    <h1>Create Test for Chapter: @Model.Chapter.Name</h1>
+
+    <form method="post">
+        <input type="hidden" asp-for="Input.ChapterId" />
+
+        <div class="mb-3">
+            <label asp-for="Input.Title" class="form-label">Test Title</label>
+            <input asp-for="Input.Title" class="form-control" />
+            <span asp-validation-for="Input.Title" class="text-danger"></span>
+        </div>
+
+        <div id="questions-container">
+            @for (int i = 0; i < Model.Input.Questions.Count; i++)
+            {
+                <div class="card mb-3 question-block" data-question-index="@i">
+                    <!-- Hidden field for model binder: -->
+                    <input type="hidden" name="Input.Questions.index" value="@i" />
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <label>Question</label>
+                            <button type="button" class="btn btn-danger btn-sm remove-question">Remove Question</button>
+                        </div>
+                        <input name="Input.Questions[@i].Content" class="form-control mb-2" />
+
+                        <div class="options-block">
+                            <strong>Options:</strong>
+                            @for (int j = 0; j < Model.Input.Questions[i].Options.Count; j++)
+                            {
+                                <div class="option-item">
+                                    <div class="input-group mb-2">
+                                        <input name="Input.Questions[@i].Options[@j].Text" class="form-control" placeholder="Option text" />
+                                        <div class="input-group-text">
+                                            <input type="radio" name="Input.Questions[@i].CorrectOptionIndex" value="@j" /> Correct
+                                        </div>
+                                        <button type="button" class="btn btn-outline-danger btn-sm remove-option">Remove</button>
+                                    </div>
+                                    <input type="hidden" name="Input.Questions[@i].Options.index" value="@j" />
+                                </div>
+                            }
+                        </div>
+                        <button type="button" class="btn btn-sm btn-outline-primary add-option">+ Add Option</button>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <button type="button" class="btn btn-secondary mb-3" id="add-question">+ Add Question</button>
+        <br />
+        <button type="submit" class="btn btn-primary">Create Test</button>
+    </form>
+</div>
+
+@section Scripts {
+    <script>
+        // Helper function to re-index all questions and their options so that
+        // the names match what the model binder expects.
+        function reindexQuestions() {
+            const questions = document.querySelectorAll('#questions-container .question-block');
+            questions.forEach((qBlock, qIndex) => {
+                // update the question block data attribute and hidden index
+                qBlock.setAttribute("data-question-index", qIndex);
+                const hiddenQIndex = qBlock.querySelector('input[name="Input.Questions.index"]');
+                if (hiddenQIndex) hiddenQIndex.value = qIndex;
+                // update the name of the question content input
+                const contentInput = qBlock.querySelector('input[name^="Input.Questions"][name$=".Content"]');
+                if(contentInput) {
+                    contentInput.name = `Input.Questions[${qIndex}].Content`;
+                }
+                // update the name of the radio buttons for correct option
+                const radioButtons = qBlock.querySelectorAll('input[type="radio"]');
+                radioButtons.forEach(radio => {
+                    radio.name = `Input.Questions[${qIndex}].CorrectOptionIndex`;
+                });
+                // Reindex options in this question
+                reindexOptions(qBlock, qIndex);
+            });
+        }
+
+        // Helper function to re-index options in a question block.
+        function reindexOptions(questionBlock, questionIndex) {
+            const optionItems = questionBlock.querySelectorAll('.options-block .option-item');
+            optionItems.forEach((optionItem, oIndex) => {
+                // update the hidden option index field
+                const hiddenOIndex = optionItem.querySelector('input[name^="Input.Questions"][name$=".Options.index"]');
+                if(hiddenOIndex) hiddenOIndex.value = oIndex;
+                // update option text input name
+                const textInput = optionItem.querySelector('input[name^="Input.Questions"][name*=".Options"]');
+                if(textInput) {
+                    textInput.name = `Input.Questions[${questionIndex}].Options[${oIndex}].Text`;
+                }
+                // update the radio button name and value
+                const radioInput = optionItem.querySelector('input[type="radio"]');
+                if(radioInput) {
+                    radioInput.name = `Input.Questions[${questionIndex}].CorrectOptionIndex`;
+                    radioInput.value = oIndex;
+                }
+            });
+        }
+
+        // Global variable to determine the next question index if adding new questions
+        let globalQuestionIndex = document.querySelectorAll('#questions-container .question-block').length;
+
+        // Add new question block
+        document.getElementById("add-question").addEventListener("click", function () {
+            const container = document.getElementById("questions-container");
+
+            // Build four default options for the new question
+            let optionsHtml = "";
+            for (let j = 0; j < 4; j++) {
+                optionsHtml += `
+                <div class="option-item">
+                    <div class="input-group mb-2">
+                        <input name="Input.Questions[${globalQuestionIndex}].Options[${j}].Text" class="form-control" placeholder="Option text" />
+                        <div class="input-group-text">
+                            <input type="radio" name="Input.Questions[${globalQuestionIndex}].CorrectOptionIndex" value="${j}" /> Correct
+                        </div>
+                        <button type="button" class="btn btn-outline-danger btn-sm remove-option">Remove</button>
+                    </div>
+                    <input type="hidden" name="Input.Questions[${globalQuestionIndex}].Options.index" value="${j}" />
+                </div>`;
+            }
+
+            const qHtml = `
+                <div class="card mb-3 question-block" data-question-index="${globalQuestionIndex}">
+                    <input type="hidden" name="Input.Questions.index" value="${globalQuestionIndex}" />
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <label>Question</label>
+                            <button type="button" class="btn btn-danger btn-sm remove-question">Remove Question</button>
+                        </div>
+                        <input name="Input.Questions[${globalQuestionIndex}].Content" class="form-control mb-2" />
+                        <div class="options-block">
+                            <strong>Options:</strong>
+                            ${optionsHtml}
+                        </div>
+                        <button type="button" class="btn btn-sm btn-outline-primary add-option">+ Add Option</button>
+                    </div>
+                </div>`;
+            container.insertAdjacentHTML('beforeend', qHtml);
+            globalQuestionIndex++;
+            reindexQuestions();
+        });
+
+        // Delegated event listener for Add Option button inside each question block.
+        document.addEventListener("click", function (e) {
+            if (e.target && e.target.classList.contains("add-option")) {
+                // Find the question block for the clicked button.
+                const questionBlock = e.target.closest(".question-block");
+                let questionIndex = questionBlock.getAttribute("data-question-index");
+                // Find the options container.
+                const optionsBlock = questionBlock.querySelector(".options-block");
+                // Count the current number of options (based on option-item divs).
+                const currentOptionCount = optionsBlock.querySelectorAll(".option-item").length;
+                const newOptionIndex = currentOptionCount;
+
+                const newOptionHtml = `
+                    <div class="option-item">
+                        <div class="input-group mb-2">
+                            <input name="Input.Questions[${questionIndex}].Options[${newOptionIndex}].Text" class="form-control" placeholder="Option text" />
+                            <div class="input-group-text">
+                                <input type="radio" name="Input.Questions[${questionIndex}].CorrectOptionIndex" value="${newOptionIndex}" /> Correct
+                            </div>
+                            <button type="button" class="btn btn-outline-danger btn-sm remove-option">Remove</button>
+                        </div>
+                        <input type="hidden" name="Input.Questions[${questionIndex}].Options.index" value="${newOptionIndex}" />
+                    </div>`;
+                optionsBlock.insertAdjacentHTML("beforeend", newOptionHtml);
+                reindexOptions(questionBlock, questionIndex);
+            }
+        });
+
+        // Delegated event listener for Remove Question buttons.
+        document.addEventListener("click", function (e) {
+            if (e.target && e.target.classList.contains("remove-question")) {
+                // Remove the entire question block.
+                const questionBlock = e.target.closest(".question-block");
+                questionBlock.parentNode.removeChild(questionBlock);
+                reindexQuestions();
+            }
+        });
+
+        // Delegated event listener for Remove Option buttons.
+        document.addEventListener("click", function (e) {
+            if (e.target && e.target.classList.contains("remove-option")) {
+                // Remove the option item (which wraps both the input group and hidden input).
+                const optionItem = e.target.closest(".option-item");
+                const optionsBlock = optionItem.parentNode;
+                optionsBlock.removeChild(optionItem);
+                // Get the question block and re-index the options.
+                const questionBlock = e.target.closest(".question-block");
+                const questionIndex = questionBlock.getAttribute("data-question-index");
+                reindexOptions(questionBlock, questionIndex);
+            }
+        });
+    </script>
+}
