@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CoHHM/CMuaY=",
+  "dgSpecHash": "n0mRjrm7VUs=",
   "success": true,
-  "projectFilePath": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp\\dbs2webapp.csproj",
+  "projectFilePath": "C:\\Programming\\ASP\\dbs2webapp\\dbs2webapp\\dbs2webapp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tomas\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\tomas\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

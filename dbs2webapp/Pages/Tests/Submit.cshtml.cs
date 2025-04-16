@@ -35,7 +35,7 @@ namespace dbs2webapp.Pages.Tests
             return RedirectToPage("/Tests/Take", new { chapterId });
         }
 
-        public async Task<IActionResult> OnPostAsync(int chapterId, Dictionary<int, int> selectedOptions)
+        public async Task<IActionResult> OnPostAsync(int testId, Dictionary<int, int> selectedOptions)
         {
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
@@ -43,38 +43,38 @@ namespace dbs2webapp.Pages.Tests
                 return RedirectToPage("/Account/Login", new { area = "Identity" });
             }
 
-            // Get chapter and test
-            Chapter = await _context.Chapters
-                .Include(c => c.Course)
-                .FirstOrDefaultAsync(c => c.Id == chapterId);
-
-            if (Chapter == null)
-            {
-                return NotFound();
-            }
-
+            // Fetch the Test (and its Chapter) by the test's Id.
             Test = await _context.Tests
+                .Include(t => t.Chapter)
+                    .ThenInclude(ch => ch.Course)
                 .Include(t => t.Questions)
                     .ThenInclude(q => q.Options)
-                .FirstOrDefaultAsync(t => t.ChapterId == chapterId);
+                .FirstOrDefaultAsync(t => t.Id == testId);
 
             if (Test == null)
             {
                 return NotFound();
             }
 
-            // Calculate score
+            // Retrieve the Chapter for display
+            Chapter = Test.Chapter;
+            if (Chapter == null)
+            {
+                return NotFound();
+            }
+
+            // Make sure we have at least one question
             TotalQuestions = Test.Questions.Count;
             Score = 0;
             UserSelections = selectedOptions ?? new Dictionary<int, int>();
 
+            // Determine which options were correct
             foreach (var question in Test.Questions)
             {
                 var correctOption = question.Options.FirstOrDefault(o => o.IsCorrect);
                 if (correctOption != null)
                 {
                     CorrectAnswers[question.Id] = correctOption;
-
                     if (UserSelections.TryGetValue(question.Id, out int selectedOptionId))
                     {
                         if (selectedOptionId == correctOption.Id)
@@ -85,13 +85,14 @@ namespace dbs2webapp.Pages.Tests
                 }
             }
 
-            // Save test result
+            // Create a new TestResult
             var testResult = new TestResult
             {
                 UserId = user.Id,
-                TestId = Test.Id,
+                TestId = Test.Id,                 // Now uses the correct Test Id
                 Score = Score,
-                TotalQuestions = TotalQuestions
+                TotalQuestions = TotalQuestions,
+                CompletedDate = DateTime.Now      // If you want a timestamp
             };
 
             try
@@ -101,7 +102,7 @@ namespace dbs2webapp.Pages.Tests
             }
             catch (Exception ex)
             {
-                // Log the exception or handle it appropriately
+                // Log the exception, show error, etc.
                 ModelState.AddModelError("", "Error saving test results.");
                 return Page();
             }

@@ -16,7 +16,7 @@
         <div class="alert alert-info">@TempData["InfoMessage"]</div>
     }
 
-    <form method="post" asp-page="/Tests/Submit" asp-route-chapterId="@Model.Chapter.Id">
+    <form method="post" asp-page="/Tests/Submit" asp-route-testId="@Model.Test.Id">
         @foreach (var question in Model.Test.Questions)
         {
             <div class="question">

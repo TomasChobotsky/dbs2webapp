@@ -12,7 +12,7 @@ using dbs2webapp.Data;
 namespace dbs2webapp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250415214406_NewMigration")]
+    [Migration("20250416125548_NewMigration")]
     partial class NewMigration
     {
         /// <inheritdoc />

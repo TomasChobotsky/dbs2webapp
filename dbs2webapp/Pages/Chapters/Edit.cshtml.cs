@@ -53,7 +53,7 @@ namespace dbs2webapp.Pages.Chapters
             return Page();
         }
 
-        public async Task<IActionResult> OnPostAsync(List<IFormFile> imageFiles)
+        public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)
             {
@@ -74,7 +74,6 @@ namespace dbs2webapp.Pages.Chapters
             Chapter.CourseId = existingChapter.CourseId;
             Chapter.CreatedDate = existingChapter.CreatedDate;
             Chapter.Order = existingChapter.Order;
-            Chapter.Content = existingChapter.Content;
 
             _context.Attach(Chapter).State = EntityState.Modified;
 

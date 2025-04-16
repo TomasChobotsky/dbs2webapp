@@ -13,20 +13,17 @@ namespace dbs2webapp.Pages.Chapters
     {
         private readonly ApplicationDbContext _context;
         private readonly UserManager<IdentityUser> _userManager;
-        private readonly IWebHostEnvironment _environment;
 
         public CreateModel(ApplicationDbContext context,
-                         UserManager<IdentityUser> userManager,
-                         IWebHostEnvironment environment)
+                         UserManager<IdentityUser> userManager)
         {
             _context = context;
             _userManager = userManager;
-            _environment = environment;
         }
 
+        [BindProperty]
         public Chapter Chapter { get; set; }
 
-        [BindProperty]
         public Course Course { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
@@ -45,21 +42,22 @@ namespace dbs2webapp.Pages.Chapters
             return Page();
         }
 
-        public async Task<IActionResult> OnPostAsync()
+        public async Task<IActionResult> OnPostAsync(int? id)
         {
             if (!ModelState.IsValid)
             {
-                Course = await _context.Courses.FindAsync(Course.Id);
+                Course = await _context.Courses
+                    .FirstOrDefaultAsync(c => c.Id == id);
                 return Page();
             }
 
             // Set basic chapter info
-            Chapter.CourseId = Course.Id;
+            Chapter.CourseId = (int)id;
             Chapter.CreatedDate = DateTime.UtcNow;
 
             // Set order (next available number)
             var maxOrder = await _context.Chapters
-                .Where(c => c.CourseId == Course.Id)
+                .Where(c => c.CourseId == id)
                 .MaxAsync(c => (int?)c.Order) ?? 0;
             Chapter.Order = maxOrder + 1;
 
