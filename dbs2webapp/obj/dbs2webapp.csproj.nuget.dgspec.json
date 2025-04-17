@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Programming\\ASP\\dbs2webapp\\dbs2webapp\\dbs2webapp.csproj": {}
+    "C:\\Users\\TomasChobotsky\\Desktop\\Programming\\new\\dbs2webapp\\dbs2webapp\\dbs2webapp.csproj": {}
   },
   "projects": {
-    "C:\\Programming\\ASP\\dbs2webapp\\dbs2webapp\\dbs2webapp.csproj": {
+    "C:\\Users\\TomasChobotsky\\Desktop\\Programming\\new\\dbs2webapp\\dbs2webapp\\dbs2webapp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Programming\\ASP\\dbs2webapp\\dbs2webapp\\dbs2webapp.csproj",
+        "projectUniqueName": "C:\\Users\\TomasChobotsky\\Desktop\\Programming\\new\\dbs2webapp\\dbs2webapp\\dbs2webapp.csproj",
         "projectName": "dbs2webapp",
-        "projectPath": "C:\\Programming\\ASP\\dbs2webapp\\dbs2webapp\\dbs2webapp.csproj",
-        "packagesPath": "C:\\Users\\tomas\\.nuget\\packages\\",
-        "outputPath": "C:\\Programming\\ASP\\dbs2webapp\\dbs2webapp\\obj\\",
+        "projectPath": "C:\\Users\\TomasChobotsky\\Desktop\\Programming\\new\\dbs2webapp\\dbs2webapp\\dbs2webapp.csproj",
+        "packagesPath": "C:\\Users\\TomasChobotsky\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TomasChobotsky\\Desktop\\Programming\\new\\dbs2webapp\\dbs2webapp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\tomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\TomasChobotsky\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -50,45 +50,27 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[9.0.3, )"
+              "version": "[9.0.3, )",
+              "noWarn": [
+                "NU1605"
+              ]
             },
-            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+            "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
               "target": "Package",
-              "version": "[9.0.3, )"
+              "version": "[9.0.3, )",
+              "noWarn": [
+                "NU1605"
+              ]
             },
-            "Microsoft.AspNetCore.Identity.UI": {
-              "target": "Package",
-              "version": "[9.0.3, )"
-            },
-            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
-              "target": "Package",
-              "version": "[9.0.3, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[9.0.3, )"
-            },
-            "Microsoft.EntityFrameworkCore.Sqlite": {
-              "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
+            "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.3, )"
             },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.21.0, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "TinyMCE": {
-              "target": "Package",
-              "version": "[7.8.0, )"
             }
           },
           "imports": [
@@ -110,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

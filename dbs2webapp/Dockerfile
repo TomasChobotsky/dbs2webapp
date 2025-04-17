@@ -1,6 +1,6 @@
-# See https://aka.ms/customizecontainer to learn how to customize your debug container and how Visual Studio uses this Dockerfile to build your images for faster debugging.
+# Na https://aka.ms/customizecontainer se dozvíte, jak si přizpůsobit kontejner ladění a jak Visual Studio používá tento dokument Dockerfile k sestavení vašich imagí pro rychlejší ladění.
 
-# This stage is used when running from VS in fast mode (Default for Debug configuration)
+# Tato fáze se používá při spuštění z VS v rychlém režimu (výchozí pro konfiguraci ladění).
 FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
 USER $APP_UID
 WORKDIR /app
@@ -8,7 +8,7 @@ EXPOSE 8080
 EXPOSE 8081
 
 
-# This stage is used to build the service project
+# Tato fáze slouží k sestavení projektu služby.
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
@@ -18,12 +18,12 @@ COPY . .
 WORKDIR "/src/dbs2webapp"
 RUN dotnet build "./dbs2webapp.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
-# This stage is used to publish the service project to be copied to the final stage
+# Tato fáze slouží k publikování projektu služby, který se má zkopírovat do konečné fáze.
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
 RUN dotnet publish "./dbs2webapp.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
-# This stage is used in production or when running from VS in regular mode (Default when not using the Debug configuration)
+# Tato fáze se používá v produkčním prostředí nebo při spuštění z VS v běžném režimu (výchozí, když se nepoužívá konfigurace ladění).
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
