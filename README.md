@@ -2,11 +2,10 @@
  
 ## Struktura
 Dbs2WebApp.sln
-│
-├── Dbs2WebApp.Api           <-- ASP.NET Core Web API (entrypoint)
-├── Dbs2WebApp.Application   <-- Application logic (use cases, interfaces)
-├── Dbs2WebApp.Domain        <-- Domain models + enums
-├── Dbs2WebApp.Infrastructure<-- Database context, EF Core, file storage, services
+- Dbs2WebApp.Api                <-- ASP.NET Core Web API (entrypoint)
+- Dbs2WebApp.Application        <-- Application logic (use cases, interfaces)
+- Dbs2WebApp.Domain             <-- Domain models + enums
+- Dbs2WebApp.Infrastructure     <-- Database context, EF Core, file storage, services
 
 
 ## Úvod (Stručný popis aplikace)
