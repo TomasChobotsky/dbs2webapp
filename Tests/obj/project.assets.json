@@ -1788,7 +1788,6 @@
         "dependencies": {
           "Application": "1.0.0",
           "AutoMapper": "14.0.0",
-          "Identity": "1.0.0",
           "Infrastructure": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.3",
           "Microsoft.AspNetCore.Authentication.OpenIdConnect": "9.0.3",
@@ -1833,21 +1832,6 @@
         },
         "runtime": {
           "bin/placeholder/Domain.dll": {}
-        }
-      },
-      "Identity/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "dependencies": {
-          "Application": "1.0.0",
-          "Domain": "1.0.0",
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.3"
-        },
-        "compile": {
-          "bin/placeholder/Identity.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Identity.dll": {}
         }
       },
       "Infrastructure/1.0.0": {
@@ -4709,11 +4693,6 @@
       "type": "project",
       "path": "../Domain/Domain.csproj",
       "msbuildProject": "../Domain/Domain.csproj"
-    },
-    "Identity/1.0.0": {
-      "type": "project",
-      "path": "../Identity/Identity.csproj",
-      "msbuildProject": "../Identity/Identity.csproj"
     },
     "Infrastructure/1.0.0": {
       "type": "project",

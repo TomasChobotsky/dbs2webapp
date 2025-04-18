@@ -1,9 +1,11 @@
 ﻿using Application.DTOs.Tests;
 using Application.Interfaces;
+using AutoMapper;
 using Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Api.Controllers
 {
@@ -12,60 +14,58 @@ namespace Api.Controllers
     [Authorize(Roles = "Student")]
     public class TestResultsController : ControllerBase
     {
-        private readonly IBaseRepository<TestResult> _repository;
         private readonly ITestResultRepository _testResultRepo;
         private readonly UserManager<IdentityUser> _userManager;
+        private readonly IMapper _mapper;
 
-        public TestResultsController(IBaseRepository<TestResult> repository, ITestResultRepository testResultRepo, UserManager<IdentityUser> userManager)
+        public TestResultsController(
+            ITestResultRepository testResultRepo,
+            UserManager<IdentityUser> userManager,
+            IMapper mapper)
         {
-            _repository = repository;
             _testResultRepo = testResultRepo;
             _userManager = userManager;
+            _mapper = mapper;
         }
 
+        // GET: api/testresults/my
         [HttpGet("my")]
         public async Task<ActionResult<IEnumerable<TestResultDto>>> GetMyResults()
         {
             var userId = _userManager.GetUserId(User);
+            if (string.IsNullOrEmpty(userId))
+                return Unauthorized();
 
-            var results = await _repository.FindAsync(tr => tr.UserId == userId);
-            var dtos = results.Select(r => new TestResultDto
-            {
-                Id = r.Id,
-                TestTitle = r.Test!.Title ?? "(Unnamed Test)",
-                Score = r.Score,
-                TotalQuestions = r.TotalQuestions,
-                CompletedDate = r.CompletedDate
-            }).ToList();
+            // we’re pulling in the Test navigation, so the delegate returns IIncludableQueryable<…,Test>
+            var results = await _testResultRepo.FindAsync(
+                tr => tr.UserId == userId,
+                include: q => q.Include(r => r.Test)
+            );
 
+            var dtos = _mapper.Map<List<TestResultDto>>(results);
             return Ok(dtos);
         }
 
+        // GET: api/testresults/{id}
         [HttpGet("{id}")]
         public async Task<ActionResult<TestResultDto>> GetResultDetail(int id)
         {
             var userId = _userManager.GetUserId(User);
-            var result = await _repository
-                .FindAsync(r => r.Id == id && r.UserId == userId);
+                if (userId == null) return Unauthorized();
+
+            var result = await _testResultRepo.FindAsync(
+                r => r.Id == id && r.UserId == userId,
+                include: q => q.Include(r => r.Test));
 
             var entity = result.FirstOrDefault();
             if (entity == null)
                 return NotFound();
 
-            var dto = new TestResultDto
-            {
-                Id = entity.Id,
-                TestTitle = entity.Test?.Title ?? "(Unknown Test)",
-                Score = entity.Score,
-                TotalQuestions = entity.TotalQuestions,
-                CompletedDate = entity.CompletedDate
-            };
-
-            return Ok(dto);
+            return Ok(_mapper.Map<TestResultDto>(entity));
         }
 
+        // POST: api/testresults
         [HttpPost]
-        [Authorize(Roles = "Student")]
         public async Task<IActionResult> SubmitTest([FromBody] TestSubmissionDto submission)
         {
             var userId = _userManager.GetUserId(User);
@@ -99,14 +99,7 @@ namespace Api.Controllers
 
             await _testResultRepo.SaveTestResultAsync(result);
 
-            return Ok(new TestResultDto
-            {
-                Id = result.Id,
-                TestTitle = test.Title ?? "(Unnamed Test)",
-                Score = correct,
-                TotalQuestions = total,
-                CompletedDate = result.CompletedDate
-            });
+            return Ok(_mapper.Map<TestResultDto>(result));
         }
     }
 }

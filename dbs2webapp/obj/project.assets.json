@@ -1331,21 +1331,6 @@
           "bin/placeholder/Domain.dll": {}
         }
       },
-      "Identity/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "dependencies": {
-          "Application": "1.0.0",
-          "Domain": "1.0.0",
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.3"
-        },
-        "compile": {
-          "bin/placeholder/Identity.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Identity.dll": {}
-        }
-      },
       "Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -3594,11 +3579,6 @@
       "path": "../Domain/Domain.csproj",
       "msbuildProject": "../Domain/Domain.csproj"
     },
-    "Identity/1.0.0": {
-      "type": "project",
-      "path": "../Identity/Identity.csproj",
-      "msbuildProject": "../Identity/Identity.csproj"
-    },
     "Infrastructure/1.0.0": {
       "type": "project",
       "path": "../Infrastructure/Infrastructure.csproj",
@@ -3609,7 +3589,6 @@
     "net9.0": [
       "Application >= 1.0.0",
       "AutoMapper >= 14.0.0",
-      "Identity >= 1.0.0",
       "Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 9.0.3",
       "Microsoft.AspNetCore.Authentication.OpenIdConnect >= 9.0.3",
@@ -3654,9 +3633,6 @@
           "projectReferences": {
             "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Application\\Application.csproj": {
               "projectPath": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Application\\Application.csproj"
-            },
-            "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Identity\\Identity.csproj": {
-              "projectPath": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Identity\\Identity.csproj"
             },
             "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Infrastructure\\Infrastructure.csproj": {
               "projectPath": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Infrastructure\\Infrastructure.csproj"

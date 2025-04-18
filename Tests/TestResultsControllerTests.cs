@@ -1,10 +1,13 @@
 ﻿using Api.Controllers;
 using Application.DTOs.Tests;
 using Application.Interfaces;
+using AutoMapper;
 using Domain.Entities;
+using Infrastructure.Mapping;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Query;
 using Moq;
 using System.Linq.Expressions;
 using System.Security.Claims;
@@ -13,9 +16,10 @@ namespace Tests
 {
     public class TestResultsControllerTests
     {
-        private readonly Mock<IBaseRepository<TestResult>> _mockRepo = new();
         private readonly Mock<ITestResultRepository> _mockTestResultRepo = new();
         private readonly Mock<UserManager<IdentityUser>> _mockUserManager;
+        private readonly IMapper _mapper;
+
         private readonly DefaultHttpContext _httpContext;
 
         public TestResultsControllerTests()
@@ -23,6 +27,9 @@ namespace Tests
             var userStoreMock = new Mock<IUserStore<IdentityUser>>();
             _mockUserManager = new Mock<UserManager<IdentityUser>>(
                 userStoreMock.Object, null, null, null, null, null, null, null, null);
+
+            var cfg = new MapperConfiguration(c => c.AddProfile<AutoMapperProfile>());
+            _mapper = cfg.CreateMapper();
 
             _httpContext = new DefaultHttpContext();
         }
@@ -32,14 +39,17 @@ namespace Tests
             _mockUserManager.Setup(m => m.GetUserId(It.IsAny<ClaimsPrincipal>()))
                 .Returns(userId);
 
-            var controller = new TestResultsController(_mockRepo.Object, _mockTestResultRepo.Object, _mockUserManager.Object);
+            var controller = new TestResultsController(_mockTestResultRepo.Object, _mockUserManager.Object, _mapper);
             controller.ControllerContext = new ControllerContext
             {
                 HttpContext = _httpContext
             };
 
-            var identity = new ClaimsIdentity(new[] { new Claim(ClaimTypes.NameIdentifier, userId) });
-            _httpContext.User = new ClaimsPrincipal(identity);
+            _httpContext.User = new ClaimsPrincipal(
+                new ClaimsIdentity(new[] {
+                    new Claim(ClaimTypes.NameIdentifier, userId)
+                })
+            );
 
             return controller;
         }
@@ -50,12 +60,15 @@ namespace Tests
             // Arrange
             string userId = "student123";
             var expectedResults = new List<TestResult>
-        {
-            new() { Id = 1, UserId = userId, Score = 8, TotalQuestions = 10, CompletedDate = DateTime.UtcNow, Test = new Test { Title = "Sample Test" } }
-        };
+            {
+                new() { Id = 1, UserId = userId, Score = 8, TotalQuestions = 10, CompletedDate = DateTime.UtcNow, Test = new Test { Title = "Sample Test" } }
+            };
 
-            _mockRepo.Setup(r => r.FindAsync(It.IsAny<Expression<Func<TestResult, bool>>>()))
-                     .ReturnsAsync(expectedResults);
+            _mockTestResultRepo
+              .Setup(r => r.FindAsync(
+                  It.IsAny<Expression<Func<TestResult, bool>>>(),
+                  It.IsAny<Func<IQueryable<TestResult>, IQueryable<TestResult>>>()))
+              .ReturnsAsync(expectedResults);
 
             var controller = CreateController(userId);
 
@@ -64,7 +77,7 @@ namespace Tests
 
             // Assert
             var okResult = Assert.IsType<OkObjectResult>(result.Result);
-            var list = Assert.IsType<List<Application.DTOs.Tests.TestResultDto>>(okResult.Value);
+            var list = Assert.IsType<List<TestResultDto>>(okResult.Value);
             Assert.Single(list);
             Assert.Equal("Sample Test", list[0].TestTitle);
         }
@@ -79,7 +92,7 @@ namespace Tests
                 new() { Id = 5, UserId = "otherStudent", Test = new Test { Title = "Secret Test" } }
             };
 
-            _mockRepo
+            _mockTestResultRepo
               .Setup(r => r.FindAsync(It.IsAny<Expression<Func<TestResult, bool>>>()))
               .ReturnsAsync((Expression<Func<TestResult, bool>> predicate) =>
                   testResults.Where(predicate.Compile()).ToList()
@@ -113,8 +126,10 @@ namespace Tests
 
             var testResults = new List<TestResult> { testResult };
 
-            _mockRepo
-              .Setup(r => r.FindAsync(It.IsAny<Expression<Func<TestResult, bool>>>()))
+            _mockTestResultRepo
+              .Setup(r => r.FindAsync(
+                  It.IsAny<Expression<Func<TestResult, bool>>>(),
+                  It.IsAny<Func<IQueryable<TestResult>, IQueryable<TestResult>>>()))
               .ReturnsAsync(new[] { testResult });
 
             var controller = CreateController(userId);
@@ -136,10 +151,10 @@ namespace Tests
             string userId = "student123";
             int missingId = 99;
 
-            _mockRepo.Setup(r => r.FindAsync(
+            _mockTestResultRepo.Setup(r => r.FindAsync(
                     It.IsAny<Expression<Func<TestResult, bool>>>(),
                     It.IsAny<Func<IQueryable<TestResult>, IQueryable<TestResult>>?>()))
-                .ReturnsAsync(new List<TestResult>()); // empty result
+                .ReturnsAsync(new List<TestResult>());
 
             var controller = CreateController(userId);
 
@@ -154,26 +169,14 @@ namespace Tests
         public async Task GetResultDetail_ReturnsNotFound_IfResultBelongsToOtherUser()
         {
             // Arrange
-            string userId = "student123";
-            int testResultId = 123;
+            var userId = "student123";
+            var testResultId = 123;
 
-            var testResults = new List<TestResult>
-            {
-                new()
-                {
-                    Id = testResultId,
-                    UserId = "otherUser",
-                    Score = 10,
-                    TotalQuestions = 10,
-                    CompletedDate = DateTime.UtcNow,
-                    Test = new Test { Title = "Stolen Test" }
-                }
-            };
-
-            _mockRepo.Setup(r => r.FindAsync(
-                    It.IsAny<Expression<Func<TestResult, bool>>>(),
-                    It.IsAny<Func<IQueryable<TestResult>, IQueryable<TestResult>>?>()))
-                .ReturnsAsync(testResults);
+            _mockTestResultRepo
+              .Setup(r => r.FindAsync(
+                  It.IsAny<Expression<Func<TestResult, bool>>>(),
+                  It.IsAny<Func<IQueryable<TestResult>, IQueryable<TestResult>>>()))
+              .ReturnsAsync(new List<TestResult>());
 
             var controller = CreateController(userId);
 
@@ -233,8 +236,8 @@ namespace Tests
 
             var submission = CreateMockSubmission(testId, new Dictionary<int, int>
             {
-                { 100, 1 }, // correct
-                { 101, 4 }  // correct
+                { 100, 1 },
+                { 101, 4 } 
             });
 
             // Act
@@ -254,7 +257,7 @@ namespace Tests
                 .Returns("student123");
 
             _mockTestResultRepo.Setup(r => r.GetTestWithQuestionsAsync(It.IsAny<int>()))
-                .ReturnsAsync((Test?)null); // simulate not found
+                .ReturnsAsync((Test?)null);
 
             var controller = CreateControllerWithRepo("student123");
 
@@ -299,7 +302,7 @@ namespace Tests
             _mockUserManager.Setup(m => m.GetUserId(It.IsAny<ClaimsPrincipal>()))
                 .Returns(userId);
 
-            var controller = new TestResultsController(_mockRepo.Object, _mockTestResultRepo.Object, _mockUserManager.Object);
+            var controller = new TestResultsController(_mockTestResultRepo.Object, _mockUserManager.Object, _mapper);
             controller.ControllerContext = new ControllerContext
             {
                 HttpContext = new DefaultHttpContext

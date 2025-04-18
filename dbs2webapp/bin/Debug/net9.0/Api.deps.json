@@ -10,7 +10,6 @@
         "dependencies": {
           "Application": "1.0.0",
           "AutoMapper": "14.0.0",
-          "Identity": "1.0.0",
           "Infrastructure": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.3",
           "Microsoft.AspNetCore.Authentication.OpenIdConnect": "9.0.3",
@@ -806,19 +805,6 @@
           }
         }
       },
-      "Identity/1.0.0": {
-        "dependencies": {
-          "Application": "1.0.0",
-          "Domain": "1.0.0",
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.3"
-        },
-        "runtime": {
-          "Identity.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
       "Infrastructure/1.0.0": {
         "dependencies": {
           "Application": "1.0.0",
@@ -1355,11 +1341,6 @@
       "sha512": ""
     },
     "Domain/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Identity/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

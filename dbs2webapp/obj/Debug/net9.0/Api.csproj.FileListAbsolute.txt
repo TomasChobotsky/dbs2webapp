@@ -182,10 +182,8 @@ D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\bin\Debug\net9.0\runtim
 D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\bin\Debug\net9.0\Application.dll
 D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\bin\Debug\net9.0\Domain.dll
-D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\bin\Debug\net9.0\Identity.dll
 D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\bin\Debug\net9.0\Infrastructure.dll
 D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\bin\Debug\net9.0\Application.pdb
-D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\bin\Debug\net9.0\Identity.pdb
 D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\bin\Debug\net9.0\Infrastructure.pdb
 D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\bin\Debug\net9.0\Domain.pdb
 D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp\obj\Debug\net9.0\Api.csproj.AssemblyReference.cache

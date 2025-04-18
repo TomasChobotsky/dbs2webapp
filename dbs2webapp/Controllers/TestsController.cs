@@ -1,5 +1,6 @@
 ﻿using Application.DTOs.Tests;
 using Application.Interfaces;
+using AutoMapper;
 using Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -15,15 +16,19 @@ namespace Api.Controllers
     {
         private readonly IBaseRepository<Test> _testRepo;
         private readonly IBaseRepository<Chapter> _chapterRepo;
+        private readonly IMapper _mapper;
 
         public TestsController(
             IBaseRepository<Test> testRepo,
-            IBaseRepository<Chapter> chapterRepo)
+            IBaseRepository<Chapter> chapterRepo,
+            IMapper mapper)
         {
             _testRepo = testRepo;
             _chapterRepo = chapterRepo;
+            _mapper = mapper;
         }
 
+        // POST: api/tests
         [Authorize(Roles = "Teacher,Admin")]
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreateTestDto dto)
@@ -43,50 +48,31 @@ namespace Api.Controllers
             if (chapterEntity.Course!.TeacherId != userId && !User.IsInRole("Admin"))
                 return Forbid();
 
-            // Validate all questions have correct option indexes
-            foreach (var q in dto.Questions)
-            {
-                if (q.CorrectOptionIndex < 0 || q.CorrectOptionIndex >= q.Options.Count)
-                    return BadRequest("Invalid CorrectOptionIndex for one or more questions.");
-            }
+            if (!ValidateCorrectOptionIndexes(dto))
+                return BadRequest("Invalid CorrectOptionIndex for one or more questions.");
 
-            var test = new Test
-            {
-                Title = dto.Title,
-                ChapterId = dto.ChapterId,
-                Questions = dto.Questions.Select(q => new Question
-                {
-                    Content = q.Content,
-                    Options = q.Options.Select((o, i) => new Option
-                    {
-                        Text = o.Text,
-                        IsCorrect = (i == q.CorrectOptionIndex)
-                    }).ToList()
-                }).ToList()
-            };
-
+            var test = _mapper.Map<Test>(dto);
             await _testRepo.AddAsync(test);
             await _testRepo.SaveAsync();
 
-            return CreatedAtAction(nameof(GetById), new { id = test.Id }, test);
+            return CreatedAtAction(nameof(GetById), new { id = test.Id }, _mapper.Map<TestDto>(test));
         }
 
-        [HttpPut("{id}")]
+        // PUT: api/tests/{id}
         [Authorize(Roles = "Teacher,Admin")]
+        [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] CreateTestDto dto)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var existingTestQuery = await _testRepo.FindAsync(
+            var testQuery = await _testRepo.FindAsync(
                 t => t.Id == id,
                 include: q => q
-                    .Include(t => t.Chapter!)
-                        .ThenInclude(ch => ch.Course)
-                    .Include(t => t.Questions!)
-                        .ThenInclude(q => q.Options));
+                    .Include(t => t.Chapter!).ThenInclude(ch => ch.Course)
+                    .Include(t => t.Questions!).ThenInclude(q => q.Options));
 
-            var test = existingTestQuery.FirstOrDefault();
+            var test = testQuery.FirstOrDefault();
             if (test == null)
                 return NotFound("Test not found.");
 
@@ -94,20 +80,14 @@ namespace Api.Controllers
             if (test.Chapter?.Course?.TeacherId != userId && !User.IsInRole("Admin"))
                 return Forbid();
 
-            // Validate input
-            foreach (var q in dto.Questions)
-            {
-                if (q.CorrectOptionIndex < 0 || q.CorrectOptionIndex >= q.Options.Count)
-                    return BadRequest("Invalid CorrectOptionIndex for one or more questions.");
-            }
+            if (!ValidateCorrectOptionIndexes(dto))
+                return BadRequest("Invalid CorrectOptionIndex for one or more questions.");
 
-            // Update title
-            test.Title = dto.Title;
-
-            // Remove old questions & options
+            // Clear old questions
             test.Questions?.Clear();
 
-            // Recreate from input
+            // Update core fields
+            test.Title = dto.Title;
             test.Questions = dto.Questions.Select(q => new Question
             {
                 Content = q.Content,
@@ -122,32 +102,33 @@ namespace Api.Controllers
             return NoContent();
         }
 
+        // GET: api/tests/{id}
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
             var test = await _testRepo.FindAsync(
                 t => t.Id == id,
-                include: q => q
-                    .Include(t => t.Questions!)
-                    .ThenInclude(q => q.Options));
+                include: q => q.Include(t => t.Questions!).ThenInclude(q => q.Options));
 
-            var result = test.FirstOrDefault();
-            return result == null ? NotFound() : Ok(result);
+            var entity = test.FirstOrDefault();
+            return entity == null
+                ? NotFound()
+                : Ok(_mapper.Map<TestDto>(entity));
         }
 
+        // GET: /api/chapters/{chapterId}/tests
         [HttpGet("/api/chapters/{chapterId}/tests")]
         [Authorize(Roles = "Teacher,Admin")]
         public async Task<IActionResult> GetTestsForChapter(int chapterId)
         {
             var tests = await _testRepo.FindAsync(
                 t => t.ChapterId == chapterId,
-                include: q => q
-                    .Include(t => t.Questions!)
-                    .ThenInclude(q => q.Options));
+                include: q => q.Include(t => t.Questions!).ThenInclude(q => q.Options));
 
-            return Ok(tests);
+            return Ok(_mapper.Map<List<TestDto>>(tests));
         }
 
+        // DELETE: api/tests/{id}
         [HttpDelete("{id}")]
         [Authorize(Roles = "Teacher,Admin")]
         public async Task<IActionResult> Delete(int id)
@@ -165,8 +146,16 @@ namespace Api.Controllers
 
             _testRepo.Remove(existing);
             await _testRepo.SaveAsync();
+
             return NoContent();
         }
-    }
 
+        // Internal helper
+        private bool ValidateCorrectOptionIndexes(CreateTestDto dto)
+        {
+            return dto.Questions.All(q =>
+                q.CorrectOptionIndex >= 0 &&
+                q.CorrectOptionIndex < q.Options.Count);
+        }
+    }
 }

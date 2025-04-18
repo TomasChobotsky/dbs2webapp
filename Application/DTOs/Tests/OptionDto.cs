@@ -9,5 +9,6 @@ namespace Application.DTOs.Tests
     public class OptionDto
     {
         public string Text { get; set; } = string.Empty;
+        public bool IsCorrect { get; set; }
     }
 }

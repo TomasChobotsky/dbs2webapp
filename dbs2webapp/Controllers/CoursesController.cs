@@ -1,4 +1,6 @@
-﻿using Application.Interfaces;
+﻿using Application.DTOs;
+using Application.Interfaces;
+using AutoMapper;
 using Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -14,11 +16,16 @@ namespace Api.Controllers
     {
         private readonly IBaseRepository<Course> _repo;
         private readonly UserManager<IdentityUser> _userManager;
+        private readonly IMapper _mapper;
 
-        public CoursesController(IBaseRepository<Course> repo, UserManager<IdentityUser> userManager)
+        public CoursesController(
+            IBaseRepository<Course> repo,
+            UserManager<IdentityUser> userManager,
+            IMapper mapper)
         {
             _repo = repo;
             _userManager = userManager;
+            _mapper = mapper;
         }
 
         // GET: api/courses
@@ -26,20 +33,19 @@ namespace Api.Controllers
         public async Task<IActionResult> GetAll()
         {
             var courses = await _repo.GetAllAsync();
-            return Ok(courses);
+            var dto = _mapper.Map<List<CourseDto>>(courses);
+            return Ok(dto);
         }
 
         // GET: api/courses/{id}
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var course = await _repo
-            .FindAsync(c => c.Id == id, include: q => q
-                .Include(c => c.Chapters!)
-                    .ThenInclude(ch => ch.Tests));
+            var course = await _repo.FindAsync(c => c.Id == id,
+                include: q => q.Include(c => c.Chapters!).ThenInclude(ch => ch.Tests));
 
             var result = course.FirstOrDefault();
-            return result == null ? NotFound() : Ok(result);
+            return result == null ? NotFound() : Ok(_mapper.Map<CourseDto>(result));
         }
 
         // GET: api/courses/mine
@@ -53,30 +59,33 @@ namespace Api.Controllers
 
             var courses = await _repo.FindAsync(c => c.TeacherId == userId,
                 include: q => q.Include(c => c.Chapters!).ThenInclude(ch => ch.Tests));
-            return Ok(courses);
+
+            return Ok(_mapper.Map<List<CourseDto>>(courses));
         }
 
         // POST: api/courses
         [Authorize(Roles = "Teacher,Admin")]
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] Course course)
+        public async Task<IActionResult> Create([FromBody] CreateCourseDto dto)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            course.TeacherId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-            course.CreatedDate = DateTime.UtcNow;
+            var entity = _mapper.Map<Course>(dto);
+            entity.TeacherId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            entity.CreatedDate = DateTime.UtcNow;
 
-            await _repo.AddAsync(course);
+            await _repo.AddAsync(entity);
             await _repo.SaveAsync();
 
-            return CreatedAtAction(nameof(GetById), new { id = course.Id }, course);
+            var resultDto = _mapper.Map<CourseDto>(entity);
+            return CreatedAtAction(nameof(GetById), new { id = entity.Id }, resultDto);
         }
 
         // PUT: api/courses/{id}
         [Authorize(Roles = "Teacher,Admin")]
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] Course updated)
+        public async Task<IActionResult> Update(int id, [FromBody] CreateCourseDto dto)
         {
             var course = await _repo.GetByIdAsync(id);
             if (course == null)
@@ -86,8 +95,7 @@ namespace Api.Controllers
             if (course.TeacherId != userId && !User.IsInRole("Admin"))
                 return Forbid();
 
-            course.Name = updated.Name;
-            course.Description = updated.Description;
+            _mapper.Map(dto, course); // Map updated values onto existing entity
             await _repo.SaveAsync();
 
             return NoContent();
@@ -108,6 +116,7 @@ namespace Api.Controllers
 
             _repo.Remove(course);
             await _repo.SaveAsync();
+
             return NoContent();
         }
     }
