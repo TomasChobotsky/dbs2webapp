@@ -28,9 +28,12 @@ namespace Infrastructure.Repositories
         public async Task<TEntity?> GetByIdAsync(object id) =>
             await _dbSet.FindAsync(id);
 
+        public Task<IEnumerable<TEntity>> FindAsync(Expression<Func<TEntity, bool>> predicate)
+            => FindAsync(predicate, null);
+
         public async Task<IEnumerable<TEntity>> FindAsync(
             Expression<Func<TEntity, bool>> predicate,
-            Func<IQueryable<TEntity>, IQueryable<TEntity>>? include = null)
+            Func<IQueryable<TEntity>, IQueryable<TEntity>>? include)
         {
             IQueryable<TEntity> query = _dbSet.Where(predicate);
 

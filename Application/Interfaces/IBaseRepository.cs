@@ -11,6 +11,8 @@ namespace Application.Interfaces
     {
         Task<List<TEntity>> GetAllAsync();
         Task<TEntity?> GetByIdAsync(object id);
+
+        public Task<IEnumerable<TEntity>> FindAsync(Expression<Func<TEntity, bool>> predicate);
         Task<IEnumerable<TEntity>> FindAsync(
             Expression<Func<TEntity, bool>> predicate, // For passing LINQ through property
             Func<IQueryable<TEntity>, IQueryable<TEntity>>? include = null); // Allows passing .Include()

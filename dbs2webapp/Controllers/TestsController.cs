@@ -10,6 +10,7 @@ namespace Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class TestsController : ControllerBase
     {
         private readonly IBaseRepository<Test> _testRepo;

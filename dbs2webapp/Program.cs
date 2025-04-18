@@ -47,6 +47,7 @@ builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 
 builder.Services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
+builder.Services.AddScoped<ITestResultRepository, TestResultRepository>();
 
 builder.Services.AddAutoMapper(typeof(Infrastructure.Mapping.AutoMapperProfile));
 
