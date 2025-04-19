@@ -1,0 +1,57 @@
+﻿@page "/test-results/{Id:int}"
+@using Application.DTOs
+@using Application.DTOs.Tests
+@inject HttpClient Http
+@inject NavigationManager Navigation
+
+<h3>Test Result</h3>
+
+@if (isLoading)
+{
+    <p>Loading result...</p>
+}
+else if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="alert alert-danger">@errorMessage</div>
+}
+else
+{
+    <div class="card shadow-sm">
+        <div class="card-header bg-success text-white">
+            <h5 class="mb-0">🧪 @result.TestTitle</h5>
+        </div>
+        <div class="card-body">
+            <p><strong>Score:</strong> @result.Score / @result.TotalQuestions</p>
+            <p><strong>Completed:</strong> @result.CompletedDate.ToString("yyyy-MM-dd HH:mm")</p>
+
+            <div class="mt-3">
+                <button class="btn btn-primary" @onclick="@(() => Navigation.NavigateTo("/"))">
+                    Back to Home
+                </button>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter] public int Id { get; set; }
+
+    private TestResultDto result = new();
+    private bool isLoading = true;
+    private string? errorMessage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            result = await Http.GetFromJsonAsync<TestResultDto>($"api/test-results/{Id}")
+                      ?? throw new Exception("Result not found.");
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error loading result: {ex.Message}";
+        }
+
+        isLoading = false;
+    }
+}

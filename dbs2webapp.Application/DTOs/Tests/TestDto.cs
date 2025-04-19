@@ -11,6 +11,7 @@ namespace Application.DTOs.Tests
 {
     public class TestDto
     {
+        public int Id { get; set; }
         public string Title { get; set; } = default!;
         public int ChapterId { get; set; }
         public List<QuestionDto> Questions { get; set; } = new();

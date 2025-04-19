@@ -104,6 +104,9 @@
               "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Application\\dbs2webapp.Application.csproj": {
                 "projectPath": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Application\\dbs2webapp.Application.csproj"
               },
+              "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Domain\\dbs2webapp.Domain.csproj": {
+                "projectPath": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Domain\\dbs2webapp.Domain.csproj"
+              },
               "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Infrastructure\\dbs2webapp.Infrastructure.csproj": {
                 "projectPath": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Infrastructure\\dbs2webapp.Infrastructure.csproj"
               }

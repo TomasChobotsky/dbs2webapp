@@ -1,0 +1,119 @@
+﻿@page "/chapters/{ChapterId:int}/tests/create"
+@inject HttpClient Http
+@inject NavigationManager Navigation
+@using Application.DTOs.Tests
+
+<h3>Create Test</h3>
+
+<EditForm Model="@testModel" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="mb-3">
+        <label class="form-label">Test Title</label>
+        <InputText @bind-Value="testModel.Title" class="form-control" />
+    </div>
+
+    @foreach (var question in testModel.Questions)
+    {
+        var index = testModel.Questions.IndexOf(question);
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <label class="form-label">Question</label>
+                    <button class="btn btn-sm btn-danger" @onclick="() => RemoveQuestion(index)">Remove Question</button>
+                </div>
+                <InputText @bind-Value="question.Content" class="form-control mb-2" />
+
+                <strong>Options:</strong>
+                <InputRadioGroup @bind-Value="question.CorrectOptionIndex" class="d-block">
+                    @for (int i = 0; i < question.Options.Count; i++)
+                    {
+                        <div class="input-group mb-2">
+                            <InputText @bind-Value="question.Options[i].Text" class="form-control" placeholder="Option text" />
+
+                            <div class="input-group-text">
+                                <InputRadio Value="@i" /> <label class="ms-1">Correct</label>
+                            </div>
+
+                            <button class="btn btn-sm btn-outline-danger" @onclick="() => RemoveOption(index, i)">Remove</button>
+                        </div>
+                    }
+                </InputRadioGroup>
+
+
+                <button class="btn btn-sm btn-outline-primary" @onclick="() => AddOption(index)">+ Add Option</button>
+            </div>
+        </div>
+    }
+
+    <button type="button" class="btn btn-secondary mb-3" @onclick="AddQuestion">+ Add Question</button>
+    <br />
+    <button type="submit" class="btn btn-primary">Create Test</button>
+</EditForm>
+
+@code {
+    [Parameter] public int ChapterId { get; set; }
+
+    private CreateTestDto testModel = new();
+
+    protected override void OnInitialized()
+    {
+        testModel.ChapterId = ChapterId;
+        AddQuestion(); // start with 1 question
+    }
+
+    private void AddQuestion()
+    {
+        var q = new QuestionDto
+        {
+            Content = string.Empty,
+            CorrectOptionIndex = 0,
+            Options = new List<OptionDto>
+            {
+                new() { Text = "" },
+                new() { Text = "" },
+                new() { Text = "" },
+                new() { Text = "" }
+            }
+        };
+        testModel.Questions.Add(q);
+    }
+
+    private void RemoveQuestion(int index)
+    {
+        if (index >= 0 && index < testModel.Questions.Count)
+            testModel.Questions.RemoveAt(index);
+    }
+
+    private void AddOption(int questionIndex)
+    {
+        testModel.Questions[questionIndex].Options.Add(new OptionDto { Text = "" });
+    }
+
+    private void RemoveOption(int questionIndex, int optionIndex)
+    {
+        var options = testModel.Questions[questionIndex].Options;
+        if (optionIndex >= 0 && optionIndex < options.Count)
+        {
+            options.RemoveAt(optionIndex);
+            // Reset correct index if needed
+            if (testModel.Questions[questionIndex].CorrectOptionIndex >= options.Count)
+                testModel.Questions[questionIndex].CorrectOptionIndex = 0;
+        }
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        var response = await Http.PostAsJsonAsync("api/tests", testModel);
+        if (response.IsSuccessStatusCode)
+        {
+            Navigation.NavigateTo("/teacher-panel");
+        }
+        else
+        {
+            var error = await response.Content.ReadAsStringAsync();
+            Console.Error.WriteLine($"Failed to create test: {error}");
+        }
+    }
+}

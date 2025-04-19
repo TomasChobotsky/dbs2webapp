@@ -16,5 +16,7 @@ namespace Application.DTOs
         public string? Content { get; set; }
 
         public int Order { get; set; } = 0;
+
+        public int CourseId { get; set; }
     }
 }

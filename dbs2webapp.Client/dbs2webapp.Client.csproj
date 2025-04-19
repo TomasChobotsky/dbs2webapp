@@ -12,7 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Components\" />
     <Folder Include="Services\" />
   </ItemGroup>
 
@@ -24,6 +23,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\dbs2webapp.Application\dbs2webapp.Application.csproj" />
+    <ProjectReference Include="..\dbs2webapp.Domain\dbs2webapp.Domain.csproj" />
     <ProjectReference Include="..\dbs2webapp.Infrastructure\dbs2webapp.Infrastructure.csproj" />
   </ItemGroup>
 

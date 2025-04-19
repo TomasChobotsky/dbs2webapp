@@ -5369,6 +5369,7 @@
       "Microsoft.NET.ILLink.Tasks >= 9.0.4",
       "Microsoft.NET.Sdk.WebAssembly.Pack >= 9.0.4",
       "dbs2webapp.Application >= 1.0.0",
+      "dbs2webapp.Domain >= 1.0.0",
       "dbs2webapp.Infrastructure >= 1.0.0"
     ]
   },
@@ -5406,6 +5407,9 @@
           "projectReferences": {
             "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Application\\dbs2webapp.Application.csproj": {
               "projectPath": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Application\\dbs2webapp.Application.csproj"
+            },
+            "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Domain\\dbs2webapp.Domain.csproj": {
+              "projectPath": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Domain\\dbs2webapp.Domain.csproj"
             },
             "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Infrastructure\\dbs2webapp.Infrastructure.csproj": {
               "projectPath": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Infrastructure\\dbs2webapp.Infrastructure.csproj"

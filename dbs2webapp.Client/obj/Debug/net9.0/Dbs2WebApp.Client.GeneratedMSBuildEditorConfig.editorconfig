@@ -28,8 +28,56 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Development/Programming/C\#/dbs2/dbs2webapp/Dbs2WebApp.Client/Pages/Courses.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlcy5yYXpvcg==
+[D:/Development/Programming/C\#/dbs2/dbs2webapp/Dbs2WebApp.Client/Components/ApiFetchWrapper.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcGlGZXRjaFdyYXBwZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Development/Programming/C\#/dbs2/dbs2webapp/Dbs2WebApp.Client/Pages/Chapters/ChapterCreate.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hhcHRlcnNcQ2hhcHRlckNyZWF0ZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Development/Programming/C\#/dbs2/dbs2webapp/Dbs2WebApp.Client/Pages/Chapters/ChapterDelete.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hhcHRlcnNcQ2hhcHRlckRlbGV0ZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Development/Programming/C\#/dbs2/dbs2webapp/Dbs2WebApp.Client/Pages/Chapters/ChapterEdit.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hhcHRlcnNcQ2hhcHRlckVkaXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Development/Programming/C\#/dbs2/dbs2webapp/Dbs2WebApp.Client/Pages/Courses/CourseCreate.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlc1xDb3Vyc2VDcmVhdGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Development/Programming/C\#/dbs2/dbs2webapp/Dbs2WebApp.Client/Pages/Courses/CourseDelete.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlc1xDb3Vyc2VEZWxldGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Development/Programming/C\#/dbs2/dbs2webapp/Dbs2WebApp.Client/Pages/Courses/CourseEdit.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlc1xDb3Vyc2VFZGl0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Development/Programming/C\#/dbs2/dbs2webapp/Dbs2WebApp.Client/Pages/TeacherPanel.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhY2hlclBhbmVsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Development/Programming/C\#/dbs2/dbs2webapp/Dbs2WebApp.Client/Pages/Tests/TestCreate.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdHNcVGVzdENyZWF0ZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Development/Programming/C\#/dbs2/dbs2webapp/Dbs2WebApp.Client/Pages/Tests/TestDelete.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdHNcVGVzdERlbGV0ZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Development/Programming/C\#/dbs2/dbs2webapp/Dbs2WebApp.Client/Pages/Tests/TestEdit.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdHNcVGVzdEVkaXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Development/Programming/C\#/dbs2/dbs2webapp/Dbs2WebApp.Client/Pages/Tests/TestResult.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdHNcVGVzdFJlc3VsdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Development/Programming/C\#/dbs2/dbs2webapp/Dbs2WebApp.Client/Pages/Tests/TestTake.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdHNcVGVzdFRha2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Development/Programming/C\#/dbs2/dbs2webapp/Dbs2WebApp.Client/_Imports.razor]

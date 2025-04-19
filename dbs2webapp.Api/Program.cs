@@ -1,9 +1,11 @@
 using Api.Extensions;
+using dbs2webapp.Api.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
-
 // Services
 builder.Services.AddControllers();
+builder.Services.AddAppCors(builder.Configuration);
+
 builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddAppServices(builder.Configuration);
@@ -17,8 +19,11 @@ if (app.Environment.IsDevelopment())
     app.UseAppSwagger();
 
 app.UseHttpsRedirection();
+app.UseAppCors();
+
 app.UseAuthentication();
 app.UseAuthorization();
+
 app.MapControllers();
 
 // Seed Identity

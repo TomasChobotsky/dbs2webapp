@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "Run Both",
+    "Projects": [
+      {
+        "Path": "Dbs2WebApp.Client\\dbs2webapp.Client.csproj",
+        "Action": "Start",
+        "DebugTarget": "http"
+      },
+      {
+        "Path": "dbs2webapp.Api\\dbs2webapp.Api.csproj",
+        "Action": "Start",
+        "DebugTarget": "Container (Dockerfile)"
+      }
+    ]
+  }
+]

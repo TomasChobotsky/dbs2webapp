@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  client:
+    ports:
+      - "3000:80"
+    labels:
+      com.microsoft.visualstudio.container.launchBrowser: "true"
+      com.microsoft.visualstudio.container.launchUrl: "http://localhost:3000"
+  api:
+    ports:
+      - "5000:8080"
+      - "5001:8081"

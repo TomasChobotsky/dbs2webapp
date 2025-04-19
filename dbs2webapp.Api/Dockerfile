@@ -1,30 +1,22 @@
-# Na https://aka.ms/customizecontainer se dozvíte, jak si přizpůsobit kontejner ladění a jak Visual Studio používá tento dokument Dockerfile k sestavení vašich imagí pro rychlejší ladění.
-
-# Tato fáze se používá při spuštění z VS v rychlém režimu (výchozí pro konfiguraci ladění).
 FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
-USER $APP_UID
 WORKDIR /app
 EXPOSE 8080
 EXPOSE 8081
 
-
-# Tato fáze slouží k sestavení projektu služby.
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
-ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["dbs2webapp/dbs2webapp.csproj", "dbs2webapp/"]
-RUN dotnet restore "./dbs2webapp/dbs2webapp.csproj"
+
+COPY ["dbs2webapp.Api/dbs2webapp.Api.csproj", "dbs2webapp.Api/"]
+RUN dotnet restore "dbs2webapp.Api/dbs2webapp.Api.csproj"
+
 COPY . .
-WORKDIR "/src/dbs2webapp"
-RUN dotnet build "./dbs2webapp.csproj" -c $BUILD_CONFIGURATION -o /app/build
+WORKDIR "/src/dbs2webapp.Api"
+RUN dotnet build "dbs2webapp.Api.csproj" -c Release -o /app/build
 
-# Tato fáze slouží k publikování projektu služby, který se má zkopírovat do konečné fáze.
 FROM build AS publish
-ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./dbs2webapp.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "dbs2webapp.Api.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
-# Tato fáze se používá v produkčním prostředí nebo při spuštění z VS v běžném režimu (výchozí, když se nepoužívá konfigurace ladění).
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "dbs2webapp.dll"]
+ENTRYPOINT ["dotnet", "dbs2webapp.Api.dll"]

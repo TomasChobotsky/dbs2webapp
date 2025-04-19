@@ -1,0 +1,96 @@
+﻿@page "/tests/take/{Id:int}"
+@using Application.DTOs
+@using Application.DTOs.Tests
+@inject HttpClient Http
+@inject NavigationManager Navigation
+
+<h3>Take Test</h3>
+
+@if (isLoading)
+{
+    <p>Loading test...</p>
+}
+else if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="alert alert-danger">@errorMessage</div>
+}
+else
+{
+    <h4>@test.Title</h4>
+
+    <EditForm OnValidSubmit="SubmitAnswers">
+        @for (int i = 0; i < test.Questions.Count; i++)
+        {
+            var q = test.Questions[i];
+
+            <div class="card mb-4">
+                <div class="card-header">
+                    <strong>Q@(i + 1):</strong> @q.Content
+                </div>
+                <div class="card-body">
+                    <InputRadioGroup @bind-Value="answers[i]">
+                        @for (int j = 0; j < q.Options.Count; j++)
+                        {
+                            <div class="form-check">
+                                <InputRadio class="form-check-input" Value="@j" />
+                                <label class="form-check-label">@q.Options[j].Text</label>
+                            </div>
+                        }
+                    </InputRadioGroup>
+                </div>
+            </div>
+        }
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </EditForm>
+}
+
+@code {
+    [Parameter] public int Id { get; set; }
+
+    private TestDto test = new();
+    private List<int> answers = new();
+    private bool isLoading = true;
+    private string? errorMessage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            test = await Http.GetFromJsonAsync<TestDto>($"api/tests/{Id}")
+                    ?? throw new Exception("Test not found.");
+
+            // One answer per question, default -1
+            answers = Enumerable.Repeat(-1, test.Questions.Count).ToList();
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Failed to load test: {ex.Message}";
+        }
+        isLoading = false;
+    }
+
+    private async Task SubmitAnswers()
+    {
+        var submission = new TestSubmissionDto
+            {
+                TestId = Id,
+                Answers = test.Questions.Select((q, i) => new AnswerSubmissionDto
+                {
+                    QuestionId = i,
+                    SelectedOptionId = answers[i]
+                }).ToList()
+            };
+
+        var response = await Http.PostAsJsonAsync("api/tests/submit", submission);
+        if (response.IsSuccessStatusCode)
+        {
+            Navigation.NavigateTo("/test-results"); // You can pass ID or store result in state
+        }
+        else
+        {
+            var error = await response.Content.ReadAsStringAsync();
+            Console.Error.WriteLine($"Failed to submit test: {error}");
+        }
+    }
+}

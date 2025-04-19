@@ -4,7 +4,7 @@ services:
   api:
     build:
       context: .
-      dockerfile: Dbs2WebApp.Api/Dockerfile
+      dockerfile: dbs2webapp.Api/Dockerfile
     ports:
       - "5000:8080"
       - "5001:8081"
@@ -16,8 +16,8 @@ services:
 
   client:
     build:
-      context: ./Dbs2WebApp.Client
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: dbs2webapp.Client/Dockerfile
     ports:
       - "3000:80"
     depends_on:
