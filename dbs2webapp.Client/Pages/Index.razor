@@ -1,0 +1,133 @@
+﻿@page "/"
+@using Microsoft.AspNetCore.Components.Authorization
+@using dbs2webapp.Application.DTOs
+@inject HttpClient Http
+@inject AuthenticationStateProvider AuthStateProvider
+@inject NavigationManager Nav
+
+<h3 class="mb-4">All Courses</h3>
+
+@if (isLoading)
+{
+    <div>Loading courses…</div>
+}
+else if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="alert alert-danger">@errorMessage</div>
+}
+else
+{
+    <div class="row g-4">
+        @foreach (var course in courses)
+        {
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">@course.Name</h5>
+                        <p class="card-text text-muted flex-grow-1">
+                            @course.Description
+                        </p>
+                        <div class="mt-auto">
+                            @if (!authState.User.Identity?.IsAuthenticated ?? false)
+                            {
+                                <button class="btn btn-primary w-100"
+                                        @onclick="RedirectToLogin">
+                                    Login to Enroll
+                                </button>
+                            }
+                            else if (authState.User.IsInRole("Student"))
+                            {
+                                if (enrolledCourseIds.Contains(course.Id))
+                                {
+                                    <a class="btn btn-outline-primary w-100"
+                                       href="@($"/chapters/{course.Id}")">
+                                        Continue Learning
+                                    </a>
+                                }
+                                else
+                                {
+                                    <button class="btn btn-primary w-100"
+                                            @onclick="() => Enroll(course.Id)">
+                                        Enroll Now
+                                    </button>
+                                }
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+@code {
+    private AuthenticationState authState = default!;
+    private List<CourseDto> courses = new();
+    private HashSet<int> enrolledCourseIds = new();
+    private bool isLoading = true;
+    private string? errorMessage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        authState = await AuthStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        // redirect based on role
+        if (user.Identity?.IsAuthenticated ?? false)
+        {
+            if (user.IsInRole("Admin"))
+            {
+                Nav.NavigateTo("/admin/users", true);
+                return;
+            }
+            if (user.IsInRole("Teacher"))
+            {
+                Nav.NavigateTo("/teacher-panel", true);
+                return;
+            }
+
+            // load enrolled courses (requires a GET api/courses/enrollments endpoint returning List<int>)
+            try
+            {
+                var list = await Http.GetFromJsonAsync<List<int>>("api/courses/enrollments");
+                if (list != null) enrolledCourseIds = list.ToHashSet();
+            }
+            catch
+            {
+                // ignore if endpoint isn’t there yet
+            }
+        }
+
+        // load all courses
+        try
+        {
+            var result = await Http.GetFromJsonAsync<List<CourseDto>>("api/courses");
+            if (result != null) courses = result;
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error loading courses: {ex.Message}";
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private void RedirectToLogin()
+        => Nav.NavigateTo($"login?returnUrl={Uri.EscapeDataString(Nav.Uri)}", true);
+
+    private async Task Enroll(int courseId)
+    {
+        // requires a POST api/courses/{id}/enroll endpoint
+        var resp = await Http.PostAsync($"api/courses/{courseId}/enroll", null);
+        if (resp.IsSuccessStatusCode)
+        {
+            enrolledCourseIds.Add(courseId);
+        }
+        else
+        {
+            errorMessage = "Enrollment failed, please try again.";
+        }
+    }
+}

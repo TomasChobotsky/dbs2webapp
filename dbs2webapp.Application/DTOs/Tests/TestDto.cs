@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.DTOs.Tests
+namespace dbs2webapp.Application.DTOs.Tests
 {
     public class TestDto
     {

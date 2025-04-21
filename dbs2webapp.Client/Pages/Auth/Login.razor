@@ -1,0 +1,80 @@
+﻿@page "/login"
+
+@using Microsoft.AspNetCore.Components.Authorization
+@using dbs2webapp.Application.DTOs.Auth
+
+@inject HttpClient Http
+@inject IJSRuntime JS
+@inject AuthenticationStateProvider AuthStateProvider
+@inject NavigationManager Nav
+
+<h3>Login</h3>
+
+<EditForm Model="login" OnValidSubmit="HandleLogin">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    @* errorMessage will show up here if set *@
+    @if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <div class="alert alert-danger">@errorMessage</div>
+    }
+
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <InputText id="email"
+                   class="form-control"
+                   @bind-Value="login.Email" />
+    </div>
+
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <InputText id="password"
+                   type="password"
+                   class="form-control"
+                   @bind-Value="login.Password" />
+    </div>
+
+    <div class="form-check mb-3">
+        <InputCheckbox @bind-Value="rememberMe" class="form-check-input" id="rememberMe" />
+        <label class="form-check-label" for="rememberMe">Remember me</label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Login</button>
+</EditForm>
+
+@code {
+    private LoginDto login = new();
+    private bool rememberMe;
+    private string? errorMessage;
+
+    private async Task HandleLogin()
+    {
+        errorMessage = null;
+        var response = await Http.PostAsJsonAsync("api/auth/login", login);
+
+        if (!response.IsSuccessStatusCode)
+        {
+            errorMessage = await response.Content.ReadAsStringAsync();
+            return;
+        }
+
+        var result = await response.Content.ReadFromJsonAsync<LoginResult>();
+        if (result?.Token == null)
+        {
+            errorMessage = "No token returned.";
+            return;
+        }
+
+        // Store in localStorage or sessionStorage
+        var storage = rememberMe ? "localStorage" : "sessionStorage";
+        await JS.InvokeVoidAsync(storage + ".setItem", "authToken", result.Token);
+
+        ((JwtAuthenticationStateProvider)AuthStateProvider)
+            .MarkUserAsAuthenticated(result.Token);
+
+        Nav.NavigateTo("/");
+    }
+
+    class LoginResult { public string Token { get; set; } = default!; }
+}

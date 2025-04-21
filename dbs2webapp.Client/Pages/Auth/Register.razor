@@ -1,0 +1,99 @@
+﻿@page "/register"
+@using System.ComponentModel.DataAnnotations
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.AspNetCore.Identity
+@inject HttpClient Http
+@inject NavigationManager Nav
+
+<h3>Register</h3>
+
+<EditForm Model="registerModel" OnValidSubmit="HandleRegister">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    @* server‑side errors *@
+    @if (apiErrors?.Any() == true)
+    {
+        <div class="alert alert-danger">
+            <ul>
+                @foreach (var err in apiErrors)
+                {
+                    <li>@err</li>
+                }
+            </ul>
+        </div>
+    }
+
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <InputText id="email"
+                   class="form-control"
+                   @bind-Value="registerModel.Email" />
+    </div>
+
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <InputText id="password"
+                   type="password"
+                   class="form-control"
+                   @bind-Value="registerModel.Password" />
+    </div>
+
+    <div class="mb-3">
+        <label for="confirm-password" class="form-label">Confirm Password</label>
+        <InputText id="confirm-password"
+                   type="password"
+                   class="form-control"
+                   @bind-Value="registerModel.ConfirmPassword" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Register</button>
+</EditForm>
+
+@code {
+    private RegisterModel registerModel = new();
+    private string[]? apiErrors;
+
+    private async Task HandleRegister()
+    {
+        apiErrors = null;
+
+        // map to the backend DTO (only Email + Password)
+        var dto = new
+        {
+            Email = registerModel.Email,
+            Password = registerModel.Password
+        };
+
+        var response = await Http.PostAsJsonAsync("api/auth/register", dto);
+
+        if (response.IsSuccessStatusCode)
+        {
+            // on success, redirect to Login
+            Nav.NavigateTo("/login");
+        }
+        else
+        {
+            // read the List<IdentityError> from the API
+            var errors = await response
+                .Content
+                .ReadFromJsonAsync<List<IdentityError>>();
+
+            apiErrors = errors?.Select(e => e.Description).ToArray()
+                        ?? new[] { "Registration failed." };
+        }
+    }
+
+    class RegisterModel
+    {
+        [Required, EmailAddress]
+        public string Email { get; set; } = default!;
+
+        [Required]
+        public string Password { get; set; } = default!;
+
+        [Required]
+        [Compare("Password", ErrorMessage = "Passwords do not match.")]
+        public string ConfirmPassword { get; set; } = default!;
+    }
+}

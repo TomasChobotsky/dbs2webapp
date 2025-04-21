@@ -1,6 +1,9 @@
 ﻿@page "/teacher-panel"
-@using Application.DTOs
-@using Application.DTOs.Tests
+@attribute [Authorize(Roles = "Teacher,Admin")]
+
+@using Microsoft.AspNetCore.Authorization
+@using dbs2webapp.Application.DTOs
+@using dbs2webapp.Application.DTOs.Tests
 @using dbs2webapp.Client.Components
 @inject NavigationManager Navigation
 
@@ -38,16 +41,19 @@
                                     </div>
                                     <div class="card-body">
                                         <p>@chapter.Description</p>
-                                        <a class="btn btn-sm btn-warning mb-2" href="@($"/chapters/{chapter.Id}/tests/create")">Add Test</a>
+                                        <a class="btn btn-sm btn-warning mb-3" href="@($"/tests/create/{chapter.Id}")">Add Test</a>
 
                                         <ApiFetchWrapper TItem="TestDto" Url="@($"api/chapters/{chapter.Id}/tests")">
                                             <ChildContent Context="tests">
                                                 @foreach (var test in tests)
                                                 {
-                                                    <div class="card mb-2">
-                                                        <div class="card-body">
-                                                            <h6>🧪 @test.Title</h6>
-                                                            <!-- Optional: Add edit/delete/view links here -->
+                                                    <div class="card">
+                                                        <div class="card-header border-bottom-0 bg-light text-black d-flex justify-content-between align-items-center">
+                                                            <h6 class="mb-0">@test.Title</h6>
+                                                            <div>
+                                                                <a class="btn btn-sm btn-outline-secondary me-2"href="@($"/tests/edit/{test.Id}")">Edit</a>
+                                                                <a class="btn btn-sm btn-outline-danger"href="@($"/tests/delete/{test.Id}")">Delete</a>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 }

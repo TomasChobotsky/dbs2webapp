@@ -1,6 +1,8 @@
 ﻿@page "/tests/take/{Id:int}"
-@using Application.DTOs
-@using Application.DTOs.Tests
+@attribute [Authorize(Roles = "Student")]
+
+@using Microsoft.AspNetCore.Authorization
+@using dbs2webapp.Application.DTOs.Tests
 @inject HttpClient Http
 @inject NavigationManager Navigation
 

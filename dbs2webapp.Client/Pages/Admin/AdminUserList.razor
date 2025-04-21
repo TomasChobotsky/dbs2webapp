@@ -1,0 +1,47 @@
+﻿@page "/admin/users"
+@attribute [Authorize(Roles = "Admin")]
+
+@using Microsoft.AspNetCore.Authorization
+@using dbs2webapp.Application.DTOs.Admin
+@using dbs2webapp.Client.Components
+@inject NavigationManager Navigation
+
+<h3>👥 Manage Users</h3>
+<a class="btn btn-success mb-3" href="/admin/create-user">+ Create New User</a>
+
+<ApiFetchWrapper TItem="AdminUserDto" Url="api/admin/users">
+    <ChildContent Context="users">
+        @if (users.Count == 0)
+        {
+            <div class="alert alert-info">No users found.</div>
+        }
+        else
+        {
+            <div class="table-responsive">
+                <table class="table table-striped align-middle">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Email</th>
+                            <th>Roles</th>
+                            <th class="text-end">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var user in users)
+                        {
+                            <tr>
+                                <td>@user.Email</td>
+                                <td>@string.Join(", ", user.Roles)</td>
+                                <td class="text-end">
+                                    <a class="btn btn-sm btn-outline-primary" href="@($"/admin/edit-user/{user.Id}")">
+                                        <i class="ms-0 fas fa-edit me-1"></i>Edit
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+    </ChildContent>
+</ApiFetchWrapper>

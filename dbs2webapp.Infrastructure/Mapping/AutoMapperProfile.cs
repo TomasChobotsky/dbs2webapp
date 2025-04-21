@@ -1,13 +1,10 @@
-﻿using Application.DTOs;
-using Application.DTOs.Tests;
+﻿using dbs2webapp.Application.DTOs;
+using dbs2webapp.Application.DTOs.Tests;
+using dbs2webapp.Application.DTOs.Admin;
+using dbs2webapp.Application.DTOs.Auth;
 using AutoMapper;
 using Domain.Entities;
 using Microsoft.AspNetCore.Identity;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Infrastructure.Mapping
 {
@@ -17,6 +14,9 @@ namespace Infrastructure.Mapping
         {
             CreateMap<Course, CourseDto>();
             CreateMap<Course, CreateCourseDto>().ReverseMap();
+
+            CreateMap<Chapter, ChapterDto>();
+            CreateMap<Chapter, CreateChapterDto>().ReverseMap();
 
             // TEST DTOs
             CreateMap<Test, TestDto>();

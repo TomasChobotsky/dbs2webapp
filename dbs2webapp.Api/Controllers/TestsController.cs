@@ -1,4 +1,4 @@
-﻿using Application.DTOs.Tests;
+﻿using dbs2webapp.Application.DTOs.Tests;
 using Application.Interfaces;
 using AutoMapper;
 using Domain.Entities;
@@ -30,28 +30,30 @@ namespace Api.Controllers
 
         // POST: api/tests
         [Authorize(Roles = "Teacher,Admin")]
-        [HttpPost]
-        public async Task<IActionResult> Create([FromBody] CreateTestDto dto)
+        [HttpPost("{chapterId}")]
+        public async Task<IActionResult> Create(int chapterId, [FromBody] CreateTestDto dto)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var chapter = await _chapterRepo.FindAsync(
-                c => c.Id == dto.ChapterId,
-                include: q => q.Include(c => c.Course));
+            var chapters = await _chapterRepo.FindAsync(
+                c => c.Id == chapterId,
+                include: q => q.Include(c => c.Course)
+            );
 
-            var chapterEntity = chapter.FirstOrDefault();
-            if (chapterEntity == null)
+            var chapter = chapters.SingleOrDefault();
+            if (chapter == null)
                 return NotFound("Chapter not found");
 
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-            if (chapterEntity.Course!.TeacherId != userId && !User.IsInRole("Admin"))
+            if (chapter.Course!.TeacherId != userId && !User.IsInRole("Admin"))
                 return Forbid();
 
             if (!ValidateCorrectOptionIndexes(dto))
                 return BadRequest("Invalid CorrectOptionIndex for one or more questions.");
 
             var test = _mapper.Map<Test>(dto);
+            test.ChapterId = chapterId;
             await _testRepo.AddAsync(test);
             await _testRepo.SaveAsync();
 
@@ -104,6 +106,7 @@ namespace Api.Controllers
 
         // GET: api/tests/{id}
         [HttpGet("{id}")]
+        [Authorize]
         public async Task<IActionResult> GetById(int id)
         {
             var test = await _testRepo.FindAsync(
@@ -118,7 +121,7 @@ namespace Api.Controllers
 
         // GET: /api/chapters/{chapterId}/tests
         [HttpGet("/api/chapters/{chapterId}/tests")]
-        [Authorize(Roles = "Teacher,Admin")]
+        [Authorize]
         public async Task<IActionResult> GetTestsForChapter(int chapterId)
         {
             var tests = await _testRepo.FindAsync(

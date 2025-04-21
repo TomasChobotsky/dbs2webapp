@@ -1,0 +1,133 @@
+﻿@page "/admin/edit-user/{UserId}"
+@attribute [Authorize(Roles = "Admin")]
+
+@using Microsoft.AspNetCore.Authorization
+@using dbs2webapp.Application.DTOs.Admin
+@inject HttpClient Http
+@inject NavigationManager Navigation
+
+<h3>Edit Roles for @form.Email</h3>
+
+@if (isLoading)
+{
+    <p>Loading user...</p>
+}
+else if (loadError != null)
+{
+    <div class="alert alert-danger">@loadError</div>
+}
+else
+{
+    <EditForm Model="form" OnValidSubmit="HandleSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <div class="form-group mb-3">
+            <label class="form-label">Email</label>
+            <InputText class="form-control" @bind-Value="form.Email" Disabled="true" />
+        </div>
+
+        <div class="form-group mb-4">
+            <label class="form-label">Roles</label>
+            @foreach (var role in AllRoles)
+            {
+                <div class="form-check">
+                    <InputCheckbox class="form-check-input"
+                                   @bind-Value="SelectedRoles[role]" />
+                    <label class="form-check-label">@role</label>
+                </div>
+            }
+        </div>
+
+        <div class="d-flex gap-2">
+            <button class="btn btn-primary" type="submit" disabled="@isSubmitting">
+                @if (isSubmitting)
+                {
+                    <span class="spinner-border spinner-border-sm"></span>
+            }
+                else
+                {
+                    <span>Save Changes</span>
+                }
+            </button>
+            <a class="btn btn-secondary" href="/admin/users">Back</a>
+        </div>
+
+        @if (!string.IsNullOrEmpty(error))
+        {
+            <div class="alert alert-danger mt-3">@error</div>
+        }
+
+        @if (success)
+        {
+            <div class="alert alert-success mt-3">✅ Roles updated successfully!</div>
+        }
+    </EditForm>
+}
+
+@code {
+    [Parameter]
+    public string UserId { get; set; } = string.Empty;
+
+    private AdminEditUserDto form = new();
+    private bool isLoading = true;
+    private string? loadError;
+    private bool isSubmitting = false;
+    private bool success = false;
+    private string? error;
+
+    private readonly string[] AllRoles = new[] { "Student", "Teacher", "Admin" };
+    private Dictionary<string, bool> SelectedRoles = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            var result = await Http.GetFromJsonAsync<AdminEditUserDto>($"/api/admin/users/{UserId}");
+            if (result == null)
+            {
+                loadError = "User not found.";
+                return;
+            }
+
+            form = result;
+            SelectedRoles = AllRoles.ToDictionary(
+                role => role,
+                role => result.Roles.Contains(role)
+            );
+        }
+        catch (Exception ex)
+        {
+            loadError = $"Error loading user: {ex.Message}";
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private async Task HandleSubmit()
+    {
+        isSubmitting = true;
+        error = null;
+        success = false;
+
+        form.Roles = SelectedRoles
+            .Where(r => r.Value)
+            .Select(r => r.Key)
+            .ToList();
+
+        var response = await Http.PutAsJsonAsync($"/api/admin/users/{UserId}", form);
+
+        if (response.IsSuccessStatusCode)
+        {
+            success = true;
+        }
+        else
+        {
+            error = $"Failed to update roles. ({(int)response.StatusCode})";
+        }
+
+        isSubmitting = false;
+    }
+}

@@ -1,6 +1,8 @@
 ﻿@page "/test-results/{Id:int}"
-@using Application.DTOs
-@using Application.DTOs.Tests
+@attribute [Authorize]
+
+@using Microsoft.AspNetCore.Authorization
+@using dbs2webapp.Application.DTOs.Tests
 @inject HttpClient Http
 @inject NavigationManager Navigation
 

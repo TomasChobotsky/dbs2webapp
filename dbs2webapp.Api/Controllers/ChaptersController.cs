@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 using Microsoft.EntityFrameworkCore;
 using AutoMapper;
-using Application.DTOs;
+using dbs2webapp.Application.DTOs;
 
 namespace Api.Controllers
 {
@@ -47,7 +47,7 @@ namespace Api.Controllers
         }
 
         // GET: api/chapters/by-course/{courseId}
-        [HttpGet("by-course/{courseId}")]
+        [HttpGet("/api/courses/{courseId}/chapters")]
         public async Task<IActionResult> GetByCourse(int courseId)
         {
             var chapters = await _chapterRepo.FindAsync(

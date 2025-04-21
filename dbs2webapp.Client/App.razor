@@ -1,12 +1,33 @@
-﻿<Router AppAssembly="@typeof(App).Assembly">
+﻿@using Microsoft.AspNetCore.Components.Authorization
+@using dbs2webapp.Client.Components
+
+<CascadingAuthenticationState>
+  <Router AppAssembly="@typeof(App).Assembly">
     <Found Context="routeData">
-        <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
-        <FocusOnNavigate RouteData="@routeData" Selector="h1" />
+      <AuthorizeRouteView RouteData="@routeData"
+                          DefaultLayout="@typeof(MainLayout)">
+        <Authorizing>
+          <p>Checking credentials…</p>
+        </Authorizing>
+        <NotAuthorized>
+          @if (!(context.User?.Identity?.IsAuthenticated ?? false))
+          {
+            @* not logged in *@
+            <RedirectToLogin />
+          }
+          else
+          {
+            @* logged in but wrong role *@
+            <p class="m-4 text-danger">You don’t have permission to view this page.</p>
+          }
+        </NotAuthorized>
+      </AuthorizeRouteView>
+      <FocusOnNavigate RouteData="@routeData" Selector="h1" />
     </Found>
     <NotFound>
-        <PageTitle>Not found</PageTitle>
-        <LayoutView Layout="@typeof(MainLayout)">
-            <p role="alert">Sorry, there's nothing at this address.</p>
-        </LayoutView>
+      <LayoutView Layout="@typeof(MainLayout)">
+        <p>Sorry, nothing at this address.</p>
+      </LayoutView>
     </NotFound>
-</Router>
+  </Router>
+</CascadingAuthenticationState>

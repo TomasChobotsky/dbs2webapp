@@ -1,7 +1,10 @@
-﻿@page "/courses/{CourseId:int}/chapters/create"
+﻿@page "/chapters/create/{CourseId:int}"
+@attribute [Authorize(Roles = "Teacher,Admin")]
+
 @inject HttpClient Http
 @inject NavigationManager Navigation
-@using Application.DTOs
+@using Microsoft.AspNetCore.Authorization
+@using dbs2webapp.Application.DTOs
 
 <h3>Create Chapter</h3>
 
@@ -42,10 +45,10 @@
 
     private async Task HandleValidSubmit()
     {
-        var response = await Http.PostAsJsonAsync("api/chapters", model);
+        var response = await Http.PostAsJsonAsync($"api/chapters/{CourseId}", model);
         if (response.IsSuccessStatusCode)
         {
-            Navigation.NavigateTo($"/teacher-panel"); // You can route to course details here if needed
+            GoBack();
         }
         else
         {

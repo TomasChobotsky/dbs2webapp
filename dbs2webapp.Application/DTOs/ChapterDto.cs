@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.DTOs
+namespace dbs2webapp.Application.DTOs
 {
     public class ChapterDto
     {

@@ -1,5 +1,8 @@
 ﻿@page "/courses/edit/{Id:int}"
-@using Application.DTOs
+@attribute [Authorize(Roles = "Teacher,Admin")]
+
+@using Microsoft.AspNetCore.Authorization
+@using dbs2webapp.Application.DTOs
 @inject HttpClient Http
 @inject NavigationManager Navigation
 

@@ -1,7 +1,10 @@
-﻿@page "/chapters/{ChapterId:int}/tests/create"
+﻿@page "/tests/create/{ChapterId:int}"
+@attribute [Authorize(Roles = "Teacher,Admin")]
+
 @inject HttpClient Http
 @inject NavigationManager Navigation
-@using Application.DTOs.Tests
+@using Microsoft.AspNetCore.Authorization
+@using dbs2webapp.Application.DTOs.Tests
 
 <h3>Create Test</h3>
 
@@ -14,38 +17,69 @@
         <InputText @bind-Value="testModel.Title" class="form-control" />
     </div>
 
-    @foreach (var question in testModel.Questions)
+    @for (int qIndex = 0; qIndex < testModel.Questions.Count; qIndex++)
     {
-        var index = testModel.Questions.IndexOf(question);
-        <div class="card mb-4">
+        var question = testModel.Questions[qIndex];
+        // capture the current qIndex into qi
+        var qi = qIndex;
+
+        <div class="card mb-4" @key="question">
             <div class="card-body">
-                <div class="d-flex justify-content-between">
-                    <label class="form-label">Question</label>
-                    <button class="btn btn-sm btn-danger" @onclick="() => RemoveQuestion(index)">Remove Question</button>
-                </div>
-                <InputText @bind-Value="question.Content" class="form-control mb-2" />
+
+                <!-- remove question -->
+                <button type="button"
+                        class="mb-3 btn btn-sm btn-danger"
+                        @onclick="() => RemoveQuestion(qi)">
+                    Remove Question
+                </button>
+
+                <!-- question text -->
+                <InputText @bind-Value="testModel.Questions[qi].Content"
+                           class="form-control mb-2" />
 
                 <strong>Options:</strong>
-                <InputRadioGroup @bind-Value="question.CorrectOptionIndex" class="d-block">
-                    @for (int i = 0; i < question.Options.Count; i++)
+                <InputRadioGroup @bind-Value="question.CorrectOptionIndex">
+
+                    @for (int oIndex = 0; oIndex < question.Options.Count; oIndex++)
                     {
-                        <div class="input-group mb-2">
-                            <InputText @bind-Value="question.Options[i].Text" class="form-control" placeholder="Option text" />
+                        // likewise capture oIndex
+                        var oi = oIndex;
+                        var option = question.Options[oi];
+
+                        <div class="input-group mb-2" @key="option">
+                            <InputText @bind-Value="option.Text"
+                                       class="form-control"
+                                       placeholder="Option text" />
 
                             <div class="input-group-text">
-                                <InputRadio Value="@i" /> <label class="ms-1">Correct</label>
+                                <InputRadio Value="@oi" />
+                                <label class="ms-1">Correct</label>
                             </div>
 
-                            <button class="btn btn-sm btn-outline-danger" @onclick="() => RemoveOption(index, i)">Remove</button>
+                            <!-- remove option -->
+                            <button type="button"
+                                    class="btn btn-sm btn-outline-danger"
+                                    @onclick="() => RemoveOption(qi, oi)">
+                                Remove
+                            </button>
                         </div>
                     }
+
                 </InputRadioGroup>
 
+                <!-- add option -->
+                <button type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        @onclick="() => AddOption(qi)">
+                    + Add Option
+                </button>
 
-                <button class="btn btn-sm btn-outline-primary" @onclick="() => AddOption(index)">+ Add Option</button>
             </div>
         </div>
     }
+
+
+
 
     <button type="button" class="btn btn-secondary mb-3" @onclick="AddQuestion">+ Add Question</button>
     <br />
@@ -105,7 +139,7 @@
 
     private async Task HandleValidSubmit()
     {
-        var response = await Http.PostAsJsonAsync("api/tests", testModel);
+        var response = await Http.PostAsJsonAsync($"api/tests/{ChapterId}", testModel);
         if (response.IsSuccessStatusCode)
         {
             Navigation.NavigateTo("/teacher-panel");

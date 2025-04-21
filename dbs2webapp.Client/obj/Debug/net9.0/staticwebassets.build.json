@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JXwiEnkh1Nes5eF07NfkeFIH3qgpIhxFQLy5pLgKw98=",
+  "Hash": "alwhOLa7s9MMeySeALHVZL8Ioic+yHrd3UTyInX8Ldg=",
   "Source": "dbs2webapp.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -94,8 +94,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "wrg73q5mxl",
-      "Integrity": "rKsgpFR87hxgx4RHAwKqLm31Vsw5OXyIaovwtzYhgPQ=",
+      "Fingerprint": "cds0vy6kn6",
+      "Integrity": "oDbLbXz9DrkFHVd0inBXuC57foWSE+2oURkF3R+xJiY=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\blazor.boot.json"
@@ -122,6 +122,48 @@
       "OriginalItemSpec": "C:\\Users\\tomas\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\9.0.4\\build\\net9.0\\blazor.webassembly.js"
     },
     {
+      "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Blazored.LocalStorage.wasm",
+      "SourceId": "dbs2webapp.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.LocalStorage#[.{fingerprint}]!.wasm",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "Fingerprint": "12n6dz54qr",
+      "Integrity": "OaMAAd5n7ORfyur5e3QIyEVKJ76MKIvwbg7/icnnYcU=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\webcil\\Blazored.LocalStorage.wasm"
+    },
+    {
+      "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Blazored.SessionStorage.wasm",
+      "SourceId": "dbs2webapp.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.SessionStorage#[.{fingerprint}]!.wasm",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "Fingerprint": "34xr2ein7y",
+      "Integrity": "nQXuCGHos7iwp2WxRUgarKmWgJYChaVQp2NajgNU3V8=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\webcil\\Blazored.SessionStorage.wasm"
+    },
+    {
       "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dbs2webapp.Application.pdb",
       "SourceId": "dbs2webapp.Client",
       "SourceType": "Computed",
@@ -136,8 +178,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "e0195dattd",
-      "Integrity": "ojkqcjoVtG6eDQNP4G061XTXiIhtS3qSjmSQVapXNJA=",
+      "Fingerprint": "d5lqlpppc2",
+      "Integrity": "bwlY6wjeHSLyel5H3z0017W+EfIy9oyvASgKUG8vQZI=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Application\\bin\\Debug\\net9.0\\dbs2webapp.Application.pdb"
@@ -157,8 +199,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "k57i1yaoj8",
-      "Integrity": "uP3f288GsplVd2vOa0Fm+J6T/CudzLvyZB8qwfpce0c=",
+      "Fingerprint": "gj3ogpeo46",
+      "Integrity": "7BuaLnhJ+ilcSJrNBihR9AYdhS945Nm0IUw/qTJYU+s=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\webcil\\dbs2webapp.Application.wasm"
@@ -178,8 +220,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "m61iusu7gb",
-      "Integrity": "fkSrhgbS4WF0ryKm9qM0bzCgLq/QYbjTGHcaIXlky/M=",
+      "Fingerprint": "yc3prg6cp4",
+      "Integrity": "voexzqZJ2oPVPNrNaY+fRJXxaNwR7PWgVRL6Xi+O4UU=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\dbs2webapp.Client.pdb"
@@ -199,8 +241,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "grmmgplc5z",
-      "Integrity": "RH/z5F3pS+2ab5OX7SRgZt3bM+C6DcAZLw1DMEpnq5M=",
+      "Fingerprint": "0iuw19l5l6",
+      "Integrity": "mKgeC/Vcnu++6e7qeRDp0qzke4336X+24Z7f7YIxUY8=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\webcil\\dbs2webapp.Client.wasm"
@@ -262,8 +304,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "l2ru4rrj29",
-      "Integrity": "jSQHFW8YmgZnB4ljZmg2wPbeZYHLqO1zixp2ongFSJ8=",
+      "Fingerprint": "qgc2g2h12s",
+      "Integrity": "Zqx+9Byknc39Y+W88V+ke0cd2MVM1zOwCIDBVsVuw+k=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Infrastructure\\bin\\Debug\\net9.0\\dbs2webapp.Infrastructure.pdb"
@@ -283,8 +325,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "7lab0ohc11",
-      "Integrity": "pYXIp/KQTVeQK80ot89VHbwVE0XOG7EZ4vczMcMw6UM=",
+      "Fingerprint": "xa8emmtvzy",
+      "Integrity": "d2DOb/311LKB1XuvlR3QcUGjg3ABAGv1gixYiQpSEAc=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\webcil\\dbs2webapp.Infrastructure.wasm"
@@ -498,6 +540,27 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\webcil\\Microsoft.AspNetCore.Authorization.wasm"
+    },
+    {
+      "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.wasm",
+      "SourceId": "dbs2webapp.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Authorization#[.{fingerprint}]!.wasm",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "Fingerprint": "rrohwkxxx2",
+      "Integrity": "WShaslVUH4uKLh3hXazSn9XwD8JhJmLeMj4QyajtDhc=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\webcil\\Microsoft.AspNetCore.Components.Authorization.wasm"
     },
     {
       "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.wasm",
@@ -1004,6 +1067,48 @@
       "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\webcil\\Microsoft.Extensions.DependencyInjection.wasm"
     },
     {
+      "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.Extensions.Diagnostics.Abstractions.wasm",
+      "SourceId": "dbs2webapp.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Diagnostics.Abstractions#[.{fingerprint}]!.wasm",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "Fingerprint": "c9bmyvcsky",
+      "Integrity": "gOAgDZqFIP4yzKNPRiHDHY+1bIVn6KmMs7z9TdlGA90=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\webcil\\Microsoft.Extensions.Diagnostics.Abstractions.wasm"
+    },
+    {
+      "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.Extensions.Diagnostics.wasm",
+      "SourceId": "dbs2webapp.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Diagnostics#[.{fingerprint}]!.wasm",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "Fingerprint": "uwkkfuzktm",
+      "Integrity": "IoLwBSPt+bWr4eGsg2DsqsYvvc8BzTBGq50pfg/u2KE=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\webcil\\Microsoft.Extensions.Diagnostics.wasm"
+    },
+    {
       "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.Extensions.FileProviders.Abstractions.wasm",
       "SourceId": "dbs2webapp.Client",
       "SourceType": "Computed",
@@ -1065,6 +1170,27 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\webcil\\Microsoft.Extensions.FileSystemGlobbing.wasm"
+    },
+    {
+      "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.Extensions.Http.wasm",
+      "SourceId": "dbs2webapp.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Http#[.{fingerprint}]!.wasm",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "Fingerprint": "km5diny1k4",
+      "Integrity": "RDRSZfgSj5nBaq5QnxLaqMzp8SKSyNN0mxLwbXBNKCY=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\webcil\\Microsoft.Extensions.Http.wasm"
     },
     {
       "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.Extensions.Identity.Core.wasm",
@@ -1149,6 +1275,27 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\webcil\\Microsoft.Extensions.Logging.wasm"
+    },
+    {
+      "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.ConfigurationExtensions.wasm",
+      "SourceId": "dbs2webapp.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Options.ConfigurationExtensions#[.{fingerprint}]!.wasm",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "Fingerprint": "e34jhrwynt",
+      "Integrity": "ehjyGp2amBo1B9vQ3//ywaKCwMu83SYMV7YIilU6G9k=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\webcil\\Microsoft.Extensions.Options.ConfigurationExtensions.wasm"
     },
     {
       "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.wasm",
@@ -5351,6 +5498,27 @@
       "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Reflection.Primitives.wasm"
     },
     {
+      "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\0ci9gcvad1-uwkkfuzktm.gz",
+      "SourceId": "dbs2webapp.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Diagnostics#[.{fingerprint=uwkkfuzktm}]!.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.Extensions.Diagnostics.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "vzcdppg6kv",
+      "Integrity": "9T9VHI/A57COXBzSf9yRoKwgSUgYc/3Rv/qfA5/27FE=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.Extensions.Diagnostics.wasm"
+    },
+    {
       "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\0gc031xhhv-5lai2eowco.gz",
       "SourceId": "dbs2webapp.Client",
       "SourceType": "Computed",
@@ -5603,12 +5771,12 @@
       "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Threading.wasm"
     },
     {
-      "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\1b047mjg7s-k57i1yaoj8.gz",
+      "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\1b047mjg7s-gj3ogpeo46.gz",
       "SourceId": "dbs2webapp.Client",
       "SourceType": "Computed",
       "ContentRoot": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/dbs2webapp.Application#[.{fingerprint=k57i1yaoj8}]!.wasm.gz",
+      "RelativePath": "_framework/dbs2webapp.Application#[.{fingerprint=gj3ogpeo46}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -5617,8 +5785,8 @@
       "RelatedAsset": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dbs2webapp.Application.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "5zdme7t49d",
-      "Integrity": "v/UjZ9dfDe/nH0vGtTTGUhhAPJ8TR5W4hvF+BFGg3FI=",
+      "Fingerprint": "ayk7q35nen",
+      "Integrity": "0rsMIPxfQA8N4hKSWHQJlPd5SptDfRFfpkccWLI9cPY=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dbs2webapp.Application.wasm"
@@ -5855,12 +6023,12 @@
       "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.Identity.Client.Extensions.Msal.wasm"
     },
     {
-      "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\2zidx73m1u-grmmgplc5z.gz",
+      "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\2zidx73m1u-0iuw19l5l6.gz",
       "SourceId": "dbs2webapp.Client",
       "SourceType": "Computed",
       "ContentRoot": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/dbs2webapp.Client#[.{fingerprint=grmmgplc5z}]!.wasm.gz",
+      "RelativePath": "_framework/dbs2webapp.Client#[.{fingerprint=0iuw19l5l6}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -5869,8 +6037,8 @@
       "RelatedAsset": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dbs2webapp.Client.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "e5kj1sl9bz",
-      "Integrity": "wg3ljXY4PLsPjSOfRq6mJswfXRXoBbSPxjYsxwFsDvE=",
+      "Fingerprint": "e1asxtiuqi",
+      "Integrity": "0hbzmsso6wUzsSst0iW0omTK458KvwtELg/6mzP6DqI=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dbs2webapp.Client.wasm"
@@ -5918,7 +6086,7 @@
       "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\wwwroot\\index.html"
     },
     {
-      "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\3kik1wegnu-wrg73q5mxl.gz",
+      "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\3kik1wegnu-cds0vy6kn6.gz",
       "SourceId": "dbs2webapp.Client",
       "SourceType": "Computed",
       "ContentRoot": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\",
@@ -5932,8 +6100,8 @@
       "RelatedAsset": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "vd5g7gpzhg",
-      "Integrity": "Q3aFUVmSV20yuXcjT1ha0i5aKCjumz/dWcHvIqkDoGs=",
+      "Fingerprint": "gnc8jezcmg",
+      "Integrity": "DA3iVV3FNzcnCnqEYlPUs7wcKOvJT0jAWeWYesqXyfA=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -6105,6 +6273,27 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Buffers.wasm"
+    },
+    {
+      "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\4fv9b5eoy6-e34jhrwynt.gz",
+      "SourceId": "dbs2webapp.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Options.ConfigurationExtensions#[.{fingerprint=e34jhrwynt}]!.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.ConfigurationExtensions.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "yflsjo4yra",
+      "Integrity": "cpHR3lENeci/CXbiQw38nN8tuFHEuX9tC5jxDx1LuEI=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.ConfigurationExtensions.wasm"
     },
     {
       "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\4nhcw2zzkb-lh20ntqzs7.gz",
@@ -7094,6 +7283,27 @@
       "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\icudt_CJK.dat"
     },
     {
+      "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\9yzvpmwhdw-rrohwkxxx2.gz",
+      "SourceId": "dbs2webapp.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Authorization#[.{fingerprint=rrohwkxxx2}]!.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "qx4vw9ot09",
+      "Integrity": "QjG7VabQ9xnK14p+TpONF3DlIlbaareumXwMOureIjc=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.wasm"
+    },
+    {
       "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\a16zpa2y9d-ii4hsghias.gz",
       "SourceId": "dbs2webapp.Client",
       "SourceType": "Computed",
@@ -7199,12 +7409,12 @@
       "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\adagito2ef-m61iusu7gb.gz",
+      "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\adagito2ef-yc3prg6cp4.gz",
       "SourceId": "dbs2webapp.Client",
       "SourceType": "Computed",
       "ContentRoot": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/dbs2webapp.Client#[.{fingerprint=m61iusu7gb}]!.pdb.gz",
+      "RelativePath": "_framework/dbs2webapp.Client#[.{fingerprint=yc3prg6cp4}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -7213,8 +7423,8 @@
       "RelatedAsset": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dbs2webapp.Client.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "b44cjkno2w",
-      "Integrity": "29L2ISGef2YUPggkthH1sCA9CrZVjXwpwSa2z4/sl+M=",
+      "Fingerprint": "axw08wb9i8",
+      "Integrity": "UuH1zBtGZyK6G/yUCP7TtQMzopNJwoz9jx8T0Zk5p+o=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dbs2webapp.Client.pdb"
@@ -7472,12 +7682,12 @@
       "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Drawing.Common.wasm"
     },
     {
-      "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\c73s7yd7o0-l2ru4rrj29.gz",
+      "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\c73s7yd7o0-qgc2g2h12s.gz",
       "SourceId": "dbs2webapp.Client",
       "SourceType": "Computed",
       "ContentRoot": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/dbs2webapp.Infrastructure#[.{fingerprint=l2ru4rrj29}]!.pdb.gz",
+      "RelativePath": "_framework/dbs2webapp.Infrastructure#[.{fingerprint=qgc2g2h12s}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -7486,8 +7696,8 @@
       "RelatedAsset": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dbs2webapp.Infrastructure.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "6row8a9kbe",
-      "Integrity": "rroJ4F9k4EPUGrx+xoy631b6wR39HKXeOGqkcBwUbvs=",
+      "Fingerprint": "1a73fpxyvp",
+      "Integrity": "Z7XqKjdbbuCFY0HoE0OcE6mWSp4rkBwQNjz2vlwYL8s=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dbs2webapp.Infrastructure.pdb"
@@ -7514,12 +7724,12 @@
       "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.ServiceModel.Web.wasm"
     },
     {
-      "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\cbzqkykwl1-e0195dattd.gz",
+      "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\cbzqkykwl1-d5lqlpppc2.gz",
       "SourceId": "dbs2webapp.Client",
       "SourceType": "Computed",
       "ContentRoot": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/dbs2webapp.Application#[.{fingerprint=e0195dattd}]!.pdb.gz",
+      "RelativePath": "_framework/dbs2webapp.Application#[.{fingerprint=d5lqlpppc2}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -7528,8 +7738,8 @@
       "RelatedAsset": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dbs2webapp.Application.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "shgv3i7n0e",
-      "Integrity": "QAAMsJsVjFE5k4JUc1jURQUlHZbxROrHSjjZ+Vq6jIQ=",
+      "Fingerprint": "i8ro3rm2lo",
+      "Integrity": "HlFVes2bE6SyM48llkxnHMzC0ECtS5jJh3nxxBEoJfk=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dbs2webapp.Application.pdb"
@@ -7827,6 +8037,27 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.runtime.js.map"
+    },
+    {
+      "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\dz2vpfw51d-12n6dz54qr.gz",
+      "SourceId": "dbs2webapp.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.LocalStorage#[.{fingerprint=12n6dz54qr}]!.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Blazored.LocalStorage.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "q6oiaip7ys",
+      "Integrity": "8mwLt5eEjW5kvTsT5hQhpXExfD2uJ6DPsH3L7t9/bxo=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Blazored.LocalStorage.wasm"
     },
     {
       "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\e14v11zajd-89larmi1tf.gz",
@@ -9635,6 +9866,27 @@
       "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.wasm"
     },
     {
+      "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\q13hdlbdup-34xr2ein7y.gz",
+      "SourceId": "dbs2webapp.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.SessionStorage#[.{fingerprint=34xr2ein7y}]!.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Blazored.SessionStorage.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "h0aen98lyq",
+      "Integrity": "MSXl2g5F2xwklqG6GfBrYqInk2TBslB2BjDz2vHVUSc=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Blazored.SessionStorage.wasm"
+    },
+    {
       "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\q3ig24si8y-e6ekmwd3wm.gz",
       "SourceId": "dbs2webapp.Client",
       "SourceType": "Computed",
@@ -9971,12 +10223,12 @@
       "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\rsh7p2096f-7lab0ohc11.gz",
+      "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\rsh7p2096f-xa8emmtvzy.gz",
       "SourceId": "dbs2webapp.Client",
       "SourceType": "Computed",
       "ContentRoot": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/dbs2webapp.Infrastructure#[.{fingerprint=7lab0ohc11}]!.wasm.gz",
+      "RelativePath": "_framework/dbs2webapp.Infrastructure#[.{fingerprint=xa8emmtvzy}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -9985,8 +10237,8 @@
       "RelatedAsset": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dbs2webapp.Infrastructure.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "ae5vzv99uo",
-      "Integrity": "7iMJq+1DvtacIaJgRFEj8wu7agMlMFwOZQ+F2BpwNKw=",
+      "Fingerprint": "5id1mwqbcw",
+      "Integrity": "Y082rXPsYVm8Rs9Ab+WbqFVPK/w7YOGEPHqqF0heZLw=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dbs2webapp.Infrastructure.wasm"
@@ -10790,6 +11042,27 @@
       "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Net.WebHeaderCollection.wasm"
     },
     {
+      "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\vpp2jzfx7z-c9bmyvcsky.gz",
+      "SourceId": "dbs2webapp.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Diagnostics.Abstractions#[.{fingerprint=c9bmyvcsky}]!.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.Extensions.Diagnostics.Abstractions.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "zkexu1uxsl",
+      "Integrity": "7ZVyE73S9N+lbH0679zUuQqL4CHJ5Pm5CqyGv59cTs0=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.Extensions.Diagnostics.Abstractions.wasm"
+    },
+    {
       "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\vr1uy6955o-w7zbn9r8n2.gz",
       "SourceId": "dbs2webapp.Client",
       "SourceType": "Computed",
@@ -11019,6 +11292,27 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.IO.Pipes.AccessControl.wasm"
+    },
+    {
+      "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\xc1n894g10-km5diny1k4.gz",
+      "SourceId": "dbs2webapp.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Http#[.{fingerprint=km5diny1k4}]!.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.Extensions.Http.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "gfioj7src2",
+      "Integrity": "tJ3CXD0MwSuy1A0YntpoShNVgV3oMW9TArwAxWfmAXM=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.Extensions.Http.wasm"
     },
     {
       "Identity": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\xjb0hwhz6s-hce23jb01s.gz",
@@ -13313,7 +13607,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "47738"
+          "Value": "49293"
         },
         {
           "Name": "Content-Type",
@@ -13321,11 +13615,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"rKsgpFR87hxgx4RHAwKqLm31Vsw5OXyIaovwtzYhgPQ=\""
+          "Value": "\"oDbLbXz9DrkFHVd0inBXuC57foWSE+2oURkF3R+xJiY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:17:40 GMT"
+          "Value": "Mon, 21 Apr 2025 20:08:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13335,18 +13629,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-rKsgpFR87hxgx4RHAwKqLm31Vsw5OXyIaovwtzYhgPQ="
+          "Value": "sha256-oDbLbXz9DrkFHVd0inBXuC57foWSE+2oURkF3R+xJiY="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\3kik1wegnu-wrg73q5mxl.gz",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\3kik1wegnu-cds0vy6kn6.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000067078079"
+          "Quality": "0.000065248597"
         }
       ],
       "ResponseHeaders": [
@@ -13356,15 +13650,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14907"
+          "Value": "15325"
         },
         {
           "Name": "ETag",
-          "Value": "\"Q3aFUVmSV20yuXcjT1ha0i5aKCjumz/dWcHvIqkDoGs=\""
+          "Value": "\"DA3iVV3FNzcnCnqEYlPUs7wcKOvJT0jAWeWYesqXyfA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 15:06:56 GMT"
+          "Value": "Mon, 21 Apr 2025 20:06:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13384,19 +13678,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"rKsgpFR87hxgx4RHAwKqLm31Vsw5OXyIaovwtzYhgPQ=\""
+          "Value": "W/\"oDbLbXz9DrkFHVd0inBXuC57foWSE+2oURkF3R+xJiY=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-rKsgpFR87hxgx4RHAwKqLm31Vsw5OXyIaovwtzYhgPQ="
+          "Value": "sha256-oDbLbXz9DrkFHVd0inBXuC57foWSE+2oURkF3R+xJiY="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\3kik1wegnu-wrg73q5mxl.gz",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\3kik1wegnu-cds0vy6kn6.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13405,7 +13699,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14907"
+          "Value": "15325"
         },
         {
           "Name": "Content-Type",
@@ -13413,11 +13707,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Q3aFUVmSV20yuXcjT1ha0i5aKCjumz/dWcHvIqkDoGs=\""
+          "Value": "\"DA3iVV3FNzcnCnqEYlPUs7wcKOvJT0jAWeWYesqXyfA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 15:06:56 GMT"
+          "Value": "Mon, 21 Apr 2025 20:06:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13435,7 +13729,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Q3aFUVmSV20yuXcjT1ha0i5aKCjumz/dWcHvIqkDoGs="
+          "Value": "sha256-DA3iVV3FNzcnCnqEYlPUs7wcKOvJT0jAWeWYesqXyfA="
         }
       ]
     },
@@ -13577,7 +13871,603 @@
       ]
     },
     {
-      "Route": "_framework/dbs2webapp.Application.e0195dattd.pdb",
+      "Route": "_framework/Blazored.LocalStorage.12n6dz54qr.wasm",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Blazored.LocalStorage.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32021"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OaMAAd5n7ORfyur5e3QIyEVKJ76MKIvwbg7/icnnYcU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:07:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "12n6dz54qr"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Blazored.LocalStorage.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OaMAAd5n7ORfyur5e3QIyEVKJ76MKIvwbg7/icnnYcU="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Blazored.LocalStorage.12n6dz54qr.wasm",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\dz2vpfw51d-12n6dz54qr.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000074222519"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13472"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8mwLt5eEjW5kvTsT5hQhpXExfD2uJ6DPsH3L7t9/bxo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:08:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"OaMAAd5n7ORfyur5e3QIyEVKJ76MKIvwbg7/icnnYcU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "12n6dz54qr"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Blazored.LocalStorage.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OaMAAd5n7ORfyur5e3QIyEVKJ76MKIvwbg7/icnnYcU="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Blazored.LocalStorage.12n6dz54qr.wasm.gz",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\dz2vpfw51d-12n6dz54qr.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13472"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8mwLt5eEjW5kvTsT5hQhpXExfD2uJ6DPsH3L7t9/bxo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:08:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "12n6dz54qr"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Blazored.LocalStorage.wasm.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8mwLt5eEjW5kvTsT5hQhpXExfD2uJ6DPsH3L7t9/bxo="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Blazored.LocalStorage.wasm",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Blazored.LocalStorage.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32021"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OaMAAd5n7ORfyur5e3QIyEVKJ76MKIvwbg7/icnnYcU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:07:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OaMAAd5n7ORfyur5e3QIyEVKJ76MKIvwbg7/icnnYcU="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Blazored.LocalStorage.wasm",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\dz2vpfw51d-12n6dz54qr.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000074222519"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13472"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8mwLt5eEjW5kvTsT5hQhpXExfD2uJ6DPsH3L7t9/bxo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:08:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"OaMAAd5n7ORfyur5e3QIyEVKJ76MKIvwbg7/icnnYcU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OaMAAd5n7ORfyur5e3QIyEVKJ76MKIvwbg7/icnnYcU="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Blazored.LocalStorage.wasm.gz",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\dz2vpfw51d-12n6dz54qr.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13472"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8mwLt5eEjW5kvTsT5hQhpXExfD2uJ6DPsH3L7t9/bxo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:08:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8mwLt5eEjW5kvTsT5hQhpXExfD2uJ6DPsH3L7t9/bxo="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Blazored.SessionStorage.34xr2ein7y.wasm",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Blazored.SessionStorage.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30997"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nQXuCGHos7iwp2WxRUgarKmWgJYChaVQp2NajgNU3V8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:21:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "34xr2ein7y"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Blazored.SessionStorage.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nQXuCGHos7iwp2WxRUgarKmWgJYChaVQp2NajgNU3V8="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Blazored.SessionStorage.34xr2ein7y.wasm",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\q13hdlbdup-34xr2ein7y.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000078155530"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12794"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MSXl2g5F2xwklqG6GfBrYqInk2TBslB2BjDz2vHVUSc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:21:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"nQXuCGHos7iwp2WxRUgarKmWgJYChaVQp2NajgNU3V8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "34xr2ein7y"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Blazored.SessionStorage.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nQXuCGHos7iwp2WxRUgarKmWgJYChaVQp2NajgNU3V8="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Blazored.SessionStorage.34xr2ein7y.wasm.gz",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\q13hdlbdup-34xr2ein7y.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12794"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MSXl2g5F2xwklqG6GfBrYqInk2TBslB2BjDz2vHVUSc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:21:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "34xr2ein7y"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Blazored.SessionStorage.wasm.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MSXl2g5F2xwklqG6GfBrYqInk2TBslB2BjDz2vHVUSc="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Blazored.SessionStorage.wasm",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Blazored.SessionStorage.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30997"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nQXuCGHos7iwp2WxRUgarKmWgJYChaVQp2NajgNU3V8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:21:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nQXuCGHos7iwp2WxRUgarKmWgJYChaVQp2NajgNU3V8="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Blazored.SessionStorage.wasm",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\q13hdlbdup-34xr2ein7y.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000078155530"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12794"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MSXl2g5F2xwklqG6GfBrYqInk2TBslB2BjDz2vHVUSc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:21:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"nQXuCGHos7iwp2WxRUgarKmWgJYChaVQp2NajgNU3V8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nQXuCGHos7iwp2WxRUgarKmWgJYChaVQp2NajgNU3V8="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Blazored.SessionStorage.wasm.gz",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\q13hdlbdup-34xr2ein7y.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12794"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MSXl2g5F2xwklqG6GfBrYqInk2TBslB2BjDz2vHVUSc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:21:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MSXl2g5F2xwklqG6GfBrYqInk2TBslB2BjDz2vHVUSc="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/dbs2webapp.Application.d5lqlpppc2.pdb",
       "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dbs2webapp.Application.pdb",
       "Selectors": [],
       "ResponseHeaders": [
@@ -13587,7 +14477,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "16252"
+          "Value": "16728"
         },
         {
           "Name": "Content-Type",
@@ -13595,11 +14485,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ojkqcjoVtG6eDQNP4G061XTXiIhtS3qSjmSQVapXNJA=\""
+          "Value": "\"bwlY6wjeHSLyel5H3z0017W+EfIy9oyvASgKUG8vQZI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:14:23 GMT"
+          "Value": "Mon, 21 Apr 2025 16:04:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13609,7 +14499,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "e0195dattd"
+          "Value": "d5lqlpppc2"
         },
         {
           "Name": "label",
@@ -13617,18 +14507,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ojkqcjoVtG6eDQNP4G061XTXiIhtS3qSjmSQVapXNJA="
+          "Value": "sha256-bwlY6wjeHSLyel5H3z0017W+EfIy9oyvASgKUG8vQZI="
         }
       ]
     },
     {
-      "Route": "_framework/dbs2webapp.Application.e0195dattd.pdb",
-      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\cbzqkykwl1-e0195dattd.gz",
+      "Route": "_framework/dbs2webapp.Application.d5lqlpppc2.pdb",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\cbzqkykwl1-d5lqlpppc2.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000114455763"
+          "Quality": "0.000111719361"
         }
       ],
       "ResponseHeaders": [
@@ -13638,15 +14528,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8736"
+          "Value": "8950"
         },
         {
           "Name": "ETag",
-          "Value": "\"QAAMsJsVjFE5k4JUc1jURQUlHZbxROrHSjjZ+Vq6jIQ=\""
+          "Value": "\"HlFVes2bE6SyM48llkxnHMzC0ECtS5jJh3nxxBEoJfk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:17:40 GMT"
+          "Value": "Mon, 21 Apr 2025 16:07:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13666,13 +14556,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"ojkqcjoVtG6eDQNP4G061XTXiIhtS3qSjmSQVapXNJA=\""
+          "Value": "W/\"bwlY6wjeHSLyel5H3z0017W+EfIy9oyvASgKUG8vQZI=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "e0195dattd"
+          "Value": "d5lqlpppc2"
         },
         {
           "Name": "label",
@@ -13680,13 +14570,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ojkqcjoVtG6eDQNP4G061XTXiIhtS3qSjmSQVapXNJA="
+          "Value": "sha256-bwlY6wjeHSLyel5H3z0017W+EfIy9oyvASgKUG8vQZI="
         }
       ]
     },
     {
-      "Route": "_framework/dbs2webapp.Application.e0195dattd.pdb.gz",
-      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\cbzqkykwl1-e0195dattd.gz",
+      "Route": "_framework/dbs2webapp.Application.d5lqlpppc2.pdb.gz",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\cbzqkykwl1-d5lqlpppc2.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13695,7 +14585,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8736"
+          "Value": "8950"
         },
         {
           "Name": "Content-Type",
@@ -13703,11 +14593,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"QAAMsJsVjFE5k4JUc1jURQUlHZbxROrHSjjZ+Vq6jIQ=\""
+          "Value": "\"HlFVes2bE6SyM48llkxnHMzC0ECtS5jJh3nxxBEoJfk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:17:40 GMT"
+          "Value": "Mon, 21 Apr 2025 16:07:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13725,7 +14615,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "e0195dattd"
+          "Value": "d5lqlpppc2"
         },
         {
           "Name": "label",
@@ -13733,12 +14623,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-QAAMsJsVjFE5k4JUc1jURQUlHZbxROrHSjjZ+Vq6jIQ="
+          "Value": "sha256-HlFVes2bE6SyM48llkxnHMzC0ECtS5jJh3nxxBEoJfk="
         }
       ]
     },
     {
-      "Route": "_framework/dbs2webapp.Application.k57i1yaoj8.wasm",
+      "Route": "_framework/dbs2webapp.Application.gj3ogpeo46.wasm",
       "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dbs2webapp.Application.wasm",
       "Selectors": [],
       "ResponseHeaders": [
@@ -13748,7 +14638,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12565"
+          "Value": "13589"
         },
         {
           "Name": "Content-Type",
@@ -13756,11 +14646,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"uP3f288GsplVd2vOa0Fm+J6T/CudzLvyZB8qwfpce0c=\""
+          "Value": "\"7BuaLnhJ+ilcSJrNBihR9AYdhS945Nm0IUw/qTJYU+s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:17:39 GMT"
+          "Value": "Mon, 21 Apr 2025 15:07:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13770,7 +14660,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "k57i1yaoj8"
+          "Value": "gj3ogpeo46"
         },
         {
           "Name": "label",
@@ -13778,18 +14668,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-uP3f288GsplVd2vOa0Fm+J6T/CudzLvyZB8qwfpce0c="
+          "Value": "sha256-7BuaLnhJ+ilcSJrNBihR9AYdhS945Nm0IUw/qTJYU+s="
         }
       ]
     },
     {
-      "Route": "_framework/dbs2webapp.Application.k57i1yaoj8.wasm",
-      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\1b047mjg7s-k57i1yaoj8.gz",
+      "Route": "_framework/dbs2webapp.Application.gj3ogpeo46.wasm",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\1b047mjg7s-gj3ogpeo46.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000199282583"
+          "Quality": "0.000187969925"
         }
       ],
       "ResponseHeaders": [
@@ -13799,15 +14689,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5017"
+          "Value": "5319"
         },
         {
           "Name": "ETag",
-          "Value": "\"v/UjZ9dfDe/nH0vGtTTGUhhAPJ8TR5W4hvF+BFGg3FI=\""
+          "Value": "\"0rsMIPxfQA8N4hKSWHQJlPd5SptDfRFfpkccWLI9cPY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:17:40 GMT"
+          "Value": "Mon, 21 Apr 2025 15:08:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13827,13 +14717,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"uP3f288GsplVd2vOa0Fm+J6T/CudzLvyZB8qwfpce0c=\""
+          "Value": "W/\"7BuaLnhJ+ilcSJrNBihR9AYdhS945Nm0IUw/qTJYU+s=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "k57i1yaoj8"
+          "Value": "gj3ogpeo46"
         },
         {
           "Name": "label",
@@ -13841,13 +14731,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-uP3f288GsplVd2vOa0Fm+J6T/CudzLvyZB8qwfpce0c="
+          "Value": "sha256-7BuaLnhJ+ilcSJrNBihR9AYdhS945Nm0IUw/qTJYU+s="
         }
       ]
     },
     {
-      "Route": "_framework/dbs2webapp.Application.k57i1yaoj8.wasm.gz",
-      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\1b047mjg7s-k57i1yaoj8.gz",
+      "Route": "_framework/dbs2webapp.Application.gj3ogpeo46.wasm.gz",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\1b047mjg7s-gj3ogpeo46.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13856,7 +14746,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5017"
+          "Value": "5319"
         },
         {
           "Name": "Content-Type",
@@ -13864,11 +14754,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"v/UjZ9dfDe/nH0vGtTTGUhhAPJ8TR5W4hvF+BFGg3FI=\""
+          "Value": "\"0rsMIPxfQA8N4hKSWHQJlPd5SptDfRFfpkccWLI9cPY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:17:40 GMT"
+          "Value": "Mon, 21 Apr 2025 15:08:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13886,7 +14776,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "k57i1yaoj8"
+          "Value": "gj3ogpeo46"
         },
         {
           "Name": "label",
@@ -13894,7 +14784,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-v/UjZ9dfDe/nH0vGtTTGUhhAPJ8TR5W4hvF+BFGg3FI="
+          "Value": "sha256-0rsMIPxfQA8N4hKSWHQJlPd5SptDfRFfpkccWLI9cPY="
         }
       ]
     },
@@ -13909,7 +14799,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "16252"
+          "Value": "16728"
         },
         {
           "Name": "Content-Type",
@@ -13917,11 +14807,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ojkqcjoVtG6eDQNP4G061XTXiIhtS3qSjmSQVapXNJA=\""
+          "Value": "\"bwlY6wjeHSLyel5H3z0017W+EfIy9oyvASgKUG8vQZI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:14:23 GMT"
+          "Value": "Mon, 21 Apr 2025 16:04:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13931,18 +14821,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ojkqcjoVtG6eDQNP4G061XTXiIhtS3qSjmSQVapXNJA="
+          "Value": "sha256-bwlY6wjeHSLyel5H3z0017W+EfIy9oyvASgKUG8vQZI="
         }
       ]
     },
     {
       "Route": "_framework/dbs2webapp.Application.pdb",
-      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\cbzqkykwl1-e0195dattd.gz",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\cbzqkykwl1-d5lqlpppc2.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000114455763"
+          "Quality": "0.000111719361"
         }
       ],
       "ResponseHeaders": [
@@ -13952,15 +14842,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8736"
+          "Value": "8950"
         },
         {
           "Name": "ETag",
-          "Value": "\"QAAMsJsVjFE5k4JUc1jURQUlHZbxROrHSjjZ+Vq6jIQ=\""
+          "Value": "\"HlFVes2bE6SyM48llkxnHMzC0ECtS5jJh3nxxBEoJfk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:17:40 GMT"
+          "Value": "Mon, 21 Apr 2025 16:07:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13980,19 +14870,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"ojkqcjoVtG6eDQNP4G061XTXiIhtS3qSjmSQVapXNJA=\""
+          "Value": "W/\"bwlY6wjeHSLyel5H3z0017W+EfIy9oyvASgKUG8vQZI=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ojkqcjoVtG6eDQNP4G061XTXiIhtS3qSjmSQVapXNJA="
+          "Value": "sha256-bwlY6wjeHSLyel5H3z0017W+EfIy9oyvASgKUG8vQZI="
         }
       ]
     },
     {
       "Route": "_framework/dbs2webapp.Application.pdb.gz",
-      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\cbzqkykwl1-e0195dattd.gz",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\cbzqkykwl1-d5lqlpppc2.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14001,7 +14891,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8736"
+          "Value": "8950"
         },
         {
           "Name": "Content-Type",
@@ -14009,11 +14899,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"QAAMsJsVjFE5k4JUc1jURQUlHZbxROrHSjjZ+Vq6jIQ=\""
+          "Value": "\"HlFVes2bE6SyM48llkxnHMzC0ECtS5jJh3nxxBEoJfk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:17:40 GMT"
+          "Value": "Mon, 21 Apr 2025 16:07:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14031,7 +14921,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-QAAMsJsVjFE5k4JUc1jURQUlHZbxROrHSjjZ+Vq6jIQ="
+          "Value": "sha256-HlFVes2bE6SyM48llkxnHMzC0ECtS5jJh3nxxBEoJfk="
         }
       ]
     },
@@ -14046,7 +14936,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12565"
+          "Value": "13589"
         },
         {
           "Name": "Content-Type",
@@ -14054,11 +14944,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"uP3f288GsplVd2vOa0Fm+J6T/CudzLvyZB8qwfpce0c=\""
+          "Value": "\"7BuaLnhJ+ilcSJrNBihR9AYdhS945Nm0IUw/qTJYU+s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:17:39 GMT"
+          "Value": "Mon, 21 Apr 2025 15:07:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14068,18 +14958,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-uP3f288GsplVd2vOa0Fm+J6T/CudzLvyZB8qwfpce0c="
+          "Value": "sha256-7BuaLnhJ+ilcSJrNBihR9AYdhS945Nm0IUw/qTJYU+s="
         }
       ]
     },
     {
       "Route": "_framework/dbs2webapp.Application.wasm",
-      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\1b047mjg7s-k57i1yaoj8.gz",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\1b047mjg7s-gj3ogpeo46.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000199282583"
+          "Quality": "0.000187969925"
         }
       ],
       "ResponseHeaders": [
@@ -14089,15 +14979,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5017"
+          "Value": "5319"
         },
         {
           "Name": "ETag",
-          "Value": "\"v/UjZ9dfDe/nH0vGtTTGUhhAPJ8TR5W4hvF+BFGg3FI=\""
+          "Value": "\"0rsMIPxfQA8N4hKSWHQJlPd5SptDfRFfpkccWLI9cPY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:17:40 GMT"
+          "Value": "Mon, 21 Apr 2025 15:08:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14117,19 +15007,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"uP3f288GsplVd2vOa0Fm+J6T/CudzLvyZB8qwfpce0c=\""
+          "Value": "W/\"7BuaLnhJ+ilcSJrNBihR9AYdhS945Nm0IUw/qTJYU+s=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-uP3f288GsplVd2vOa0Fm+J6T/CudzLvyZB8qwfpce0c="
+          "Value": "sha256-7BuaLnhJ+ilcSJrNBihR9AYdhS945Nm0IUw/qTJYU+s="
         }
       ]
     },
     {
       "Route": "_framework/dbs2webapp.Application.wasm.gz",
-      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\1b047mjg7s-k57i1yaoj8.gz",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\1b047mjg7s-gj3ogpeo46.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14138,7 +15028,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5017"
+          "Value": "5319"
         },
         {
           "Name": "Content-Type",
@@ -14146,11 +15036,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"v/UjZ9dfDe/nH0vGtTTGUhhAPJ8TR5W4hvF+BFGg3FI=\""
+          "Value": "\"0rsMIPxfQA8N4hKSWHQJlPd5SptDfRFfpkccWLI9cPY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:17:40 GMT"
+          "Value": "Mon, 21 Apr 2025 15:08:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14168,12 +15058,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-v/UjZ9dfDe/nH0vGtTTGUhhAPJ8TR5W4hvF+BFGg3FI="
+          "Value": "sha256-0rsMIPxfQA8N4hKSWHQJlPd5SptDfRFfpkccWLI9cPY="
         }
       ]
     },
     {
-      "Route": "_framework/dbs2webapp.Client.grmmgplc5z.wasm",
+      "Route": "_framework/dbs2webapp.Client.0iuw19l5l6.wasm",
       "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dbs2webapp.Client.wasm",
       "Selectors": [],
       "ResponseHeaders": [
@@ -14183,7 +15073,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "56085"
+          "Value": "124693"
         },
         {
           "Name": "Content-Type",
@@ -14191,11 +15081,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RH/z5F3pS+2ab5OX7SRgZt3bM+C6DcAZLw1DMEpnq5M=\""
+          "Value": "\"mKgeC/Vcnu++6e7qeRDp0qzke4336X+24Z7f7YIxUY8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:17:39 GMT"
+          "Value": "Mon, 21 Apr 2025 20:08:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14205,7 +15095,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "grmmgplc5z"
+          "Value": "0iuw19l5l6"
         },
         {
           "Name": "label",
@@ -14213,18 +15103,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-RH/z5F3pS+2ab5OX7SRgZt3bM+C6DcAZLw1DMEpnq5M="
+          "Value": "sha256-mKgeC/Vcnu++6e7qeRDp0qzke4336X+24Z7f7YIxUY8="
         }
       ]
     },
     {
-      "Route": "_framework/dbs2webapp.Client.grmmgplc5z.wasm",
-      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\2zidx73m1u-grmmgplc5z.gz",
+      "Route": "_framework/dbs2webapp.Client.0iuw19l5l6.wasm",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\2zidx73m1u-0iuw19l5l6.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000050903538"
+          "Quality": "0.000023390719"
         }
       ],
       "ResponseHeaders": [
@@ -14234,15 +15124,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19644"
+          "Value": "42751"
         },
         {
           "Name": "ETag",
-          "Value": "\"wg3ljXY4PLsPjSOfRq6mJswfXRXoBbSPxjYsxwFsDvE=\""
+          "Value": "\"0hbzmsso6wUzsSst0iW0omTK458KvwtELg/6mzP6DqI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:17:40 GMT"
+          "Value": "Mon, 21 Apr 2025 20:08:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14262,13 +15152,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"RH/z5F3pS+2ab5OX7SRgZt3bM+C6DcAZLw1DMEpnq5M=\""
+          "Value": "W/\"mKgeC/Vcnu++6e7qeRDp0qzke4336X+24Z7f7YIxUY8=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "grmmgplc5z"
+          "Value": "0iuw19l5l6"
         },
         {
           "Name": "label",
@@ -14276,13 +15166,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-RH/z5F3pS+2ab5OX7SRgZt3bM+C6DcAZLw1DMEpnq5M="
+          "Value": "sha256-mKgeC/Vcnu++6e7qeRDp0qzke4336X+24Z7f7YIxUY8="
         }
       ]
     },
     {
-      "Route": "_framework/dbs2webapp.Client.grmmgplc5z.wasm.gz",
-      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\2zidx73m1u-grmmgplc5z.gz",
+      "Route": "_framework/dbs2webapp.Client.0iuw19l5l6.wasm.gz",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\2zidx73m1u-0iuw19l5l6.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14291,7 +15181,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19644"
+          "Value": "42751"
         },
         {
           "Name": "Content-Type",
@@ -14299,11 +15189,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wg3ljXY4PLsPjSOfRq6mJswfXRXoBbSPxjYsxwFsDvE=\""
+          "Value": "\"0hbzmsso6wUzsSst0iW0omTK458KvwtELg/6mzP6DqI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:17:40 GMT"
+          "Value": "Mon, 21 Apr 2025 20:08:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14321,7 +15211,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "grmmgplc5z"
+          "Value": "0iuw19l5l6"
         },
         {
           "Name": "label",
@@ -14329,168 +15219,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-wg3ljXY4PLsPjSOfRq6mJswfXRXoBbSPxjYsxwFsDvE="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/dbs2webapp.Client.m61iusu7gb.pdb",
-      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dbs2webapp.Client.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "49752"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"fkSrhgbS4WF0ryKm9qM0bzCgLq/QYbjTGHcaIXlky/M=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:17:39 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "m61iusu7gb"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/dbs2webapp.Client.pdb"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-fkSrhgbS4WF0ryKm9qM0bzCgLq/QYbjTGHcaIXlky/M="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/dbs2webapp.Client.m61iusu7gb.pdb",
-      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\adagito2ef-m61iusu7gb.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000026167735"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "38214"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"29L2ISGef2YUPggkthH1sCA9CrZVjXwpwSa2z4/sl+M=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:17:40 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"fkSrhgbS4WF0ryKm9qM0bzCgLq/QYbjTGHcaIXlky/M=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "m61iusu7gb"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/dbs2webapp.Client.pdb"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-fkSrhgbS4WF0ryKm9qM0bzCgLq/QYbjTGHcaIXlky/M="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/dbs2webapp.Client.m61iusu7gb.pdb.gz",
-      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\adagito2ef-m61iusu7gb.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "38214"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"29L2ISGef2YUPggkthH1sCA9CrZVjXwpwSa2z4/sl+M=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:17:40 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "m61iusu7gb"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/dbs2webapp.Client.pdb.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-29L2ISGef2YUPggkthH1sCA9CrZVjXwpwSa2z4/sl+M="
+          "Value": "sha256-0hbzmsso6wUzsSst0iW0omTK458KvwtELg/6mzP6DqI="
         }
       ]
     },
@@ -14505,7 +15234,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "49752"
+          "Value": "102044"
         },
         {
           "Name": "Content-Type",
@@ -14513,11 +15242,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fkSrhgbS4WF0ryKm9qM0bzCgLq/QYbjTGHcaIXlky/M=\""
+          "Value": "\"voexzqZJ2oPVPNrNaY+fRJXxaNwR7PWgVRL6Xi+O4UU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:17:39 GMT"
+          "Value": "Mon, 21 Apr 2025 20:08:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14527,18 +15256,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-fkSrhgbS4WF0ryKm9qM0bzCgLq/QYbjTGHcaIXlky/M="
+          "Value": "sha256-voexzqZJ2oPVPNrNaY+fRJXxaNwR7PWgVRL6Xi+O4UU="
         }
       ]
     },
     {
       "Route": "_framework/dbs2webapp.Client.pdb",
-      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\adagito2ef-m61iusu7gb.gz",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\adagito2ef-yc3prg6cp4.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000026167735"
+          "Quality": "0.000012572291"
         }
       ],
       "ResponseHeaders": [
@@ -14548,15 +15277,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "38214"
+          "Value": "79539"
         },
         {
           "Name": "ETag",
-          "Value": "\"29L2ISGef2YUPggkthH1sCA9CrZVjXwpwSa2z4/sl+M=\""
+          "Value": "\"UuH1zBtGZyK6G/yUCP7TtQMzopNJwoz9jx8T0Zk5p+o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:17:40 GMT"
+          "Value": "Mon, 21 Apr 2025 20:08:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14576,19 +15305,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"fkSrhgbS4WF0ryKm9qM0bzCgLq/QYbjTGHcaIXlky/M=\""
+          "Value": "W/\"voexzqZJ2oPVPNrNaY+fRJXxaNwR7PWgVRL6Xi+O4UU=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-fkSrhgbS4WF0ryKm9qM0bzCgLq/QYbjTGHcaIXlky/M="
+          "Value": "sha256-voexzqZJ2oPVPNrNaY+fRJXxaNwR7PWgVRL6Xi+O4UU="
         }
       ]
     },
     {
       "Route": "_framework/dbs2webapp.Client.pdb.gz",
-      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\adagito2ef-m61iusu7gb.gz",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\adagito2ef-yc3prg6cp4.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14597,7 +15326,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "38214"
+          "Value": "79539"
         },
         {
           "Name": "Content-Type",
@@ -14605,11 +15334,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"29L2ISGef2YUPggkthH1sCA9CrZVjXwpwSa2z4/sl+M=\""
+          "Value": "\"UuH1zBtGZyK6G/yUCP7TtQMzopNJwoz9jx8T0Zk5p+o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:17:40 GMT"
+          "Value": "Mon, 21 Apr 2025 20:08:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14627,7 +15356,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-29L2ISGef2YUPggkthH1sCA9CrZVjXwpwSa2z4/sl+M="
+          "Value": "sha256-UuH1zBtGZyK6G/yUCP7TtQMzopNJwoz9jx8T0Zk5p+o="
         }
       ]
     },
@@ -14642,7 +15371,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "56085"
+          "Value": "124693"
         },
         {
           "Name": "Content-Type",
@@ -14650,11 +15379,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RH/z5F3pS+2ab5OX7SRgZt3bM+C6DcAZLw1DMEpnq5M=\""
+          "Value": "\"mKgeC/Vcnu++6e7qeRDp0qzke4336X+24Z7f7YIxUY8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:17:39 GMT"
+          "Value": "Mon, 21 Apr 2025 20:08:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14664,18 +15393,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-RH/z5F3pS+2ab5OX7SRgZt3bM+C6DcAZLw1DMEpnq5M="
+          "Value": "sha256-mKgeC/Vcnu++6e7qeRDp0qzke4336X+24Z7f7YIxUY8="
         }
       ]
     },
     {
       "Route": "_framework/dbs2webapp.Client.wasm",
-      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\2zidx73m1u-grmmgplc5z.gz",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\2zidx73m1u-0iuw19l5l6.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000050903538"
+          "Quality": "0.000023390719"
         }
       ],
       "ResponseHeaders": [
@@ -14685,15 +15414,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19644"
+          "Value": "42751"
         },
         {
           "Name": "ETag",
-          "Value": "\"wg3ljXY4PLsPjSOfRq6mJswfXRXoBbSPxjYsxwFsDvE=\""
+          "Value": "\"0hbzmsso6wUzsSst0iW0omTK458KvwtELg/6mzP6DqI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:17:40 GMT"
+          "Value": "Mon, 21 Apr 2025 20:08:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14713,19 +15442,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"RH/z5F3pS+2ab5OX7SRgZt3bM+C6DcAZLw1DMEpnq5M=\""
+          "Value": "W/\"mKgeC/Vcnu++6e7qeRDp0qzke4336X+24Z7f7YIxUY8=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-RH/z5F3pS+2ab5OX7SRgZt3bM+C6DcAZLw1DMEpnq5M="
+          "Value": "sha256-mKgeC/Vcnu++6e7qeRDp0qzke4336X+24Z7f7YIxUY8="
         }
       ]
     },
     {
       "Route": "_framework/dbs2webapp.Client.wasm.gz",
-      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\2zidx73m1u-grmmgplc5z.gz",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\2zidx73m1u-0iuw19l5l6.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14734,7 +15463,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19644"
+          "Value": "42751"
         },
         {
           "Name": "Content-Type",
@@ -14742,11 +15471,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wg3ljXY4PLsPjSOfRq6mJswfXRXoBbSPxjYsxwFsDvE=\""
+          "Value": "\"0hbzmsso6wUzsSst0iW0omTK458KvwtELg/6mzP6DqI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:17:40 GMT"
+          "Value": "Mon, 21 Apr 2025 20:08:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14764,7 +15493,168 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-wg3ljXY4PLsPjSOfRq6mJswfXRXoBbSPxjYsxwFsDvE="
+          "Value": "sha256-0hbzmsso6wUzsSst0iW0omTK458KvwtELg/6mzP6DqI="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/dbs2webapp.Client.yc3prg6cp4.pdb",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dbs2webapp.Client.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "102044"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"voexzqZJ2oPVPNrNaY+fRJXxaNwR7PWgVRL6Xi+O4UU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 20:08:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yc3prg6cp4"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/dbs2webapp.Client.pdb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-voexzqZJ2oPVPNrNaY+fRJXxaNwR7PWgVRL6Xi+O4UU="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/dbs2webapp.Client.yc3prg6cp4.pdb",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\adagito2ef-yc3prg6cp4.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000012572291"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "79539"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UuH1zBtGZyK6G/yUCP7TtQMzopNJwoz9jx8T0Zk5p+o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 20:08:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"voexzqZJ2oPVPNrNaY+fRJXxaNwR7PWgVRL6Xi+O4UU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yc3prg6cp4"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/dbs2webapp.Client.pdb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-voexzqZJ2oPVPNrNaY+fRJXxaNwR7PWgVRL6Xi+O4UU="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/dbs2webapp.Client.yc3prg6cp4.pdb.gz",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\adagito2ef-yc3prg6cp4.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "79539"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UuH1zBtGZyK6G/yUCP7TtQMzopNJwoz9jx8T0Zk5p+o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 20:08:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yc3prg6cp4"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/dbs2webapp.Client.pdb.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UuH1zBtGZyK6G/yUCP7TtQMzopNJwoz9jx8T0Zk5p+o="
         }
       ]
     },
@@ -15365,168 +16255,7 @@
       ]
     },
     {
-      "Route": "_framework/dbs2webapp.Infrastructure.7lab0ohc11.wasm",
-      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dbs2webapp.Infrastructure.wasm",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "88341"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"pYXIp/KQTVeQK80ot89VHbwVE0XOG7EZ4vczMcMw6UM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:17:39 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "7lab0ohc11"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/dbs2webapp.Infrastructure.wasm"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-pYXIp/KQTVeQK80ot89VHbwVE0XOG7EZ4vczMcMw6UM="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/dbs2webapp.Infrastructure.7lab0ohc11.wasm",
-      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\rsh7p2096f-7lab0ohc11.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000038752180"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "25804"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"7iMJq+1DvtacIaJgRFEj8wu7agMlMFwOZQ+F2BpwNKw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:17:40 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"pYXIp/KQTVeQK80ot89VHbwVE0XOG7EZ4vczMcMw6UM=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "7lab0ohc11"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/dbs2webapp.Infrastructure.wasm"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-pYXIp/KQTVeQK80ot89VHbwVE0XOG7EZ4vczMcMw6UM="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/dbs2webapp.Infrastructure.7lab0ohc11.wasm.gz",
-      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\rsh7p2096f-7lab0ohc11.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "25804"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"7iMJq+1DvtacIaJgRFEj8wu7agMlMFwOZQ+F2BpwNKw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:17:40 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "7lab0ohc11"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/dbs2webapp.Infrastructure.wasm.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-7iMJq+1DvtacIaJgRFEj8wu7agMlMFwOZQ+F2BpwNKw="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/dbs2webapp.Infrastructure.l2ru4rrj29.pdb",
+      "Route": "_framework/dbs2webapp.Infrastructure.pdb",
       "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dbs2webapp.Infrastructure.pdb",
       "Selectors": [],
       "ResponseHeaders": [
@@ -15536,7 +16265,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "23536"
+          "Value": "23640"
         },
         {
           "Name": "Content-Type",
@@ -15544,40 +16273,32 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"jSQHFW8YmgZnB4ljZmg2wPbeZYHLqO1zixp2ongFSJ8=\""
+          "Value": "\"Zqx+9Byknc39Y+W88V+ke0cd2MVM1zOwCIDBVsVuw+k=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:14:23 GMT"
+          "Value": "Mon, 21 Apr 2025 18:34:05 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "l2ru4rrj29"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/dbs2webapp.Infrastructure.pdb"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-jSQHFW8YmgZnB4ljZmg2wPbeZYHLqO1zixp2ongFSJ8="
+          "Value": "sha256-Zqx+9Byknc39Y+W88V+ke0cd2MVM1zOwCIDBVsVuw+k="
         }
       ]
     },
     {
-      "Route": "_framework/dbs2webapp.Infrastructure.l2ru4rrj29.pdb",
-      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\c73s7yd7o0-l2ru4rrj29.gz",
+      "Route": "_framework/dbs2webapp.Infrastructure.pdb",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\c73s7yd7o0-qgc2g2h12s.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000085866392"
+          "Quality": "0.000085667780"
         }
       ],
       "ResponseHeaders": [
@@ -15587,19 +16308,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "11645"
+          "Value": "11672"
         },
         {
           "Name": "ETag",
-          "Value": "\"rroJ4F9k4EPUGrx+xoy631b6wR39HKXeOGqkcBwUbvs=\""
+          "Value": "\"Z7XqKjdbbuCFY0HoE0OcE6mWSp4rkBwQNjz2vlwYL8s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:17:40 GMT"
+          "Value": "Mon, 21 Apr 2025 18:34:07 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -15615,27 +16336,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"jSQHFW8YmgZnB4ljZmg2wPbeZYHLqO1zixp2ongFSJ8=\""
+          "Value": "W/\"Zqx+9Byknc39Y+W88V+ke0cd2MVM1zOwCIDBVsVuw+k=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "l2ru4rrj29"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/dbs2webapp.Infrastructure.pdb"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-jSQHFW8YmgZnB4ljZmg2wPbeZYHLqO1zixp2ongFSJ8="
+          "Value": "sha256-Zqx+9Byknc39Y+W88V+ke0cd2MVM1zOwCIDBVsVuw+k="
         }
       ]
     },
     {
-      "Route": "_framework/dbs2webapp.Infrastructure.l2ru4rrj29.pdb.gz",
-      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\c73s7yd7o0-l2ru4rrj29.gz",
+      "Route": "_framework/dbs2webapp.Infrastructure.pdb.gz",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\c73s7yd7o0-qgc2g2h12s.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -15644,7 +16357,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "11645"
+          "Value": "11672"
         },
         {
           "Name": "Content-Type",
@@ -15652,11 +16365,164 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"rroJ4F9k4EPUGrx+xoy631b6wR39HKXeOGqkcBwUbvs=\""
+          "Value": "\"Z7XqKjdbbuCFY0HoE0OcE6mWSp4rkBwQNjz2vlwYL8s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:17:40 GMT"
+          "Value": "Mon, 21 Apr 2025 18:34:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Z7XqKjdbbuCFY0HoE0OcE6mWSp4rkBwQNjz2vlwYL8s="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/dbs2webapp.Infrastructure.qgc2g2h12s.pdb",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dbs2webapp.Infrastructure.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23640"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Zqx+9Byknc39Y+W88V+ke0cd2MVM1zOwCIDBVsVuw+k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 18:34:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qgc2g2h12s"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/dbs2webapp.Infrastructure.pdb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Zqx+9Byknc39Y+W88V+ke0cd2MVM1zOwCIDBVsVuw+k="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/dbs2webapp.Infrastructure.qgc2g2h12s.pdb",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\c73s7yd7o0-qgc2g2h12s.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000085667780"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11672"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Z7XqKjdbbuCFY0HoE0OcE6mWSp4rkBwQNjz2vlwYL8s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 18:34:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Zqx+9Byknc39Y+W88V+ke0cd2MVM1zOwCIDBVsVuw+k=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qgc2g2h12s"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/dbs2webapp.Infrastructure.pdb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Zqx+9Byknc39Y+W88V+ke0cd2MVM1zOwCIDBVsVuw+k="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/dbs2webapp.Infrastructure.qgc2g2h12s.pdb.gz",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\c73s7yd7o0-qgc2g2h12s.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11672"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Z7XqKjdbbuCFY0HoE0OcE6mWSp4rkBwQNjz2vlwYL8s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 18:34:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15674,7 +16540,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "l2ru4rrj29"
+          "Value": "qgc2g2h12s"
         },
         {
           "Name": "label",
@@ -15682,144 +16548,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-rroJ4F9k4EPUGrx+xoy631b6wR39HKXeOGqkcBwUbvs="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/dbs2webapp.Infrastructure.pdb",
-      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dbs2webapp.Infrastructure.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "23536"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"jSQHFW8YmgZnB4ljZmg2wPbeZYHLqO1zixp2ongFSJ8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:14:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-jSQHFW8YmgZnB4ljZmg2wPbeZYHLqO1zixp2ongFSJ8="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/dbs2webapp.Infrastructure.pdb",
-      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\c73s7yd7o0-l2ru4rrj29.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000085866392"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11645"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"rroJ4F9k4EPUGrx+xoy631b6wR39HKXeOGqkcBwUbvs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:17:40 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"jSQHFW8YmgZnB4ljZmg2wPbeZYHLqO1zixp2ongFSJ8=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-jSQHFW8YmgZnB4ljZmg2wPbeZYHLqO1zixp2ongFSJ8="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/dbs2webapp.Infrastructure.pdb.gz",
-      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\c73s7yd7o0-l2ru4rrj29.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11645"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"rroJ4F9k4EPUGrx+xoy631b6wR39HKXeOGqkcBwUbvs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:17:40 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-rroJ4F9k4EPUGrx+xoy631b6wR39HKXeOGqkcBwUbvs="
+          "Value": "sha256-Z7XqKjdbbuCFY0HoE0OcE6mWSp4rkBwQNjz2vlwYL8s="
         }
       ]
     },
@@ -15842,11 +16571,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pYXIp/KQTVeQK80ot89VHbwVE0XOG7EZ4vczMcMw6UM=\""
+          "Value": "\"d2DOb/311LKB1XuvlR3QcUGjg3ABAGv1gixYiQpSEAc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:17:39 GMT"
+          "Value": "Mon, 21 Apr 2025 18:18:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15856,18 +16585,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pYXIp/KQTVeQK80ot89VHbwVE0XOG7EZ4vczMcMw6UM="
+          "Value": "sha256-d2DOb/311LKB1XuvlR3QcUGjg3ABAGv1gixYiQpSEAc="
         }
       ]
     },
     {
       "Route": "_framework/dbs2webapp.Infrastructure.wasm",
-      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\rsh7p2096f-7lab0ohc11.gz",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\rsh7p2096f-xa8emmtvzy.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000038752180"
+          "Quality": "0.000038654813"
         }
       ],
       "ResponseHeaders": [
@@ -15877,15 +16606,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "25804"
+          "Value": "25869"
         },
         {
           "Name": "ETag",
-          "Value": "\"7iMJq+1DvtacIaJgRFEj8wu7agMlMFwOZQ+F2BpwNKw=\""
+          "Value": "\"Y082rXPsYVm8Rs9Ab+WbqFVPK/w7YOGEPHqqF0heZLw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:17:40 GMT"
+          "Value": "Mon, 21 Apr 2025 18:18:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15905,19 +16634,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"pYXIp/KQTVeQK80ot89VHbwVE0XOG7EZ4vczMcMw6UM=\""
+          "Value": "W/\"d2DOb/311LKB1XuvlR3QcUGjg3ABAGv1gixYiQpSEAc=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pYXIp/KQTVeQK80ot89VHbwVE0XOG7EZ4vczMcMw6UM="
+          "Value": "sha256-d2DOb/311LKB1XuvlR3QcUGjg3ABAGv1gixYiQpSEAc="
         }
       ]
     },
     {
       "Route": "_framework/dbs2webapp.Infrastructure.wasm.gz",
-      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\rsh7p2096f-7lab0ohc11.gz",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\rsh7p2096f-xa8emmtvzy.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -15926,7 +16655,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "25804"
+          "Value": "25869"
         },
         {
           "Name": "Content-Type",
@@ -15934,11 +16663,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"7iMJq+1DvtacIaJgRFEj8wu7agMlMFwOZQ+F2BpwNKw=\""
+          "Value": "\"Y082rXPsYVm8Rs9Ab+WbqFVPK/w7YOGEPHqqF0heZLw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 16:17:40 GMT"
+          "Value": "Mon, 21 Apr 2025 18:18:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15956,7 +16685,168 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-7iMJq+1DvtacIaJgRFEj8wu7agMlMFwOZQ+F2BpwNKw="
+          "Value": "sha256-Y082rXPsYVm8Rs9Ab+WbqFVPK/w7YOGEPHqqF0heZLw="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/dbs2webapp.Infrastructure.xa8emmtvzy.wasm",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dbs2webapp.Infrastructure.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "88341"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d2DOb/311LKB1XuvlR3QcUGjg3ABAGv1gixYiQpSEAc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 18:18:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xa8emmtvzy"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/dbs2webapp.Infrastructure.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-d2DOb/311LKB1XuvlR3QcUGjg3ABAGv1gixYiQpSEAc="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/dbs2webapp.Infrastructure.xa8emmtvzy.wasm",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\rsh7p2096f-xa8emmtvzy.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000038654813"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25869"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Y082rXPsYVm8Rs9Ab+WbqFVPK/w7YOGEPHqqF0heZLw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 18:18:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"d2DOb/311LKB1XuvlR3QcUGjg3ABAGv1gixYiQpSEAc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xa8emmtvzy"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/dbs2webapp.Infrastructure.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-d2DOb/311LKB1XuvlR3QcUGjg3ABAGv1gixYiQpSEAc="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/dbs2webapp.Infrastructure.xa8emmtvzy.wasm.gz",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\rsh7p2096f-xa8emmtvzy.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25869"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Y082rXPsYVm8Rs9Ab+WbqFVPK/w7YOGEPHqqF0heZLw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 18:18:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xa8emmtvzy"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/dbs2webapp.Infrastructure.wasm.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Y082rXPsYVm8Rs9Ab+WbqFVPK/w7YOGEPHqqF0heZLw="
         }
       ]
     },
@@ -18937,6 +19827,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-f0A9dZQw+3NdnQlBAKrFJAKYX3NE+GJUbNy7zbvg6HY="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.AspNetCore.Components.Authorization.rrohwkxxx2.wasm",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22293"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WShaslVUH4uKLh3hXazSn9XwD8JhJmLeMj4QyajtDhc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 16:07:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rrohwkxxx2"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Microsoft.AspNetCore.Components.Authorization.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WShaslVUH4uKLh3hXazSn9XwD8JhJmLeMj4QyajtDhc="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.AspNetCore.Components.Authorization.rrohwkxxx2.wasm",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\9yzvpmwhdw-rrohwkxxx2.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000101337657"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9867"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QjG7VabQ9xnK14p+TpONF3DlIlbaareumXwMOureIjc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 16:07:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"WShaslVUH4uKLh3hXazSn9XwD8JhJmLeMj4QyajtDhc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rrohwkxxx2"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Microsoft.AspNetCore.Components.Authorization.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WShaslVUH4uKLh3hXazSn9XwD8JhJmLeMj4QyajtDhc="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.AspNetCore.Components.Authorization.rrohwkxxx2.wasm.gz",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\9yzvpmwhdw-rrohwkxxx2.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9867"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QjG7VabQ9xnK14p+TpONF3DlIlbaareumXwMOureIjc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 16:07:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rrohwkxxx2"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Microsoft.AspNetCore.Components.Authorization.wasm.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QjG7VabQ9xnK14p+TpONF3DlIlbaareumXwMOureIjc="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.AspNetCore.Components.Authorization.wasm",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22293"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WShaslVUH4uKLh3hXazSn9XwD8JhJmLeMj4QyajtDhc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 16:07:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WShaslVUH4uKLh3hXazSn9XwD8JhJmLeMj4QyajtDhc="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.AspNetCore.Components.Authorization.wasm",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\9yzvpmwhdw-rrohwkxxx2.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000101337657"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9867"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QjG7VabQ9xnK14p+TpONF3DlIlbaareumXwMOureIjc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 16:07:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"WShaslVUH4uKLh3hXazSn9XwD8JhJmLeMj4QyajtDhc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WShaslVUH4uKLh3hXazSn9XwD8JhJmLeMj4QyajtDhc="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.AspNetCore.Components.Authorization.wasm.gz",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\9yzvpmwhdw-rrohwkxxx2.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9867"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QjG7VabQ9xnK14p+TpONF3DlIlbaareumXwMOureIjc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 16:07:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QjG7VabQ9xnK14p+TpONF3DlIlbaareumXwMOureIjc="
         }
       ]
     },
@@ -26093,6 +27281,602 @@
       ]
     },
     {
+      "Route": "_framework/Microsoft.Extensions.Diagnostics.Abstractions.c9bmyvcsky.wasm",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.Extensions.Diagnostics.Abstractions.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "21269"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gOAgDZqFIP4yzKNPRiHDHY+1bIVn6KmMs7z9TdlGA90=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 17:39:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c9bmyvcsky"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Microsoft.Extensions.Diagnostics.Abstractions.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gOAgDZqFIP4yzKNPRiHDHY+1bIVn6KmMs7z9TdlGA90="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.Extensions.Diagnostics.Abstractions.c9bmyvcsky.wasm",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\vpp2jzfx7z-c9bmyvcsky.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000113908190"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8778"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7ZVyE73S9N+lbH0679zUuQqL4CHJ5Pm5CqyGv59cTs0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 17:39:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"gOAgDZqFIP4yzKNPRiHDHY+1bIVn6KmMs7z9TdlGA90=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c9bmyvcsky"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Microsoft.Extensions.Diagnostics.Abstractions.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gOAgDZqFIP4yzKNPRiHDHY+1bIVn6KmMs7z9TdlGA90="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.Extensions.Diagnostics.Abstractions.c9bmyvcsky.wasm.gz",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\vpp2jzfx7z-c9bmyvcsky.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8778"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7ZVyE73S9N+lbH0679zUuQqL4CHJ5Pm5CqyGv59cTs0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 17:39:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c9bmyvcsky"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Microsoft.Extensions.Diagnostics.Abstractions.wasm.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7ZVyE73S9N+lbH0679zUuQqL4CHJ5Pm5CqyGv59cTs0="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.Extensions.Diagnostics.Abstractions.wasm",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.Extensions.Diagnostics.Abstractions.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "21269"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gOAgDZqFIP4yzKNPRiHDHY+1bIVn6KmMs7z9TdlGA90=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 17:39:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gOAgDZqFIP4yzKNPRiHDHY+1bIVn6KmMs7z9TdlGA90="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.Extensions.Diagnostics.Abstractions.wasm",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\vpp2jzfx7z-c9bmyvcsky.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000113908190"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8778"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7ZVyE73S9N+lbH0679zUuQqL4CHJ5Pm5CqyGv59cTs0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 17:39:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"gOAgDZqFIP4yzKNPRiHDHY+1bIVn6KmMs7z9TdlGA90=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gOAgDZqFIP4yzKNPRiHDHY+1bIVn6KmMs7z9TdlGA90="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.Extensions.Diagnostics.Abstractions.wasm.gz",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\vpp2jzfx7z-c9bmyvcsky.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8778"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7ZVyE73S9N+lbH0679zUuQqL4CHJ5Pm5CqyGv59cTs0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 17:39:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7ZVyE73S9N+lbH0679zUuQqL4CHJ5Pm5CqyGv59cTs0="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.Extensions.Diagnostics.uwkkfuzktm.wasm",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.Extensions.Diagnostics.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26389"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IoLwBSPt+bWr4eGsg2DsqsYvvc8BzTBGq50pfg/u2KE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 17:39:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uwkkfuzktm"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Microsoft.Extensions.Diagnostics.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IoLwBSPt+bWr4eGsg2DsqsYvvc8BzTBGq50pfg/u2KE="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.Extensions.Diagnostics.uwkkfuzktm.wasm",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\0ci9gcvad1-uwkkfuzktm.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000081030711"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12340"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9T9VHI/A57COXBzSf9yRoKwgSUgYc/3Rv/qfA5/27FE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 17:39:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"IoLwBSPt+bWr4eGsg2DsqsYvvc8BzTBGq50pfg/u2KE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uwkkfuzktm"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Microsoft.Extensions.Diagnostics.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IoLwBSPt+bWr4eGsg2DsqsYvvc8BzTBGq50pfg/u2KE="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.Extensions.Diagnostics.uwkkfuzktm.wasm.gz",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\0ci9gcvad1-uwkkfuzktm.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12340"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9T9VHI/A57COXBzSf9yRoKwgSUgYc/3Rv/qfA5/27FE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 17:39:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uwkkfuzktm"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Microsoft.Extensions.Diagnostics.wasm.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9T9VHI/A57COXBzSf9yRoKwgSUgYc/3Rv/qfA5/27FE="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.Extensions.Diagnostics.wasm",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.Extensions.Diagnostics.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26389"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IoLwBSPt+bWr4eGsg2DsqsYvvc8BzTBGq50pfg/u2KE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 17:39:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IoLwBSPt+bWr4eGsg2DsqsYvvc8BzTBGq50pfg/u2KE="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.Extensions.Diagnostics.wasm",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\0ci9gcvad1-uwkkfuzktm.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000081030711"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12340"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9T9VHI/A57COXBzSf9yRoKwgSUgYc/3Rv/qfA5/27FE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 17:39:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"IoLwBSPt+bWr4eGsg2DsqsYvvc8BzTBGq50pfg/u2KE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IoLwBSPt+bWr4eGsg2DsqsYvvc8BzTBGq50pfg/u2KE="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.Extensions.Diagnostics.wasm.gz",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\0ci9gcvad1-uwkkfuzktm.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12340"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9T9VHI/A57COXBzSf9yRoKwgSUgYc/3Rv/qfA5/27FE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 17:39:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9T9VHI/A57COXBzSf9yRoKwgSUgYc/3Rv/qfA5/27FE="
+        }
+      ]
+    },
+    {
       "Route": "_framework/Microsoft.Extensions.FileProviders.Abstractions.tkb8mck29g.wasm",
       "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.Extensions.FileProviders.Abstractions.wasm",
       "Selectors": [],
@@ -26983,6 +28767,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-zwtzPlUUlARkWyZMHRVWU9VRISUSXVo0ZOrsK9YNETU="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.Extensions.Http.km5diny1k4.wasm",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.Extensions.Http.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "82197"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RDRSZfgSj5nBaq5QnxLaqMzp8SKSyNN0mxLwbXBNKCY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 17:39:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "km5diny1k4"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Microsoft.Extensions.Http.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RDRSZfgSj5nBaq5QnxLaqMzp8SKSyNN0mxLwbXBNKCY="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.Extensions.Http.km5diny1k4.wasm",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\xc1n894g10-km5diny1k4.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000029722098"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33644"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tJ3CXD0MwSuy1A0YntpoShNVgV3oMW9TArwAxWfmAXM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 17:39:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"RDRSZfgSj5nBaq5QnxLaqMzp8SKSyNN0mxLwbXBNKCY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "km5diny1k4"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Microsoft.Extensions.Http.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RDRSZfgSj5nBaq5QnxLaqMzp8SKSyNN0mxLwbXBNKCY="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.Extensions.Http.km5diny1k4.wasm.gz",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\xc1n894g10-km5diny1k4.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33644"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tJ3CXD0MwSuy1A0YntpoShNVgV3oMW9TArwAxWfmAXM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 17:39:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "km5diny1k4"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Microsoft.Extensions.Http.wasm.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tJ3CXD0MwSuy1A0YntpoShNVgV3oMW9TArwAxWfmAXM="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.Extensions.Http.wasm",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.Extensions.Http.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "82197"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RDRSZfgSj5nBaq5QnxLaqMzp8SKSyNN0mxLwbXBNKCY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 17:39:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RDRSZfgSj5nBaq5QnxLaqMzp8SKSyNN0mxLwbXBNKCY="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.Extensions.Http.wasm",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\xc1n894g10-km5diny1k4.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000029722098"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33644"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tJ3CXD0MwSuy1A0YntpoShNVgV3oMW9TArwAxWfmAXM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 17:39:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"RDRSZfgSj5nBaq5QnxLaqMzp8SKSyNN0mxLwbXBNKCY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RDRSZfgSj5nBaq5QnxLaqMzp8SKSyNN0mxLwbXBNKCY="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.Extensions.Http.wasm.gz",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\xc1n894g10-km5diny1k4.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33644"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tJ3CXD0MwSuy1A0YntpoShNVgV3oMW9TArwAxWfmAXM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 17:39:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tJ3CXD0MwSuy1A0YntpoShNVgV3oMW9TArwAxWfmAXM="
         }
       ]
     },
@@ -28175,6 +30257,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-rnlWDDiF71n6L7Y+C5Sf59TbEVNwOf/5nMmSlyXaUng="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.Extensions.Options.ConfigurationExtensions.e34jhrwynt.wasm",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.ConfigurationExtensions.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12053"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ehjyGp2amBo1B9vQ3//ywaKCwMu83SYMV7YIilU6G9k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 17:39:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e34jhrwynt"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Microsoft.Extensions.Options.ConfigurationExtensions.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ehjyGp2amBo1B9vQ3//ywaKCwMu83SYMV7YIilU6G9k="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.Extensions.Options.ConfigurationExtensions.e34jhrwynt.wasm",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\4fv9b5eoy6-e34jhrwynt.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000183621006"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5445"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cpHR3lENeci/CXbiQw38nN8tuFHEuX9tC5jxDx1LuEI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 17:39:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ehjyGp2amBo1B9vQ3//ywaKCwMu83SYMV7YIilU6G9k=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e34jhrwynt"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Microsoft.Extensions.Options.ConfigurationExtensions.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ehjyGp2amBo1B9vQ3//ywaKCwMu83SYMV7YIilU6G9k="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.Extensions.Options.ConfigurationExtensions.e34jhrwynt.wasm.gz",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\4fv9b5eoy6-e34jhrwynt.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5445"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cpHR3lENeci/CXbiQw38nN8tuFHEuX9tC5jxDx1LuEI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 17:39:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e34jhrwynt"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Microsoft.Extensions.Options.ConfigurationExtensions.wasm.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cpHR3lENeci/CXbiQw38nN8tuFHEuX9tC5jxDx1LuEI="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.Extensions.Options.ConfigurationExtensions.wasm",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.ConfigurationExtensions.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12053"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ehjyGp2amBo1B9vQ3//ywaKCwMu83SYMV7YIilU6G9k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 17:39:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ehjyGp2amBo1B9vQ3//ywaKCwMu83SYMV7YIilU6G9k="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.Extensions.Options.ConfigurationExtensions.wasm",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\4fv9b5eoy6-e34jhrwynt.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000183621006"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5445"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cpHR3lENeci/CXbiQw38nN8tuFHEuX9tC5jxDx1LuEI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 17:39:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ehjyGp2amBo1B9vQ3//ywaKCwMu83SYMV7YIilU6G9k=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ehjyGp2amBo1B9vQ3//ywaKCwMu83SYMV7YIilU6G9k="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.Extensions.Options.ConfigurationExtensions.wasm.gz",
+      "AssetFile": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\obj\\Debug\\net9.0\\compressed\\4fv9b5eoy6-e34jhrwynt.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5445"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cpHR3lENeci/CXbiQw38nN8tuFHEuX9tC5jxDx1LuEI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 17:39:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cpHR3lENeci/CXbiQw38nN8tuFHEuX9tC5jxDx1LuEI="
         }
       ]
     },
@@ -85121,7 +87501,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 18 Apr 2025 17:15:49 GMT"
+          "Value": "Mon, 21 Apr 2025 19:18:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -85182,7 +87562,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 18 Apr 2025 17:15:49 GMT"
+          "Value": "Mon, 21 Apr 2025 19:18:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -85227,7 +87607,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 18 Apr 2025 17:15:49 GMT"
+          "Value": "Mon, 21 Apr 2025 19:18:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -85282,7 +87662,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 18 Apr 2025 17:15:49 GMT"
+          "Value": "Mon, 21 Apr 2025 19:18:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -85335,7 +87715,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 18 Apr 2025 17:15:49 GMT"
+          "Value": "Mon, 21 Apr 2025 19:18:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -85372,7 +87752,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 18 Apr 2025 17:15:49 GMT"
+          "Value": "Mon, 21 Apr 2025 19:18:34 GMT"
         },
         {
           "Name": "Cache-Control",

@@ -1,0 +1,90 @@
+﻿@page "/chapters/learn/{ChapterId:int}"
+@using Microsoft.AspNetCore.Authorization
+@using dbs2webapp.Application.DTOs
+@using dbs2webapp.Application.DTOs.Tests
+@attribute [Authorize(Roles = "Student")]
+@inject HttpClient Http
+@inject NavigationManager Nav
+
+<h3 class="mb-3">@chapter?.Name</h3>
+
+@if (isLoading)
+{
+    <div>Loading chapter…</div>
+}
+else if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="alert alert-danger">@errorMessage</div>
+}
+else if (chapter == null)
+{
+    <div class="alert alert-warning">Chapter not found.</div>
+}
+else
+{
+    <p class="text-muted">@chapter.Description</p>
+    <div class="chapter-content mb-4">
+        @((MarkupString)chapter.Content)
+    </div>
+
+    <h5 class="mb-2">Available Tests</h5>
+    @if (tests == null)
+    {
+        <div>Loading tests…</div>
+    }
+    else if (!tests.Any())
+    {
+        <div class="text-muted">No tests available for this chapter.</div>
+    }
+    else
+    {
+        <ul class="list-group">
+            @foreach (var test in tests)
+            {
+                <li class="list-group-item d-flex justify-content-between align-items-center"
+                    @key="test.Id">
+                    @test.Title
+                    <button class="btn btn-success btn-sm"
+                            @onclick="@(() => Nav.NavigateTo($"/tests/take/{test.Id}"))">
+                        Take Test
+                    </button>
+                </li>
+            }
+        </ul>
+    }
+
+    <button class="btn btn-secondary mt-4"
+            @onclick="@(() => Nav.NavigateTo($"/chapters/{chapter.CourseId}"))">
+        ← Back to Chapters
+    </button>
+}
+
+@code {
+    [Parameter] public int ChapterId { get; set; }
+
+    private ChapterDto? chapter;
+    private List<TestDto>? tests;
+    private bool isLoading = true;
+    private string? errorMessage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            chapter = await Http.GetFromJsonAsync<ChapterDto>(
+                $"api/chapters/{ChapterId}");
+            tests = await Http.GetFromJsonAsync<List<TestDto>>(
+                $"api/chapters/{ChapterId}/tests")
+                ?? new List<TestDto>();
+        }
+        catch (Exception ex)
+        {
+            errorMessage = ex.Message;
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+}
+\

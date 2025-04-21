@@ -1,4 +1,4 @@
-﻿using Application.DTOs;
+﻿using dbs2webapp.Application.DTOs.Auth;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;

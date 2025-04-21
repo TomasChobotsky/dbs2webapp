@@ -1,7 +1,10 @@
 ﻿@page "/courses/create"
+@attribute [Authorize(Roles = "Teacher,Admin")]
+
 @inject HttpClient Http
 @inject NavigationManager Navigation
-@using Application.DTOs
+@using Microsoft.AspNetCore.Authorization
+@using dbs2webapp.Application.DTOs
 
 <h3>Create New Course</h3>
 

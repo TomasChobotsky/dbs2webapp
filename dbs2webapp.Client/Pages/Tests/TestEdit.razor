@@ -1,14 +1,16 @@
-﻿@page "/tests/edit/{Id:int}"
-@using Application.DTOs
-@using Application.DTOs.Tests
+﻿@page "/tests/edit/{TestId:int}"
+@attribute [Authorize(Roles = "Teacher,Admin")]
+
 @inject HttpClient Http
 @inject NavigationManager Navigation
+@using Microsoft.AspNetCore.Authorization
+@using dbs2webapp.Application.DTOs.Tests
 
 <h3>Edit Test</h3>
 
 @if (isLoading)
 {
-    <p>Loading test...</p>
+    <div class="text-center my-5">Loading…</div>
 }
 else if (!string.IsNullOrEmpty(errorMessage))
 {
@@ -16,7 +18,7 @@ else if (!string.IsNullOrEmpty(errorMessage))
 }
 else
 {
-    <EditForm Model="@testModel" OnValidSubmit="HandleValidSubmit">
+    <EditForm Model="testModel" OnValidSubmit="HandleValidSubmit">
         <DataAnnotationsValidator />
         <ValidationSummary />
 
@@ -25,49 +27,73 @@ else
             <InputText @bind-Value="testModel.Title" class="form-control" />
         </div>
 
-        @foreach (var question in testModel.Questions)
+        @for (int qIndex = 0; qIndex < testModel.Questions.Count; qIndex++)
         {
-            var qIndex = testModel.Questions.IndexOf(question);
-            <div class="card mb-4">
+            // capture for closures:
+            var qi = qIndex;
+            var question = testModel.Questions[qi];
+
+            <div class="card mb-4" @key="question">
                 <div class="card-body">
                     <div class="d-flex justify-content-between">
                         <label class="form-label">Question</label>
-                        <button class="btn btn-sm btn-danger" @onclick="() => RemoveQuestion(qIndex)">Remove Question</button>
+                        <button type="button"
+                                class="btn btn-sm btn-danger"
+                                @onclick="() => RemoveQuestion(qi)">
+                            Remove Question
+                        </button>
                     </div>
-                    <InputText @bind-Value="question.Content" class="form-control mb-2" />
+
+                    <InputText @bind-Value="testModel.Questions[qi].Content"
+                               class="form-control mb-2" />
 
                     <strong>Options:</strong>
-                    <InputRadioGroup @bind-Value="question.CorrectOptionIndex" class="d-block">
-                        @for (int i = 0; i < question.Options.Count; i++)
+                    <InputRadioGroup @bind-Value="question.CorrectOptionIndex">
+                        @for (int oIndex = 0; oIndex < question.Options.Count; oIndex++)
                         {
-                            <div class="input-group mb-2">
-                                <InputText @bind-Value="question.Options[i].Text" class="form-control" placeholder="Option text" />
+                            var oi = oIndex;
+                            var option = question.Options[oi];
+
+                            <div class="input-group mb-2" @key="option">
+                                <InputText @bind-Value="option.Text"
+                                           class="form-control"
+                                           placeholder="Option text" />
 
                                 <div class="input-group-text">
-                                    <InputRadio Value="@i" /> <label class="ms-1">Correct</label>
+                                    <InputRadio Value="@oi" />
+                                    <label class="ms-1">Correct</label>
                                 </div>
 
-                                <button class="btn btn-sm btn-outline-danger" @onclick="() => RemoveOption(qIndex, i)">Remove</button>
+                                <button type="button"
+                                        class="btn btn-sm btn-outline-danger"
+                                        @onclick="() => RemoveOption(qi, oi)">
+                                    Remove
+                                </button>
                             </div>
                         }
                     </InputRadioGroup>
 
-
-                    <button class="btn btn-sm btn-outline-primary" @onclick="() => AddOption(qIndex)">+ Add Option</button>
+                    <button type="button"
+                            class="btn btn-sm btn-outline-primary"
+                            @onclick="() => AddOption(qi)">
+                        + Add Option
+                    </button>
                 </div>
             </div>
         }
 
-        <button class="btn btn-secondary mb-3" @onclick="AddQuestion">+ Add Question</button>
+        <button type="button" class="btn btn-secondary mb-3" @onclick="AddQuestion">
+            + Add Question
+        </button>
         <br />
         <button type="submit" class="btn btn-primary">Save Changes</button>
     </EditForm>
 }
 
 @code {
-    [Parameter] public int Id { get; set; }
+    [Parameter] public int TestId { get; set; }
 
-    private TestDto testModel = new();
+    private CreateTestDto testModel = new();
     private bool isLoading = true;
     private string? errorMessage;
 
@@ -75,69 +101,75 @@ else
     {
         try
         {
-            var fetched = await Http.GetFromJsonAsync<TestDto>($"api/tests/{Id}");
-            if (fetched == null)
-                throw new Exception("Test not found.");
+            // Load the existing test (including its questions & options)
+            var dto = await Http.GetFromJsonAsync<CreateTestDto>($"api/tests/{TestId}");
+            if (dto == null)
+                throw new Exception("Test not found");
 
-            testModel = fetched;
+            testModel = dto;
         }
         catch (Exception ex)
         {
-            errorMessage = $"Failed to load test: {ex.Message}";
+            errorMessage = $"Could not load test: {ex.Message}";
         }
-        isLoading = false;
-    }
-
-    private async Task HandleValidSubmit()
-    {
-        var response = await Http.PutAsJsonAsync($"api/tests/{Id}", testModel);
-        if (response.IsSuccessStatusCode)
+        finally
         {
-            Navigation.NavigateTo("/teacher-panel");
-        }
-        else
-        {
-            var error = await response.Content.ReadAsStringAsync();
-            Console.Error.WriteLine($"Error saving test: {error}");
+            isLoading = false;
         }
     }
 
     private void AddQuestion()
     {
         testModel.Questions.Add(new QuestionDto
-        {
-            Content = "",
-            CorrectOptionIndex = 0,
-            Options = new List<OptionDto>
+            {
+                Content = "",
+                CorrectOptionIndex = 0,
+                Options = new List<OptionDto>
             {
                 new() { Text = "" },
                 new() { Text = "" },
                 new() { Text = "" },
                 new() { Text = "" }
             }
-        });
+            });
     }
 
-    private void RemoveQuestion(int index)
+    private void RemoveQuestion(int questionIndex)
     {
-        if (index >= 0 && index < testModel.Questions.Count)
-            testModel.Questions.RemoveAt(index);
+        if (questionIndex >= 0 && questionIndex < testModel.Questions.Count)
+            testModel.Questions.RemoveAt(questionIndex);
     }
 
     private void AddOption(int questionIndex)
     {
-        testModel.Questions[questionIndex].Options.Add(new OptionDto { Text = "" });
+        var opts = testModel.Questions[questionIndex].Options;
+        opts.Add(new OptionDto { Text = "" });
     }
 
     private void RemoveOption(int questionIndex, int optionIndex)
     {
-        var options = testModel.Questions[questionIndex].Options;
-        if (optionIndex >= 0 && optionIndex < options.Count)
+        var opts = testModel.Questions[questionIndex].Options;
+        if (optionIndex >= 0 && optionIndex < opts.Count)
         {
-            options.RemoveAt(optionIndex);
-
-            if (testModel.Questions[questionIndex].CorrectOptionIndex >= options.Count)
+            opts.RemoveAt(optionIndex);
+            // ensure CorrectOptionIndex stays valid
+            if (testModel.Questions[questionIndex].CorrectOptionIndex >= opts.Count)
                 testModel.Questions[questionIndex].CorrectOptionIndex = 0;
+        }
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        // PUT or PATCH to your update endpoint
+        var response = await Http.PutAsJsonAsync($"api/tests/{TestId}", testModel);
+        if (response.IsSuccessStatusCode)
+        {
+            Navigation.NavigateTo("/teacher-panel");
+        }
+        else
+        {
+            var err = await response.Content.ReadAsStringAsync();
+            errorMessage = $"Save failed: {err}";
         }
     }
 }

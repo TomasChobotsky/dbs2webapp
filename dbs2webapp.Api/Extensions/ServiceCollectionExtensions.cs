@@ -2,7 +2,6 @@
 using Infrastructure.Data;
 using Infrastructure.Mapping;
 using Infrastructure.Repositories;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace Api.Extensions

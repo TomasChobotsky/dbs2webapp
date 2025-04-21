@@ -1,0 +1,65 @@
+﻿@page "/chapters/{CourseId:int}"
+@using Microsoft.AspNetCore.Authorization
+@using dbs2webapp.Application.DTOs
+@attribute [Authorize]
+@inject HttpClient Http
+@inject NavigationManager Nav
+
+<h3 class="mb-4">Chapters</h3>
+
+@if (isLoading)
+{
+    <div>Loading chapters…</div>
+}
+else if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="alert alert-danger">@errorMessage</div>
+}
+else if (!chapters.Any())
+{
+    <div class="text-muted">No chapters available.</div>
+}
+else
+{
+    <div class="list-group">
+        @for (int i = 0; i < chapters.Count; i++)
+        {
+            var chapter = chapters[i];
+            <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+               @key="chapter"
+               @onclick="@(() => Nav.NavigateTo($"/chapters/learn/{chapter.Id}"))">
+                <div>
+                    <h5 class="mb-1">@chapter.Name</h5>
+                    <p class="mb-0 text-muted">@chapter.Description</p>
+                </div>
+                <span class="badge bg-primary rounded-pill">Learn</span>
+            </a>
+        }
+    </div>
+}
+
+@code {
+    [Parameter] public int CourseId { get; set; }
+
+    private List<ChapterDto> chapters = new();
+    private bool isLoading = true;
+    private string? errorMessage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            chapters = await Http.GetFromJsonAsync<List<ChapterDto>>(
+                $"api/courses/{CourseId}/chapters")
+                ?? new List<ChapterDto>();
+        }
+        catch (Exception ex)
+        {
+            errorMessage = ex.Message;
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+}
