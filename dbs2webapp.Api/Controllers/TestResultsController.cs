@@ -1,11 +1,12 @@
 ﻿using dbs2webapp.Application.DTOs.Tests;
 using Application.Interfaces;
 using AutoMapper;
-using Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using dbs2webapp.Application.DTOs.Tests.Result;
+using dbs2webapp.Domain.Entities;
 
 namespace Api.Controllers
 {
@@ -14,92 +15,117 @@ namespace Api.Controllers
     [Authorize(Roles = "Student")]
     public class TestResultsController : ControllerBase
     {
-        private readonly ITestResultRepository _testResultRepo;
+        private readonly IBaseRepository<TestResult> _testResultRepo;
+        private readonly IBaseRepository<Test> _testRepo;
         private readonly UserManager<IdentityUser> _userManager;
         private readonly IMapper _mapper;
 
         public TestResultsController(
-            ITestResultRepository testResultRepo,
+            IBaseRepository<TestResult> testResultRepo,
+            IBaseRepository<Test> testRepo,
             UserManager<IdentityUser> userManager,
             IMapper mapper)
         {
             _testResultRepo = testResultRepo;
+            _testRepo = testRepo;
             _userManager = userManager;
             _mapper = mapper;
         }
 
-        // GET: api/testresults/my
-        [HttpGet("my")]
-        public async Task<ActionResult<IEnumerable<TestResultDto>>> GetMyResults()
-        {
-            var userId = _userManager.GetUserId(User);
-            if (string.IsNullOrEmpty(userId))
-                return Unauthorized();
-
-            // we’re pulling in the Test navigation, so the delegate returns IIncludableQueryable<…,Test>
-            var results = await _testResultRepo.FindAsync(
-                tr => tr.UserId == userId,
-                include: q => q.Include(r => r.Test)
-            );
-
-            var dtos = _mapper.Map<List<TestResultDto>>(results);
-            return Ok(dtos);
-        }
-
-        // GET: api/testresults/{id}
-        [HttpGet("{id}")]
-        public async Task<ActionResult<TestResultDto>> GetResultDetail(int id)
-        {
-            var userId = _userManager.GetUserId(User);
-                if (userId == null) return Unauthorized();
-
-            var result = await _testResultRepo.FindAsync(
-                r => r.Id == id && r.UserId == userId,
-                include: q => q.Include(r => r.Test));
-
-            var entity = result.FirstOrDefault();
-            if (entity == null)
-                return NotFound();
-
-            return Ok(_mapper.Map<TestResultDto>(entity));
-        }
-
-        // POST: api/testresults
         [HttpPost]
-        public async Task<IActionResult> SubmitTest([FromBody] TestSubmissionDto submission)
+        [Authorize(Roles = "Student")]
+        public async Task<ActionResult<int>> Submit(TestSubmissionDto submission)
         {
             var userId = _userManager.GetUserId(User);
-            if (userId == null) return Unauthorized();
+            if (userId is null) return Unauthorized();
 
-            var test = await _testResultRepo.GetTestWithQuestionsAsync(submission.TestId);
-            if (test == null)
-                return NotFound($"Test with id {submission.TestId} not found.");
+            // 1) Load the test with options to know what's correct
+            var test = (await _testRepo.FindAsync(
+                            t => t.Id == submission.TestId,
+                            q => q.Include(t => t.Questions)
+                                  .ThenInclude(qq => qq.Options)))
+                       .FirstOrDefault();
 
-            int correct = 0;
-            int total = test.Questions!.Count;
+            if (test is null) return NotFound("Test not found.");
 
-            foreach (var q in test.Questions)
+            // 2) Build answer entities + compute score
+            var answers = new List<TestAnswer>();
+            int score = 0;
+
+            foreach (var ans in submission.Answers)
             {
-                var submitted = submission.Answers.FirstOrDefault(a => a.QuestionId == q.Id);
-                if (submitted == null) continue;
+                answers.Add(new TestAnswer
+                {
+                    QuestionId = ans.QuestionId,
+                    SelectedOptionId = ans.SelectedOptionId
+                });
 
-                var correctOption = q.Options!.FirstOrDefault(o => o.IsCorrect);
-                if (correctOption != null && submitted.SelectedOptionId == correctOption.Id)
-                    correct++;
+                // is the chosen option correct?
+                var correct = test.Questions
+                                  .SelectMany(q => q.Options)
+                                  .Any(o => o.Id == ans.SelectedOptionId && o.IsCorrect);
+                if (correct) score++;
             }
 
+            // 3) Create result
             var result = new TestResult
             {
                 UserId = userId,
                 TestId = test.Id,
-                Score = correct,
-                TotalQuestions = total,
-                CompletedDate = DateTime.UtcNow
+                CompletedDate = DateTime.UtcNow,
+                TotalQuestions = submission.Answers.Count,
+                Score = score,
+                Answers = answers
             };
 
-            await _testResultRepo.SaveTestResultAsync(result);
+            await _testResultRepo.AddAsync(result);
+            await _testResultRepo.SaveAsync();
 
-            return Ok(_mapper.Map<TestResultDto>(result));
+            return Ok(result.Id);
+        }
+
+        [HttpGet("{id}")]
+        [Authorize(Roles = "Student")]
+        public async Task<ActionResult<TestResultDetailsDto>> GetResultDetail(int id)
+        {
+            var userId = _userManager.GetUserId(User);
+            if (userId is null) return Unauthorized();
+
+            var entity = (await _testResultRepo.FindAsync(
+                            r => r.Id == id && r.UserId == userId,
+                            q => q
+                                .Include(r => r.Answers)
+                                .Include(r => r.Test)
+                                    .ThenInclude(t => t.Questions)
+                                        .ThenInclude(qq => qq.Options)))
+                         .FirstOrDefault();
+
+            if (entity is null) return NotFound();
+
+            var dto = _mapper.Map<TestResultDetailsDto>(
+                entity,
+                opt => opt.Items["ChosenOptionIds"] =
+                           entity.Answers
+                                 .Select(a => a.SelectedOptionId)
+                                 .ToHashSet());
+
+            return Ok(dto);
+        }
+
+        // GET api/testresults
+        [HttpGet]
+        [Authorize(Roles = "Student")]
+        public async Task<ActionResult<IEnumerable<TestResultDto>>> ListMine()
+        {
+            var userId = _userManager.GetUserId(User);
+            if (userId is null) return Unauthorized();
+
+            var results = await _testResultRepo.FindAsync(
+                r => r.UserId == userId,
+                include: q => q.Include(r => r.Test));
+
+            return Ok(_mapper.Map<IEnumerable<TestResultDto>>(results
+                     .OrderByDescending(r => r.CompletedDate)));
         }
     }
 }

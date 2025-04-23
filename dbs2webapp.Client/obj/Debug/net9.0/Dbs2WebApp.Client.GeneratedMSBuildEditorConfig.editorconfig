@@ -108,6 +108,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdHNcVGVzdEVkaXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Development/Programming/C\#/dbs2/dbs2webapp/Dbs2WebApp.Client/Pages/Tests/TestHistory.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdHNcVGVzdEhpc3RvcnkucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Development/Programming/C\#/dbs2/dbs2webapp/Dbs2WebApp.Client/Pages/Tests/TestResult.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdHNcVGVzdFJlc3VsdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

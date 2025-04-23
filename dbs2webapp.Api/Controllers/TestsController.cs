@@ -1,7 +1,7 @@
 ﻿using dbs2webapp.Application.DTOs.Tests;
 using Application.Interfaces;
 using AutoMapper;
-using Domain.Entities;
+using dbs2webapp.Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;

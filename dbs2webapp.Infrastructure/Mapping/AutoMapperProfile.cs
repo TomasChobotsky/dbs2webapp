@@ -3,8 +3,9 @@ using dbs2webapp.Application.DTOs.Tests;
 using dbs2webapp.Application.DTOs.Admin;
 using dbs2webapp.Application.DTOs.Auth;
 using AutoMapper;
-using Domain.Entities;
+using dbs2webapp.Domain.Entities;
 using Microsoft.AspNetCore.Identity;
+using dbs2webapp.Application.DTOs.Tests.Result;
 
 namespace Infrastructure.Mapping
 {
@@ -24,9 +25,23 @@ namespace Infrastructure.Mapping
             CreateMap<Test, CreateTestDto>().ReverseMap();
 
             CreateMap<Question, QuestionDto>().ReverseMap();
+            CreateMap<Question, QuestionResultDto>();
+
             CreateMap<Option, OptionDto>().ReverseMap();
+            CreateMap<Option, OptionResultDto>()
+                .ForMember(d => d.WasChosen, c => c.Ignore())
+                .AfterMap((src, dest, ctx) =>
+                 {
+                     var chosen = (HashSet<int>)ctx.Items["ChosenOptionIds"];
+                     dest.WasChosen = chosen.Contains(src.Id);
+                 });
 
             CreateMap<TestResult, TestResultDto>().ReverseMap();
+            CreateMap<TestResult, TestResultDetailsDto>()
+                .ForMember(d => d.TestTitle,
+                           c => c.MapFrom(s => s.Test.Title))
+                .ForMember(d => d.Questions,        
+                           c => c.MapFrom(s => s.Test.Questions));
 
             // TEST submission model mapping
             CreateMap<TestResult, TestResultDto>()

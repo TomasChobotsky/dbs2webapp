@@ -1,4 +1,4 @@
-﻿using Domain.Entities;
+﻿using dbs2webapp.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;

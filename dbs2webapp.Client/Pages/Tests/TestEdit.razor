@@ -1,10 +1,10 @@
 ﻿@page "/tests/edit/{TestId:int}"
 @attribute [Authorize(Roles = "Teacher,Admin")]
 
-@inject HttpClient Http
-@inject NavigationManager Navigation
 @using Microsoft.AspNetCore.Authorization
 @using dbs2webapp.Application.DTOs.Tests
+@inject HttpClient Http
+@inject NavigationManager Nav
 
 <h3>Edit Test</h3>
 
@@ -22,51 +22,64 @@ else
         <DataAnnotationsValidator />
         <ValidationSummary />
 
+        <!-- ---------- Test title ------------------------------------------------ -->
         <div class="mb-3">
             <label class="form-label">Test Title</label>
-            <InputText @bind-Value="testModel.Title" class="form-control" />
+            <InputText class="form-control"
+            @bind-Value="testModel.Title" />
         </div>
 
-        @for (int qIndex = 0; qIndex < testModel.Questions.Count; qIndex++)
+        <!-- ---------- Questions -------------------------------------------------- -->
+        @for (var qIndex = 0; qIndex < testModel.Questions.Count; qIndex++)
         {
-            // capture for closures:
-            var qi = qIndex;
-            var question = testModel.Questions[qi];
+            var qi = qIndex;                         // capture index for lambdas
+            var q = testModel.Questions[qi];
 
-            <div class="card mb-4" @key="question">
+            <div class="card mb-4" @key="q">
                 <div class="card-body">
+
                     <div class="d-flex justify-content-between">
                         <label class="form-label">Question</label>
                         <button type="button"
-                                class="btn btn-sm btn-danger"
-                                @onclick="() => RemoveQuestion(qi)">
+                        class="btn btn-sm btn-danger"
+                        @onclick="() => RemoveQuestion(qi)">
                             Remove Question
                         </button>
                     </div>
 
-                    <InputText @bind-Value="testModel.Questions[qi].Content"
-                               class="form-control mb-2" />
+                    <InputText class="form-control mb-2"
+                    placeholder="Question text"
+                    @bind-Value="q.Content" />
 
-                    <strong>Options:</strong>
-                    <InputRadioGroup @bind-Value="question.CorrectOptionIndex">
-                        @for (int oIndex = 0; oIndex < question.Options.Count; oIndex++)
+                    <strong>Options</strong>
+
+                    <!-- *** FIX:   separate group per question,
+                    TValue="int", explicit Name      -->
+                    <InputRadioGroup TValue="int"
+                    Name="@($"correct_q{qi}")"
+                    class="d-block"
+                    @bind-Value="q.CorrectOptionIndex">
+
+                        @for (var oIndex = 0; oIndex < q.Options.Count; oIndex++)
                         {
                             var oi = oIndex;
-                            var option = question.Options[oi];
+                            var opt = q.Options[oi];
 
-                            <div class="input-group mb-2" @key="option">
-                                <InputText @bind-Value="option.Text"
-                                           class="form-control"
-                                           placeholder="Option text" />
+                            <div class="input-group mb-2" @key="opt">
 
-                                <div class="input-group-text">
-                                    <InputRadio Value="@oi" />
-                                    <label class="ms-1">Correct</label>
-                                </div>
+                                <InputText class="form-control"
+                                placeholder="Option text"
+                                @bind-Value="opt.Text" />
+
+                                <span class="input-group-text">
+                                    <!-- *** FIX: TValue & Value ---------------- -->
+                                    <InputRadio TValue="int" Value="oi" />
+                                    <label class="ms-1 mb-0">Correct</label>
+                                </span>
 
                                 <button type="button"
-                                        class="btn btn-sm btn-outline-danger"
-                                        @onclick="() => RemoveOption(qi, oi)">
+                                class="btn btn-sm btn-outline-danger"
+                                @onclick="() => RemoveOption(qi, oi)">
                                     Remove
                                 </button>
                             </div>
@@ -74,17 +87,20 @@ else
                     </InputRadioGroup>
 
                     <button type="button"
-                            class="btn btn-sm btn-outline-primary"
-                            @onclick="() => AddOption(qi)">
+                    class="btn btn-sm btn-outline-primary"
+                    @onclick="() => AddOption(qi)">
                         + Add Option
                     </button>
                 </div>
             </div>
         }
 
-        <button type="button" class="btn btn-secondary mb-3" @onclick="AddQuestion">
+        <button type="button"
+        class="btn btn-secondary mb-3"
+        @onclick="AddQuestion">
             + Add Question
         </button>
+
         <br />
         <button type="submit" class="btn btn-primary">Save Changes</button>
     </EditForm>
@@ -97,79 +113,69 @@ else
     private bool isLoading = true;
     private string? errorMessage;
 
+    // ----------------------------- Load existing test ---------------------------
     protected override async Task OnInitializedAsync()
     {
         try
         {
-            // Load the existing test (including its questions & options)
-            var dto = await Http.GetFromJsonAsync<CreateTestDto>($"api/tests/{TestId}");
-            if (dto == null)
-                throw new Exception("Test not found");
-
+            var dto = await Http.GetFromJsonAsync<CreateTestDto>($"api/tests/{TestId}")
+                      ?? throw new Exception("Test not found");
             testModel = dto;
+            FixIndexesFromFlags();
         }
-        catch (Exception ex)
-        {
-            errorMessage = $"Could not load test: {ex.Message}";
-        }
-        finally
-        {
-            isLoading = false;
-        }
+        catch (Exception ex) { errorMessage = $"Could not load test: {ex.Message}"; }
+        finally { isLoading = false; }
     }
 
+    // ----------------------------- Question helpers -----------------------------
     private void AddQuestion()
-    {
-        testModel.Questions.Add(new QuestionDto
+        => testModel.Questions.Add(new QuestionDto
             {
                 Content = "",
-                CorrectOptionIndex = 0,
-                Options = new List<OptionDto>
-            {
-                new() { Text = "" },
-                new() { Text = "" },
-                new() { Text = "" },
-                new() { Text = "" }
-            }
+                CorrectOptionIndex = -1,       // -1 = none selected
+                Options = Enumerable.Range(0, 4)
+                                     .Select(_ => new OptionDto())
+                                     .ToList()
             });
-    }
 
-    private void RemoveQuestion(int questionIndex)
+    private void RemoveQuestion(int idx) => testModel.Questions.RemoveAt(idx);
+
+    // ----------------------------- Option helpers -------------------------------
+    private void AddOption(int qIdx) => testModel.Questions[qIdx].Options.Add(new OptionDto());
+
+    private void RemoveOption(int qIdx, int oIdx)
     {
-        if (questionIndex >= 0 && questionIndex < testModel.Questions.Count)
-            testModel.Questions.RemoveAt(questionIndex);
+        var q = testModel.Questions[qIdx];
+        q.Options.RemoveAt(oIdx);
+
+        if (q.CorrectOptionIndex == oIdx) q.CorrectOptionIndex = -1; // removed the answer
+        else if (q.CorrectOptionIndex > oIdx) q.CorrectOptionIndex--;    // shift left
     }
 
-    private void AddOption(int questionIndex)
-    {
-        var opts = testModel.Questions[questionIndex].Options;
-        opts.Add(new OptionDto { Text = "" });
-    }
-
-    private void RemoveOption(int questionIndex, int optionIndex)
-    {
-        var opts = testModel.Questions[questionIndex].Options;
-        if (optionIndex >= 0 && optionIndex < opts.Count)
-        {
-            opts.RemoveAt(optionIndex);
-            // ensure CorrectOptionIndex stays valid
-            if (testModel.Questions[questionIndex].CorrectOptionIndex >= opts.Count)
-                testModel.Questions[questionIndex].CorrectOptionIndex = 0;
-        }
-    }
-
+    // ----------------------------- Submit ---------------------------------------
     private async Task HandleValidSubmit()
     {
-        // PUT or PATCH to your update endpoint
-        var response = await Http.PutAsJsonAsync($"api/tests/{TestId}", testModel);
-        if (response.IsSuccessStatusCode)
+        PrepareForSave();
+
+        var resp = await Http.PutAsJsonAsync($"api/tests/{TestId}", testModel);
+        if (resp.IsSuccessStatusCode) Nav.NavigateTo("/teacher-panel");
+        else errorMessage = "Save failed: " + await resp.Content.ReadAsStringAsync();
+    }
+
+    private void PrepareForSave()          // call before POST/PUT
+    {
+        foreach (var q in testModel.Questions)
         {
-            Navigation.NavigateTo("/teacher-panel");
+            for (int i = 0; i < q.Options.Count; i++)
+                q.Options[i].IsCorrect = (i == q.CorrectOptionIndex);
         }
-        else
+    }
+    private void FixIndexesFromFlags()
+    {
+        foreach (var q in testModel.Questions)
         {
-            var err = await response.Content.ReadAsStringAsync();
-            errorMessage = $"Save failed: {err}";
+            var idx = q.Options.FindIndex(o => o.IsCorrect);
+            q.CorrectOptionIndex = idx;    // will be -1 if no true flag was found
         }
     }
 }

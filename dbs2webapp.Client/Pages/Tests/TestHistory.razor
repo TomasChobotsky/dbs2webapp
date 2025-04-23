@@ -1,0 +1,123 @@
+﻿@page "/test-history"
+@attribute [Authorize(Roles = "Student")]
+
+@using Microsoft.AspNetCore.Authorization
+@using dbs2webapp.Application.DTOs.Tests
+@inject HttpClient        Http
+@inject NavigationManager Nav
+
+<h3>Your Finished Tests</h3>
+
+@if (isLoading)
+{
+    <p>Loading…</p>
+}
+else if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="alert alert-danger">@errorMessage</div>
+}
+else if (results.Count == 0)
+{
+    <div class="alert alert-info">You haven’t completed any tests yet.</div>
+}
+else
+{
+    <!-- ---------- result list ------------------------------------------------ -->
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th @onclick="() => SortBy(nameof(TestResultDto.TestTitle))" style="cursor:pointer">
+                    Test&nbsp;Title @SortGlyph(nameof(TestResultDto.TestTitle))
+                </th>
+                <th @onclick="() => SortBy(nameof(TestResultDto.CompletedDate))" style="cursor:pointer">
+                    Date&nbsp;Completed @SortGlyph(nameof(TestResultDto.CompletedDate))
+                </th>
+                <th @onclick="() => SortBy(nameof(TestResultDto.Score))" style="cursor:pointer">
+                    Score @SortGlyph(nameof(TestResultDto.Score))
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var r in sorted)
+            {
+                <tr>
+                    <td>@r.TestTitle</td>
+                    <td>@r.CompletedDate.ToLocalTime()</td>
+                    <td>@r.Score / @r.TotalQuestions
+                        (@((int)Math.Round(r.Score / (double)r.TotalQuestions * 100))%)</td>
+                    <td>
+                        <button class="btn btn-sm btn-outline-primary"
+                                @onclick="@(() => Nav.NavigateTo($"/test-results/{r.Id}"))">
+                            View
+                        </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<TestResultDto> results = new();
+    private List<TestResultDto> sorted  = new();
+
+    private bool   isLoading   = true;
+    private string? errorMessage;
+
+    private string? sortBy;
+    private bool    sortAsc = true;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            results = await Http.GetFromJsonAsync<List<TestResultDto>>("api/testresults")
+                      ?? new List<TestResultDto>();
+
+            SortBy(nameof(TestResultDto.CompletedDate));
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Could not load history: {ex.Message}";
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private void SortBy(string column)
+    {
+        if (sortBy == column)
+            sortAsc = !sortAsc;
+        else
+        {
+            sortBy = column;
+            sortAsc = true;
+        }
+
+        IEnumerable<TestResultDto> query = column switch
+        {
+            nameof(TestResultDto.TestTitle) =>
+                results.OrderBy(r => r.TestTitle,
+                                StringComparer.CurrentCultureIgnoreCase),
+
+            nameof(TestResultDto.CompletedDate) =>
+                results.OrderBy(r => r.CompletedDate),
+
+            nameof(TestResultDto.Score) =>
+                results.OrderBy(r => r.Score / (double)r.TotalQuestions),
+
+            _ => results.OrderBy(r => r.Id)
+        };
+
+        sorted = (sortAsc ? query : query.Reverse()).ToList();
+    }
+
+
+    private MarkupString SortGlyph(string column)
+        => (sortBy == column)
+           ? (MarkupString)$"<span class='ms-1 bi bi-caret-{(sortAsc ? "up-fill" : "down-fill")}'></span>"
+           : (MarkupString)"";
+}

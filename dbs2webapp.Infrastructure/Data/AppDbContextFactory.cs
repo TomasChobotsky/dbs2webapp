@@ -13,7 +13,7 @@ public class AppDbContextFactory : IDesignTimeDbContextFactory<AppDbContext>
 {
     public AppDbContext CreateDbContext(string[] args)
     {
-        var basePath = Path.Combine(Directory.GetCurrentDirectory(), "../dbs2webapp");
+        var basePath = Path.Combine(Directory.GetCurrentDirectory(), "../dbs2webapp.Api");
 
         var config = new ConfigurationBuilder()
             .SetBasePath(basePath)

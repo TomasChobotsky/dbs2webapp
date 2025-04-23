@@ -1,10 +1,10 @@
 ﻿@page "/tests/create/{ChapterId:int}"
 @attribute [Authorize(Roles = "Teacher,Admin")]
 
-@inject HttpClient Http
-@inject NavigationManager Navigation
 @using Microsoft.AspNetCore.Authorization
 @using dbs2webapp.Application.DTOs.Tests
+@inject HttpClient          Http
+@inject NavigationManager   Nav
 
 <h3>Create Test</h3>
 
@@ -13,141 +13,142 @@
     <ValidationSummary />
 
     <div class="mb-3">
-        <label class="form-label">Test Title</label>
-        <InputText @bind-Value="testModel.Title" class="form-control" />
+        <label class="form-label">Test title</label>
+        <InputText class="form-control" @bind-Value="testModel.Title"/>
     </div>
 
-    @for (int qIndex = 0; qIndex < testModel.Questions.Count; qIndex++)
+    @for (var qIndex = 0; qIndex < testModel.Questions.Count; qIndex++)
     {
-        var question = testModel.Questions[qIndex];
-        // capture the current qIndex into qi
-        var qi = qIndex;
+        var qi = qIndex;                            // capture loop variable once
+        var q  = testModel.Questions[qi];
 
-        <div class="card mb-4" @key="question">
+        <div class="card mb-4" @key="q">
             <div class="card-body">
 
-                <!-- remove question -->
                 <button type="button"
-                        class="mb-3 btn btn-sm btn-danger"
-                        @onclick="() => RemoveQuestion(qi)">
-                    Remove Question
+                class="btn btn-sm btn-danger mb-3"
+                @onclick="() => RemoveQuestion(qi)">
+                    Remove question
                 </button>
 
-                <!-- question text -->
-                <InputText @bind-Value="testModel.Questions[qi].Content"
-                           class="form-control mb-2" />
+                <InputText class="form-control mb-2"
+                placeholder="Question text"
+                @bind-Value="q.Content" />
 
-                <strong>Options:</strong>
-                <InputRadioGroup @bind-Value="question.CorrectOptionIndex">
+                <strong>Options</strong>
 
-                    @for (int oIndex = 0; oIndex < question.Options.Count; oIndex++)
+                <!-- 1️⃣  Every question gets its own radio group.                -->
+                <!-- 2️⃣  Tell the group we’re binding an INT with TValue="int".  -->
+                <!-- 3️⃣  Give each group an explicit Name to isolate them.       -->
+                <InputRadioGroup TValue="int"
+                Name="@($"correct_q{qi}")"
+                class="d-block"
+                @bind-Value="q.CorrectOptionIndex">
+
+                    @for (var oIndex = 0; oIndex < q.Options.Count; oIndex++)
                     {
-                        // likewise capture oIndex
-                        var oi = oIndex;
-                        var option = question.Options[oi];
+                        var oi = oIndex;            // capture once
+                        var opt = q.Options[oi];
 
-                        <div class="input-group mb-2" @key="option">
-                            <InputText @bind-Value="option.Text"
-                                       class="form-control"
-                                       placeholder="Option text" />
+                        <div class="input-group mb-2" @key="opt">
 
-                            <div class="input-group-text">
-                                <InputRadio Value="@oi" />
-                                <label class="ms-1">Correct</label>
-                            </div>
+                            <InputText class="form-control"
+                            placeholder="Option text"
+                            @bind-Value="opt.Text" />
 
-                            <!-- remove option -->
+                            <span class="input-group-text">
+                                <!-- 4️⃣  Each radio gets the option index as its Value -->
+                                <InputRadio TValue="int" Value="oi" />
+                                <label class="ms-1 mb-0">Correct</label>
+                            </span>
+
                             <button type="button"
-                                    class="btn btn-sm btn-outline-danger"
-                                    @onclick="() => RemoveOption(qi, oi)">
+                            class="btn btn-sm btn-outline-danger"
+                            @onclick="() => RemoveOption(qi, oi)">
                                 Remove
                             </button>
                         </div>
                     }
-
                 </InputRadioGroup>
 
-                <!-- add option -->
                 <button type="button"
-                        class="btn btn-sm btn-outline-primary"
-                        @onclick="() => AddOption(qi)">
-                    + Add Option
+                class="btn btn-sm btn-outline-primary"
+                @onclick="() => AddOption(qi)">
+                    + Add option
                 </button>
-
             </div>
         </div>
     }
 
+    <button type="button" class="btn btn-secondary mb-3" @onclick="AddQuestion">
+        + Add question
+    </button>
 
-
-
-    <button type="button" class="btn btn-secondary mb-3" @onclick="AddQuestion">+ Add Question</button>
-    <br />
-    <button type="submit" class="btn btn-primary">Create Test</button>
+    <br/>
+    <button type="submit" class="btn btn-primary">Create test</button>
 </EditForm>
 
 @code {
     [Parameter] public int ChapterId { get; set; }
 
-    private CreateTestDto testModel = new();
+    private readonly CreateTestDto testModel = new();
 
     protected override void OnInitialized()
     {
         testModel.ChapterId = ChapterId;
-        AddQuestion(); // start with 1 question
+        AddQuestion();                              // start with one question
     }
 
+    // ---------- Question helpers ------------------------------------------------
     private void AddQuestion()
     {
-        var q = new QuestionDto
+        testModel.Questions.Add(new QuestionDto
         {
-            Content = string.Empty,
-            CorrectOptionIndex = 0,
-            Options = new List<OptionDto>
-            {
-                new() { Text = "" },
-                new() { Text = "" },
-                new() { Text = "" },
-                new() { Text = "" }
-            }
-        };
-        testModel.Questions.Add(q);
+            Content           = string.Empty,
+            CorrectOptionIndex = -1,                // -1 = “no answer yet”
+            Options = Enumerable.Range(0, 4)
+                                 .Select(_ => new OptionDto())
+                                 .ToList()
+        });
     }
 
-    private void RemoveQuestion(int index)
+    private void RemoveQuestion(int idx)
+        => testModel.Questions.RemoveAt(idx);
+
+    // ---------- Option helpers ---------------------------------------------------
+    private void AddOption(int qIdx)
+        => testModel.Questions[qIdx].Options.Add(new OptionDto());
+
+    private void RemoveOption(int qIdx, int oIdx)
     {
-        if (index >= 0 && index < testModel.Questions.Count)
-            testModel.Questions.RemoveAt(index);
+        var q = testModel.Questions[qIdx];
+        q.Options.RemoveAt(oIdx);
+
+        // keep CorrectOptionIndex valid
+        if (q.CorrectOptionIndex == oIdx)           // removed the correct one
+            q.CorrectOptionIndex = -1;              // “none chosen”
+        else if (q.CorrectOptionIndex > oIdx)       // removed an earlier option
+            q.CorrectOptionIndex--;                 // shift left
     }
 
-    private void AddOption(int questionIndex)
-    {
-        testModel.Questions[questionIndex].Options.Add(new OptionDto { Text = "" });
-    }
-
-    private void RemoveOption(int questionIndex, int optionIndex)
-    {
-        var options = testModel.Questions[questionIndex].Options;
-        if (optionIndex >= 0 && optionIndex < options.Count)
-        {
-            options.RemoveAt(optionIndex);
-            // Reset correct index if needed
-            if (testModel.Questions[questionIndex].CorrectOptionIndex >= options.Count)
-                testModel.Questions[questionIndex].CorrectOptionIndex = 0;
-        }
-    }
-
+    // ---------- Submit -----------------------------------------------------------
     private async Task HandleValidSubmit()
     {
-        var response = await Http.PostAsJsonAsync($"api/tests/{ChapterId}", testModel);
-        if (response.IsSuccessStatusCode)
-        {
-            Navigation.NavigateTo("/teacher-panel");
-        }
+        PrepareForSave();
+
+        var resp = await Http.PostAsJsonAsync($"api/tests/{ChapterId}", testModel);
+        if (resp.IsSuccessStatusCode)
+            Nav.NavigateTo("/teacher-panel");
         else
+            Console.Error.WriteLine(await resp.Content.ReadAsStringAsync());
+    }
+
+    private void PrepareForSave()          // call before POST/PUT
+    {
+        foreach (var q in testModel.Questions)
         {
-            var error = await response.Content.ReadAsStringAsync();
-            Console.Error.WriteLine($"Failed to create test: {error}");
+            for (int i = 0; i < q.Options.Count; i++)
+                q.Options[i].IsCorrect = (i == q.CorrectOptionIndex);
         }
     }
 }

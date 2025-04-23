@@ -1,12 +1,7 @@
-﻿using Domain.Entities;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using dbs2webapp.Domain.Entities;
 
 namespace Infrastructure.Data
 {
@@ -24,19 +19,18 @@ namespace Infrastructure.Data
         public DbSet<Option> Options { get; set; }
         public DbSet<UserCourse> UserCourses { get; set; }
         public DbSet<TestResult> TestResults { get; set; }
+        public DbSet<TestAnswer> TestAnswers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            // Configure Course-Teacher relationship
             modelBuilder.Entity<Course>()
                 .HasOne(c => c.Teacher)
                 .WithMany()
                 .HasForeignKey(c => c.TeacherId)
                 .OnDelete(DeleteBehavior.Restrict); // Prevent cascade delete
 
-            // Configure UserCourse relationships
             modelBuilder.Entity<UserCourse>()
                 .HasOne(uc => uc.User)
                 .WithMany()
@@ -47,9 +41,8 @@ namespace Infrastructure.Data
                 .HasOne(uc => uc.Course)
                 .WithMany(c => c.UserCourses)
                 .HasForeignKey(uc => uc.CourseId)
-                .OnDelete(DeleteBehavior.Restrict); // Prevent cascade delete
+                .OnDelete(DeleteBehavior.Cascade);
 
-            // Configure Chapter-Course relationship (if you have Chapters)
             modelBuilder.Entity<Chapter>()
                 .HasOne(ch => ch.Course)
                 .WithMany(c => c.Chapters)
@@ -66,7 +59,25 @@ namespace Infrastructure.Data
                 .WithMany()
                 .HasForeignKey(tr => tr.TestId);
 
-            // Add any additional configuration here
+            modelBuilder.Entity<TestAnswer>(ta =>
+            {
+                ta.HasKey(e => e.Id);
+
+                ta.HasOne(e => e.TestResult)
+                  .WithMany(r => r.Answers)
+                  .HasForeignKey(e => e.TestResultId)
+                  .OnDelete(DeleteBehavior.Cascade);
+
+                ta.HasOne(e => e.Question)
+                  .WithMany(q => q.Answers)
+                  .HasForeignKey(e => e.QuestionId)
+                  .OnDelete(DeleteBehavior.Restrict);
+
+                ta.HasOne(e => e.SelectedOption)
+                  .WithMany()
+                  .HasForeignKey(e => e.SelectedOptionId)
+                  .OnDelete(DeleteBehavior.Restrict);
+            });
         }
     }
 }

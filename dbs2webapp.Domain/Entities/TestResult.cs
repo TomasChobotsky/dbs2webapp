@@ -1,8 +1,9 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using dbs2webapp.Domain.Entities;
+using Microsoft.AspNetCore.Identity;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Domain.Entities
+namespace dbs2webapp.Domain.Entities
 {
     public class TestResult
     {
@@ -24,5 +25,6 @@ namespace Domain.Entities
         public int TestId { get; set; }
         [ForeignKey("TestId")]
         public Test? Test { get; set; }
+        public ICollection<TestAnswer> Answers { get; set; } = new List<TestAnswer>();
     }
 }

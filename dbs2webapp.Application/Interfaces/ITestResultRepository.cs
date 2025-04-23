@@ -1,4 +1,4 @@
-﻿using Domain.Entities;
+﻿using dbs2webapp.Domain.Entities;
 
 namespace Application.Interfaces
 {

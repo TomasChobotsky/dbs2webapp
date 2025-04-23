@@ -4,13 +4,13 @@
 @using Microsoft.AspNetCore.Authorization
 @using dbs2webapp.Application.DTOs.Tests
 @inject HttpClient Http
-@inject NavigationManager Navigation
+@inject NavigationManager Nav
 
 <h3>Take Test</h3>
 
 @if (isLoading)
 {
-    <p>Loading test...</p>
+    <p>Loading test…</p>
 }
 else if (!string.IsNullOrEmpty(errorMessage))
 {
@@ -20,22 +20,35 @@ else
 {
     <h4>@test.Title</h4>
 
-    <EditForm OnValidSubmit="SubmitAnswers">
-        @for (int i = 0; i < test.Questions.Count; i++)
+    <EditForm Model="@answers" OnValidSubmit="SubmitAnswers">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        @for (int qIndex = 0; qIndex < test.Questions.Count; qIndex++)
         {
-            var q = test.Questions[i];
+            var qi = qIndex;
+            var q = test.Questions[qi];
 
             <div class="card mb-4">
                 <div class="card-header">
-                    <strong>Q@(i + 1):</strong> @q.Content
+                    <strong>Q@(qi + 1):</strong> @q.Content
                 </div>
                 <div class="card-body">
-                    <InputRadioGroup @bind-Value="answers[i]">
-                        @for (int j = 0; j < q.Options.Count; j++)
+
+                    <InputRadioGroup TValue="int"
+                                     Name="@($"answer_q{qi}")"
+                                     class="d-block"
+                                     @bind-Value="answers[qi]">
+
+                        @for (int oIndex = 0; oIndex < q.Options.Count; oIndex++)
                         {
+                            var opt = q.Options[oIndex];
+
                             <div class="form-check">
-                                <InputRadio class="form-check-input" Value="@j" />
-                                <label class="form-check-label">@q.Options[j].Text</label>
+                                <InputRadio TValue="int"
+                                            class="form-check-input"
+                                            Value="@opt.Id" />
+                                <label class="form-check-label">@opt.Text</label>
                             </div>
                         }
                     </InputRadioGroup>
@@ -60,39 +73,44 @@ else
         try
         {
             test = await Http.GetFromJsonAsync<TestDto>($"api/tests/{Id}")
-                    ?? throw new Exception("Test not found.");
+                   ?? throw new Exception("Test not found.");
 
-            // One answer per question, default -1
             answers = Enumerable.Repeat(-1, test.Questions.Count).ToList();
         }
-        catch (Exception ex)
-        {
-            errorMessage = $"Failed to load test: {ex.Message}";
-        }
-        isLoading = false;
+        catch (Exception ex) { errorMessage = $"Failed to load test: {ex.Message}"; }
+        finally { isLoading = false; }
     }
 
     private async Task SubmitAnswers()
     {
+        if (answers.Any(a => a == -1))
+        {
+            errorMessage = "Please answer every question before submitting.";
+            StateHasChanged();
+            return;
+        }
+
         var submission = new TestSubmissionDto
             {
                 TestId = Id,
-                Answers = test.Questions.Select((q, i) => new AnswerSubmissionDto
+                Answers = test.Questions.Select((q, idx) => new AnswerSubmissionDto
                 {
-                    QuestionId = i,
-                    SelectedOptionId = answers[i]
+                    QuestionId = q.Id,
+                    SelectedOptionId = answers[idx]
                 }).ToList()
             };
 
-        var response = await Http.PostAsJsonAsync("api/tests/submit", submission);
-        if (response.IsSuccessStatusCode)
+        var resp = await Http.PostAsJsonAsync("api/testresults", submission);
+        if (resp.IsSuccessStatusCode)
         {
-            Navigation.NavigateTo("/test-results"); // You can pass ID or store result in state
+            var resultId = await resp.Content.ReadFromJsonAsync<int>();
+            Nav.NavigateTo($"/test-results/{resultId}");
+
         }
         else
         {
-            var error = await response.Content.ReadAsStringAsync();
-            Console.Error.WriteLine($"Failed to submit test: {error}");
+            errorMessage = "Submit failed: " + await resp.Content.ReadAsStringAsync();
         }
     }
+
 }

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Domain.Entities
+namespace dbs2webapp.Domain.Entities
 {
     public class Question
     {
@@ -17,6 +17,8 @@ namespace Domain.Entities
         public Test? Test { get; set; }
 
         public List<Option>? Options { get; set; }
+
+        public ICollection<TestAnswer> Answers { get; set; } = new List<TestAnswer>();
     }
 
 }

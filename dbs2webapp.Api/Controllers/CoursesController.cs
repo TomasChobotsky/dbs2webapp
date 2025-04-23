@@ -1,7 +1,7 @@
 ﻿using dbs2webapp.Application.DTOs;
 using Application.Interfaces;
 using AutoMapper;
-using Domain.Entities;
+using dbs2webapp.Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -35,7 +35,20 @@ namespace Api.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var courses = await _courseRepo.GetAllAsync();
+            IEnumerable<Course> courses;
+
+            if (User.Identity?.IsAuthenticated == true
+                && User.IsInRole("Teacher"))
+            {
+                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier)!;
+                // your BaseRepository has FindAsync for predicate searches
+                courses = await _courseRepo.FindAsync(c => c.TeacherId == userId);
+            }
+            else
+            {
+                courses = await _courseRepo.GetAllAsync();
+            }
+
             var dto = _mapper.Map<List<CourseDto>>(courses);
             return Ok(dto);
         }

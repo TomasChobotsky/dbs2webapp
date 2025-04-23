@@ -1,8 +1,8 @@
 ﻿using Api.Controllers;
-using Application.DTOs.Tests;
+using dbs2webapp.Application.DTOs.Tests;
 using Application.Interfaces;
 using AutoMapper;
-using Domain.Entities;
+using dbs2webapp.Domain.Entities;
 using Infrastructure.Mapping;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
