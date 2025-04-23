@@ -13,7 +13,7 @@ builder.Services.AddTransient<JwtAuthorizationMessageHandler>();
 
 builder.Services.AddHttpClient("API", client =>
 {
-    client.BaseAddress = new Uri("https://localhost:5000/");
+    client.BaseAddress = new Uri("http://localhost:5000/");
 })
 .AddHttpMessageHandler<JwtAuthorizationMessageHandler>();
 

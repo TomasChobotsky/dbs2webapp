@@ -14,7 +14,7 @@ WORKDIR /src/dbs2webapp.Client
 RUN dotnet publish dbs2webapp.Client.csproj -c Release -o /app/publish
 
 FROM nginx:alpine AS final
-COPY --from=build /app/publish /usr/share/nginx/html
+COPY --from=build /app/publish/wwwroot /usr/share/nginx/html
 COPY ["dbs2webapp.Client/nginx.conf", "/etc/nginx/nginx.conf"]
 
 EXPOSE 80

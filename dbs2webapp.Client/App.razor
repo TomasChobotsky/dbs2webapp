@@ -12,12 +12,10 @@
         <NotAuthorized>
           @if (!(context.User?.Identity?.IsAuthenticated ?? false))
           {
-            @* not logged in *@
             <RedirectToLogin />
           }
           else
           {
-            @* logged in but wrong role *@
             <p class="m-4 text-danger">You don’t have permission to view this page.</p>
           }
         </NotAuthorized>
