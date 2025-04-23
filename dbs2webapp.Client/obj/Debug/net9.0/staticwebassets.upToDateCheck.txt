@@ -39,6 +39,7 @@ D:\Development\Programming\C#\dbs2\dbs2webapp\Dbs2WebApp.Client\wwwroot\sample-d
 D:\Development\Programming\C#\dbs2\dbs2webapp\Dbs2WebApp.Client\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
 D:\Development\Programming\C#\dbs2\dbs2webapp\Dbs2WebApp.Client\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
 D:\Development\Programming\C#\dbs2\dbs2webapp\Dbs2WebApp.Client\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+D:\Development\Programming\C#\dbs2\dbs2webapp\Dbs2WebApp.Client\wwwroot\translateInterop.js
 D:\Development\Programming\C#\dbs2\dbs2webapp\Dbs2WebApp.Client\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
 D:\Development\Programming\C#\dbs2\dbs2webapp\Dbs2WebApp.Client\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
 D:\Development\Programming\C#\dbs2\dbs2webapp\Dbs2WebApp.Client\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
@@ -94,3 +95,4 @@ wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
 wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
 wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
 wwwroot\sample-data\weather.json
+wwwroot\translateInterop.js

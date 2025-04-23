@@ -205,6 +205,10 @@
       "PackagePath": "staticwebassets\\sample-data\\weather.json"
     },
     {
+      "Id": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\Dbs2WebApp.Client\\wwwroot\\translateInterop.js",
+      "PackagePath": "staticwebassets\\translateInterop.js"
+    },
+    {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.dbs2webapp.Client.props",
       "PackagePath": "build\\dbs2webapp.Client.props"
     },

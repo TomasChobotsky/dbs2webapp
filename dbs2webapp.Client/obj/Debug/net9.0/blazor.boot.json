@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "dbs2webapp.Client",
   "resources": {
-    "hash": "sha256-XXZ5MssjZzzQN7CjflcB448muJx/SkFpJPwfTKO4By4=",
+    "hash": "sha256-jt2VBPAcl6vPV8R1l94eVxi5Pc4NPQgBECJ+8GQGidE=",
     "fingerprinting": {
       "AutoMapper.totk3ghnq9.wasm": "AutoMapper.wasm",
       "Azure.Core.92q6rqqhly.wasm": "Azure.Core.wasm",
@@ -243,14 +243,14 @@
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "dbs2webapp.Application.20o0pbacv4.wasm": "dbs2webapp.Application.wasm",
+      "dbs2webapp.Application.udxpn6khnk.wasm": "dbs2webapp.Application.wasm",
       "dbs2webapp.Domain.wdn08cjy8u.wasm": "dbs2webapp.Domain.wasm",
-      "dbs2webapp.Infrastructure.rn3314d19k.wasm": "dbs2webapp.Infrastructure.wasm",
-      "dbs2webapp.Application.4mbk3hwdyl.pdb": "dbs2webapp.Application.pdb",
+      "dbs2webapp.Infrastructure.ry0q79q36t.wasm": "dbs2webapp.Infrastructure.wasm",
+      "dbs2webapp.Application.z5d3bgv7bn.pdb": "dbs2webapp.Application.pdb",
       "dbs2webapp.Domain.wp5g25vp1e.pdb": "dbs2webapp.Domain.pdb",
-      "dbs2webapp.Infrastructure.vyc7yomymf.pdb": "dbs2webapp.Infrastructure.pdb",
-      "dbs2webapp.Client.fuhkws31e9.wasm": "dbs2webapp.Client.wasm",
-      "dbs2webapp.Client.d5z1i848kd.pdb": "dbs2webapp.Client.pdb"
+      "dbs2webapp.Infrastructure.lg3mcdcjbl.pdb": "dbs2webapp.Infrastructure.pdb",
+      "dbs2webapp.Client.33jfffglgc.wasm": "dbs2webapp.Client.wasm",
+      "dbs2webapp.Client.77gfkbpyu6.pdb": "dbs2webapp.Client.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.hvg7u8bimp.js": "sha256-LX9rFEWGVxhkOkAVPG0w5RxPwzPBlEUz6dQNjWS7M+M="
@@ -502,16 +502,16 @@
       "WindowsBase.5lai2eowco.wasm": "sha256-GcDi5293y2A7oSiFYTbBTUe0d+ISbvgeel4ZNd8KkPM=",
       "mscorlib.wzkfrp7u5k.wasm": "sha256-9PjsU0gaxxz5Vyw++p9DeYUWLsaXbaMS2RbX6wmTUmk=",
       "netstandard.d82br99ghv.wasm": "sha256-DS8keXxU4eQpa1kIoiFxOA2Ii2g9hoNWSaVi8F8AnIE=",
-      "dbs2webapp.Application.20o0pbacv4.wasm": "sha256-gt5G5DpGAd1JqYNTGuxL4RDtWeHiB6pzAh39762CZaw=",
+      "dbs2webapp.Application.udxpn6khnk.wasm": "sha256-QkTWn1Q9C+x/gjdJs5/rLEJyytlLHLF18bJPegznuCI=",
       "dbs2webapp.Domain.wdn08cjy8u.wasm": "sha256-ZN5PhA23fzt0qCs6YUxRvp8dxe9CL44TCL/Dz7vK57s=",
-      "dbs2webapp.Infrastructure.rn3314d19k.wasm": "sha256-R3YhG0tnbMBQJyWNQxexE6gqD0kX3VEC4hMAn7EomBg=",
-      "dbs2webapp.Client.fuhkws31e9.wasm": "sha256-qei1gSOgIeKKpxLS5RmueiF5KSe+8GaSa7C4WQrQW8w="
+      "dbs2webapp.Infrastructure.ry0q79q36t.wasm": "sha256-ne19lT6BGeCB8+yDBuHx73bnvSyIQTjvF0XMS6L1IyA=",
+      "dbs2webapp.Client.33jfffglgc.wasm": "sha256-X1kHEucUewpP1g8wk+8hmk8uNE3KriM4dwYWUA5CQQg="
     },
     "pdb": {
-      "dbs2webapp.Application.4mbk3hwdyl.pdb": "sha256-zH5RRF0fO7sE+NSxrljbMrGW2uNJTWOVUvLSlIwGY+0=",
+      "dbs2webapp.Application.z5d3bgv7bn.pdb": "sha256-mb/rE2dJo7njyRaNEpMhc05vYEvGxYAJsqixSI/Vsb8=",
       "dbs2webapp.Domain.wp5g25vp1e.pdb": "sha256-DNl7dxnWWZD6xDTFsYyFacVdiaoK0qyfbsxfL+1OgAU=",
-      "dbs2webapp.Infrastructure.vyc7yomymf.pdb": "sha256-mSACm/PSPDyibRzJMGXWtAE9rQwePjMCnwkiunluYT8=",
-      "dbs2webapp.Client.d5z1i848kd.pdb": "sha256-MRp6O3A1vDdp4O8aJ7a9vWu6vJ1p3RKdwh6xqAxObP8="
+      "dbs2webapp.Infrastructure.lg3mcdcjbl.pdb": "sha256-BRsgMQb1uVJQeMsIeXwXzX/sP34npRmlwJHva8fNLPs=",
+      "dbs2webapp.Client.77gfkbpyu6.pdb": "sha256-w69zWfVK35BkV93YHC/aumg9e8T5x5TGWkLcvzjF4VI="
     }
   },
   "cacheBootResources": true,

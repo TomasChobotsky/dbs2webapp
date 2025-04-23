@@ -32,6 +32,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcGlGZXRjaFdyYXBwZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Development/Programming/C\#/dbs2/dbs2webapp/Dbs2WebApp.Client/Components/LanguageToggle.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYW5ndWFnZVRvZ2dsZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Development/Programming/C\#/dbs2/dbs2webapp/Dbs2WebApp.Client/Components/RedirectToLogin.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSZWRpcmVjdFRvTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
