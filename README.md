@@ -59,7 +59,7 @@ You can register new users via `/api/auth/register`, or seed roles manually via 
 
 | Student View | Teacher Panel |
 |--------------|---------------|
-| *(insert screenshots here)* | *(insert screenshots here)* |
+| ![alt text](image.png) | ![alt text](image-1.png) |
 
 ---
 
