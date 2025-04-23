@@ -1,0 +1,64 @@
+﻿@page "/chapters/create/{CourseId:int}"
+@attribute [Authorize(Roles = "Teacher,Admin")]
+
+@inject HttpClient Http
+@inject NavigationManager Navigation
+@using Microsoft.AspNetCore.Authorization
+@using dbs2webapp.Application.DTOs
+
+<h3>Create Chapter</h3>
+
+<EditForm Model="@model" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="mb-3">
+        <label class="form-label">Chapter Name</label>
+        <InputText @bind-Value="model.Name" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Short Description</label>
+        <InputTextArea @bind-Value="model.Description" class="form-control" rows="3" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Chapter Content</label>
+        <InputTextArea @bind-Value="model.Content" class="form-control" rows="6" />
+    </div>
+
+    <div class="d-flex justify-content-between">
+        <button class="btn btn-secondary" @onclick="GoBack">Back to Course</button>
+        <button type="submit" class="btn btn-primary">Create Chapter</button>
+    </div>
+</EditForm>
+
+@code {
+    [Parameter] public int CourseId { get; set; }
+
+    private CreateChapterDto model = new();
+
+    protected override void OnInitialized()
+    {
+        model.CourseId = CourseId;
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        var response = await Http.PostAsJsonAsync($"api/chapters/{CourseId}", model);
+        if (response.IsSuccessStatusCode)
+        {
+            GoBack();
+        }
+        else
+        {
+            var error = await response.Content.ReadAsStringAsync();
+            Console.Error.WriteLine($"Failed to create chapter: {error}");
+        }
+    }
+
+    private void GoBack()
+    {
+        Navigation.NavigateTo("/teacher-panel");
+    }
+}

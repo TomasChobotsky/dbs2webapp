@@ -1,0 +1,116 @@
+﻿@page "/tests/take/{Id:int}"
+@attribute [Authorize(Roles = "Student")]
+
+@using Microsoft.AspNetCore.Authorization
+@using dbs2webapp.Application.DTOs.Tests
+@inject HttpClient Http
+@inject NavigationManager Nav
+
+<h3>Take Test</h3>
+
+@if (isLoading)
+{
+    <p>Loading test…</p>
+}
+else if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="alert alert-danger">@errorMessage</div>
+}
+else
+{
+    <h4>@test.Title</h4>
+
+    <EditForm Model="@answers" OnValidSubmit="SubmitAnswers">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        @for (int qIndex = 0; qIndex < test.Questions.Count; qIndex++)
+        {
+            var qi = qIndex;
+            var q = test.Questions[qi];
+
+            <div class="card mb-4">
+                <div class="card-header">
+                    <strong>Q@(qi + 1):</strong> @q.Content
+                </div>
+                <div class="card-body">
+
+                    <InputRadioGroup TValue="int"
+                                     Name="@($"answer_q{qi}")"
+                                     class="d-block"
+                                     @bind-Value="answers[qi]">
+
+                        @for (int oIndex = 0; oIndex < q.Options.Count; oIndex++)
+                        {
+                            var opt = q.Options[oIndex];
+
+                            <div class="form-check">
+                                <InputRadio TValue="int"
+                                            class="form-check-input"
+                                            Value="@opt.Id" />
+                                <label class="form-check-label">@opt.Text</label>
+                            </div>
+                        }
+                    </InputRadioGroup>
+                </div>
+            </div>
+        }
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </EditForm>
+}
+
+@code {
+    [Parameter] public int Id { get; set; }
+
+    private TestDto test = new();
+    private List<int> answers = new();
+    private bool isLoading = true;
+    private string? errorMessage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            test = await Http.GetFromJsonAsync<TestDto>($"api/tests/{Id}")
+                   ?? throw new Exception("Test not found.");
+
+            answers = Enumerable.Repeat(-1, test.Questions.Count).ToList();
+        }
+        catch (Exception ex) { errorMessage = $"Failed to load test: {ex.Message}"; }
+        finally { isLoading = false; }
+    }
+
+    private async Task SubmitAnswers()
+    {
+        if (answers.Any(a => a == -1))
+        {
+            errorMessage = "Please answer every question before submitting.";
+            StateHasChanged();
+            return;
+        }
+
+        var submission = new TestSubmissionDto
+            {
+                TestId = Id,
+                Answers = test.Questions.Select((q, idx) => new AnswerSubmissionDto
+                {
+                    QuestionId = q.Id,
+                    SelectedOptionId = answers[idx]
+                }).ToList()
+            };
+
+        var resp = await Http.PostAsJsonAsync("api/testresults", submission);
+        if (resp.IsSuccessStatusCode)
+        {
+            var resultId = await resp.Content.ReadFromJsonAsync<int>();
+            Nav.NavigateTo($"/test-results/{resultId}");
+
+        }
+        else
+        {
+            errorMessage = "Submit failed: " + await resp.Content.ReadAsStringAsync();
+        }
+    }
+
+}

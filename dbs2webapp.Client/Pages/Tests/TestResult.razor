@@ -1,0 +1,93 @@
+﻿@page "/test-results/{Id:int}"
+@attribute [Authorize(Roles = "Student")]
+
+@using Microsoft.AspNetCore.Authorization
+@using dbs2webapp.Application.DTOs.Tests
+@using dbs2webapp.Application.DTOs.Tests.Result
+@inject HttpClient        Http
+@inject NavigationManager Nav
+
+<h3>Test Result</h3>
+
+@if (isLoading)
+{
+    <p>Loading result…</p>
+}
+else if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="alert alert-danger">@errorMessage</div>
+}
+else
+{
+    <div class="card mb-4">
+        <div class="card-body">
+            <h4 class="card-title">@result.TestTitle</h4>
+
+            <p class="card-text">
+                Completed on <strong>@result.CompletedDate.ToLocalTime()</strong><br />
+                Score: <strong>@result.Score</strong>/<strong>@result.TotalQuestions</strong>
+                (@((int)Math.Round(result.Score / (double)result.TotalQuestions * 100))%)
+            </p>
+        </div>
+    </div>
+
+    @for (var qIndex = 0; qIndex < result.Questions.Count; qIndex++)
+    {
+        var q = result.Questions[qIndex];
+
+        <div class="card mb-3">
+            <div class="card-header fw-bold">
+                Q@(qIndex + 1): @q.Content
+            </div>
+
+            <ul class="list-group list-group-flush">
+                @foreach (var opt in q.Options)
+                {
+                    var isStudentChoice = opt.WasChosen;
+                    var isCorrect       = opt.IsCorrect;
+
+                    var css = isStudentChoice switch
+                    {
+                        true  when isCorrect => "list-group-item list-group-item-success", // picked & correct
+                        true  =>               "list-group-item list-group-item-danger",  // picked & wrong
+                        _ =>                   "list-group-item"
+                    };
+
+                    <li class="@css" style="position: relative;">
+                        @opt.Text
+
+                        @if (isCorrect)
+                        {
+                            <span class="position-absolute top-0 end-0 me-2 text-success">
+                                ✔
+                            </span>
+                        }
+                    </li>
+                }
+            </ul>
+        </div>
+    }
+
+    <button class="btn btn-secondary" @onclick="@(() => Nav.NavigateTo("/test-history"))">
+        Back to Test History
+    </button>
+}
+
+@code {
+    [Parameter] public int Id { get; set; }
+
+    private TestResultDetailsDto result = new();
+    private bool     isLoading   = true;
+    private string?  errorMessage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            result = await Http.GetFromJsonAsync<TestResultDetailsDto>($"api/testresults/{Id}")
+                     ?? throw new Exception("Result not found.");
+        }
+        catch (Exception ex) { errorMessage = $"Failed to load result: {ex.Message}"; }
+        finally { isLoading = false; }
+    }
+}

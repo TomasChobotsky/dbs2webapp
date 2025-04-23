@@ -1,0 +1,53 @@
+version: '3.8'
+
+services:
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-CU12-ubuntu-22.04
+    container_name: dbs2webapp-db
+    ports:
+      - "1433:1433"
+    environment:
+      SA_PASSWORD: "Asdf1234*"
+      ACCEPT_EULA: "Y"
+    networks:
+      - web
+    restart: always
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P 'Asdf1234*' -Q 'SELECT 1' || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 15
+      start_period: 20s
+
+  api:
+    build:
+      context: .
+      dockerfile: dbs2webapp.Api/Dockerfile
+    ports:
+      - "5000:8080"
+      - "5001:8081"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: "http://+:8080;"
+      ConnectionStrings__DefaultConnection: "Server=dbs2webapp-db;Database=dbs2database;User Id=sa;Password=Asdf1234*;TrustServerCertificate=True;MultipleActiveResultSets=true;"
+    depends_on:
+      db:
+        condition: service_healthy
+
+    networks:
+      - web
+
+  client:
+    build:
+      context: .
+      dockerfile: dbs2webapp.Client/Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - api
+    networks:
+      - web
+
+networks:
+  web:
+    driver: bridge

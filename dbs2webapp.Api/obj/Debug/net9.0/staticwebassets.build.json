@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "1xd5tmH78Bp5MKXQPgOBEXytuBza9c0MmQ9DMSOxymE=",
+  "Source": "dbs2webapp.Api",
+  "BasePath": "_content/dbs2webapp.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

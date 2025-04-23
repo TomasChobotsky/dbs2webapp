@@ -1,0 +1,47 @@
+﻿@page "/courses/create"
+@attribute [Authorize(Roles = "Teacher,Admin")]
+
+@inject HttpClient Http
+@inject NavigationManager Navigation
+@using Microsoft.AspNetCore.Authorization
+@using dbs2webapp.Application.DTOs
+
+<h3>Create New Course</h3>
+
+<EditForm Model="@model" OnValidSubmit="@HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="mb-3">
+        <label class="form-label">Course Name</label>
+        <InputText @bind-Value="model.Name" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Description</label>
+        <InputTextArea @bind-Value="model.Description" class="form-control" rows="4" />
+    </div>
+
+    <div class="d-flex justify-content-end">
+        <button type="submit" class="btn btn-primary">Create</button>
+    </div>
+</EditForm>
+
+@code {
+    private CreateCourseDto model = new();
+
+    private async Task HandleValidSubmit()
+    {
+        var response = await Http.PostAsJsonAsync("api/courses", model);
+        if (response.IsSuccessStatusCode)
+        {
+            Navigation.NavigateTo("/teacher-panel"); // Adjust path if needed
+        }
+        else
+        {
+            // handle error (optional UI)
+            var error = await response.Content.ReadAsStringAsync();
+            Console.Error.WriteLine($"Error creating course: {error}");
+        }
+    }
+}

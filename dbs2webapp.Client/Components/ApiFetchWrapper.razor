@@ -1,0 +1,54 @@
+﻿@typeparam TItem
+
+@inject HttpClient Http
+
+@if (isLoading)
+{
+    <div class="text-center my-5 text-gray-600">Loading...</div>
+}
+else if (!string.IsNullOrEmpty(error))
+{
+    <div class="alert alert-danger text-sm">
+        <p>@error</p>
+        <button class="btn btn-sm btn-outline-danger mt-2" @onclick="Reload">Retry</button>
+    </div>
+}
+else if (data != null)
+{
+    @ChildContent(data!)
+}
+
+@code {
+    [Parameter] public string Url { get; set; } = string.Empty;
+    [Parameter] public RenderFragment<List<TItem>> ChildContent { get; set; } = default!;
+
+    private List<TItem>? data;
+    private bool isLoading = true;
+    private string? error;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadData();
+    }
+
+    private async Task LoadData()
+    {
+        isLoading = true;
+        error = null;
+        data = null;
+
+        try
+        {
+            data = await Http.GetFromJsonAsync<List<TItem>>(Url);
+        }
+        catch (Exception ex)
+        {
+            error = $"Error loading data: {ex.Message}";
+        }
+
+        isLoading = false;
+        StateHasChanged();
+    }
+
+    private async Task Reload() => await LoadData();
+}

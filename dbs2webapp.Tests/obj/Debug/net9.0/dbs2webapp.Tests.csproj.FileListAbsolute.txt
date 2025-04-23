@@ -1,0 +1,8 @@
+D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp.Tests\bin\Debug\net9.0\.msCoverageSourceRootsMapping_dbs2webapp.Tests
+D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp.Tests\bin\Debug\net9.0\CoverletSourceRootsMapping_dbs2webapp.Tests
+D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp.Tests\obj\Debug\net9.0\dbs2webapp.Tests.csproj.AssemblyReference.cache
+D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp.Tests\obj\Debug\net9.0\dbs2webapp.Tests.GeneratedMSBuildEditorConfig.editorconfig
+D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp.Tests\obj\Debug\net9.0\dbs2webapp.Tests.AssemblyInfoInputs.cache
+D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp.Tests\obj\Debug\net9.0\dbs2webapp.Tests.AssemblyInfo.cs
+D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp.Tests\obj\Debug\net9.0\dbs2webapp.Tests.csproj.CoreCompileInputs.cache
+D:\Development\Programming\C#\dbs2\dbs2webapp\dbs2webapp.Tests\obj\Debug\net9.0\dbs2webapp.Tests.sourcelink.json

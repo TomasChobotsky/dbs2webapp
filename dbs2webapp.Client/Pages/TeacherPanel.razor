@@ -1,0 +1,71 @@
+﻿@page "/teacher-panel"
+@attribute [Authorize(Roles = "Teacher,Admin")]
+
+@using Microsoft.AspNetCore.Authorization
+@using dbs2webapp.Application.DTOs
+@using dbs2webapp.Application.DTOs.Tests
+@using dbs2webapp.Client.Components
+@inject NavigationManager Navigation
+
+
+<h3>📚 Your Courses</h3>
+<a class="btn btn-success mb-3" href="/courses/create">Add New Course</a>
+
+<ApiFetchWrapper TItem="CourseDto" Url="api/courses">
+    <ChildContent Context="courses">
+        @foreach (var course in courses)
+        {
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">@course.Name</h5>
+                    <div>
+                        <a class="btn btn-sm btn-light me-2" href="@($"/courses/edit/{course.Id}")">Edit</a>
+                        <a class="btn btn-sm btn-danger" href="@($"/courses/delete/{course.Id}")">Delete</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p class="text-muted">@course.Description</p>
+                    <a class="btn btn-sm btn-info mb-3" href="@($"/chapters/create/{course.Id}")">Add Chapter</a>
+
+                    <ApiFetchWrapper TItem="ChapterDto" Url="@($"api/courses/{course.Id}/chapters")">
+                        <ChildContent Context="chapters">
+                            @foreach (var chapter in chapters.OrderBy(c => c.Order))
+                            {
+                                <div class="card mb-3">
+                                    <div class="card-header bg-secondary text-white d-flex justify-content-between align-items-center">
+                                        <h6 class="mb-0">@chapter.Name</h6>
+                                        <div>
+                                            <a class="btn btn-sm btn-light me-2" href="@($"/chapters/edit/{chapter.Id}")">Edit</a>
+                                            <a class="btn btn-sm btn-danger" href="@($"/chapters/delete/{chapter.Id}")">Delete</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>@chapter.Description</p>
+                                        <a class="btn btn-sm btn-warning mb-3" href="@($"/tests/create/{chapter.Id}")">Add Test</a>
+
+                                        <ApiFetchWrapper TItem="TestDto" Url="@($"api/chapters/{chapter.Id}/tests")">
+                                            <ChildContent Context="tests">
+                                                @foreach (var test in tests)
+                                                {
+                                                    <div class="card">
+                                                        <div class="card-header border-bottom-0 bg-light text-black d-flex justify-content-between align-items-center">
+                                                            <h6 class="mb-0">@test.Title</h6>
+                                                            <div>
+                                                                <a class="btn btn-sm btn-outline-secondary me-2"href="@($"/tests/edit/{test.Id}")">Edit</a>
+                                                                <a class="btn btn-sm btn-outline-danger"href="@($"/tests/delete/{test.Id}")">Delete</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                }
+                                            </ChildContent>
+                                        </ApiFetchWrapper>
+                                    </div>
+                                </div>
+                            }
+                        </ChildContent>
+                    </ApiFetchWrapper>
+                </div>
+            </div>
+        }
+    </ChildContent>
+</ApiFetchWrapper>

@@ -1,0 +1,29 @@
+﻿@using System.Globalization
+@inject IJSRuntime JS
+@inject NavigationManager Nav
+
+<div class="btn-group language-toggle" role="group" aria-label="Language switch">
+    <button class="@BtnClass("en")" @onclick="@(() => Switch("en","en"))">
+        <span class="fi fi-gb me-1"></span> English
+    </button>
+
+    <button class="@BtnClass("cs")" @onclick="@(() => Switch("en","cs"))">
+        <span class="fi fi-cz me-1"></span> Čeština
+    </button>
+</div>
+
+@code {
+    // helper: primary if active, outline if not
+    private string BtnClass(string code)
+        => $"btn btn-sm {(Current == code ? "btn-primary" : "btn-outline-primary")}";
+}
+
+@code {
+    private string Current => CultureInfo.CurrentUICulture.TwoLetterISOLanguageName;
+
+    private async Task Switch(string src, string trg)
+    {
+        await JS.InvokeVoidAsync("setLang", src, trg);
+        Nav.NavigateTo(Nav.Uri, forceLoad: true);
+    }
+}

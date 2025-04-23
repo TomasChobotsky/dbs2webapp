@@ -1,0 +1,6 @@
+@dbs2webapp_HostAddress = http://localhost:5174
+
+GET {{dbs2webapp_HostAddress}}/courses/
+Accept: application/json
+
+###

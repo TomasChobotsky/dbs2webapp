@@ -1,0 +1,62 @@
+﻿@inherits LayoutComponentBase
+@using System.Security.Claims
+@using Microsoft.AspNetCore.Components.Authorization
+@using dbs2webapp.Client.Components
+@inject IJSRuntime JS
+@inject AuthenticationStateProvider AuthStateProvider
+@inject NavigationManager Nav
+
+<div class="page">
+  <div class="sidebar">
+    <NavMenu />
+  </div>
+
+  <main>
+    <div class="top-row px-4">
+      <LanguageToggle />
+
+      <AuthorizeView>
+
+        <!-- when logged in -->
+        <Authorized Context="authState">
+          @{
+            // authState is an AuthenticationState
+            var user  = authState.User;
+            var roles = user.FindAll(ClaimTypes.Role).Select(c => c.Value);
+          }
+          <span class="me-3">
+            Hello, <strong>@user.Identity?.Name</strong> (@string.Join(", ", roles))
+          </span>
+          <button class="text-dark btn btn-link p-0" @onclick="Logout">Logout</button>
+        </Authorized>
+
+        <!-- when anonymous -->
+        <NotAuthorized>
+          <NavLink class="text-dark me-3" href="/login">Login</NavLink>
+          <NavLink class="text-dark" href="/register">Register</NavLink>
+        </NotAuthorized>
+
+      </AuthorizeView>
+    </div>
+
+    <article class="content px-4">
+      @Body
+    </article>
+  </main>
+</div>
+
+@code {
+  private async Task Logout()
+  {
+    // clear both storages
+    await JS.InvokeVoidAsync("localStorage.removeItem",    "authToken");
+    await JS.InvokeVoidAsync("sessionStorage.removeItem", "authToken");
+
+    // notify auth state provider
+    ((JwtAuthenticationStateProvider)AuthStateProvider)
+      .MarkUserAsLoggedOut();
+
+    // back home
+    Nav.NavigateTo("/", true);
+  }
+}
