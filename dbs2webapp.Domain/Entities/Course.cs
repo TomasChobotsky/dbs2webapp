@@ -9,11 +9,12 @@ namespace dbs2webapp.Domain.Entities
         [Key]
         public int Id { get; set; }
 
-        [Required]
-        [MaxLength(100)]
+        [Required(ErrorMessage = "Course name is required")]
+        [MaxLength(100, ErrorMessage = "Max length of Name is 100")]
         public string? Name { get; set; }
 
-        [MaxLength(1000)]
+        [Required(ErrorMessage = "Chapter description is required")]
+        [MaxLength(1000, ErrorMessage = "Max length of Name is 1000")]
         public string? Description { get; set; }
 
         public List<Chapter>? Chapters { get; set; }

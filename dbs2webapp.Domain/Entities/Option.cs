@@ -7,13 +7,15 @@ namespace dbs2webapp.Domain.Entities
     {
         [Key]
         public int Id { get; set; }
-        [Required]
-        [MaxLength(200)]
+
+        [Required(ErrorMessage = "Option name is required")]
+        [MaxLength(200, ErrorMessage = "Max length of Text is 200")]
         public string? Text { get; set; }
-        [Required]
+
+        [Required(ErrorMessage = "IsCorrect is required")]
         public bool IsCorrect { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Field is required")]
         public int QuestionId { get; set; }
         [ForeignKey("QuestionId")]
         public Question? Question { get; set; }

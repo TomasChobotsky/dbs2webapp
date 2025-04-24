@@ -9,12 +9,12 @@ namespace dbs2webapp.Domain.Entities
         [Key]
         public int Id { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Field is required")]
         public string? UserId { get; set; }
         [ForeignKey("UserId")]
         public IdentityUser? User { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Field is required")]
         public int CourseId { get; set; }
         [ForeignKey("CourseId")]
         public Course? Course { get; set; }

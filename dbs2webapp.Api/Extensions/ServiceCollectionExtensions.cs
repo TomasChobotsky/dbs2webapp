@@ -1,4 +1,7 @@
 ﻿using Application.Interfaces;
+using dbs2webapp.Application.Interfaces;
+using dbs2webapp.Domain.Entities;
+using dbs2webapp.Infrastructure.Repositories;
 using Infrastructure.Data;
 using Infrastructure.Mapping;
 using Infrastructure.Repositories;
@@ -15,6 +18,9 @@ namespace Api.Extensions
 
             services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
             services.AddScoped<ITestResultRepository, TestResultRepository>();
+            services.AddScoped<IBaseRepository<Course>, CourseRepository>();
+            services.AddScoped<ICourseRepository, CourseRepository>();
+
 
             services.AddAutoMapper(typeof(AutoMapperProfile));
 

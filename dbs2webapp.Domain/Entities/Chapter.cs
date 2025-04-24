@@ -10,11 +10,11 @@ namespace dbs2webapp.Domain.Entities
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Chapter name is required")]
-        [MaxLength(100)]
+        [MaxLength(100, ErrorMessage = "Max length of Name is 100")]
         public string? Name { get; set; }
 
-        [Required]
-        [MaxLength(1000)]
+        [Required(ErrorMessage = "Chapter description is required")]
+        [MaxLength(1000, ErrorMessage = "Max length of Description is 1000")]
         public string? Description { get; set; }
 
         [Column(TypeName = "nvarchar(MAX)")] // For rich HTML content

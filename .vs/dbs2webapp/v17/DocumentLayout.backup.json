@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8FC57F7F-4DFB-CF03-1DB8-1564B39B8536}|dbs2webapp.Api\\dbs2webapp.Api.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp.api\\controllers\\testresultscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FC57F7F-4DFB-CF03-1DB8-1564B39B8536}|dbs2webapp.Api\\dbs2webapp.Api.csproj|solutionrelative:dbs2webapp.api\\controllers\\testresultscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FC57F7F-4DFB-CF03-1DB8-1564B39B8536}|dbs2webapp.Api\\dbs2webapp.Api.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp.api\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FC57F7F-4DFB-CF03-1DB8-1564B39B8536}|dbs2webapp.Api\\dbs2webapp.Api.csproj|solutionrelative:dbs2webapp.api\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FC57F7F-4DFB-CF03-1DB8-1564B39B8536}|dbs2webapp.Api\\dbs2webapp.Api.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp.api\\controllers\\testscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FC57F7F-4DFB-CF03-1DB8-1564B39B8536}|dbs2webapp.Api\\dbs2webapp.Api.csproj|solutionrelative:dbs2webapp.api\\controllers\\testscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4D32D394-B1DE-C0D2-CA0B-A73E6F6970E8}|dbs2webapp.Domain\\dbs2webapp.Domain.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp.domain\\entities\\usercourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D32D394-B1DE-C0D2-CA0B-A73E6F6970E8}|dbs2webapp.Domain\\dbs2webapp.Domain.csproj|solutionrelative:dbs2webapp.domain\\entities\\usercourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -113,18 +125,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E91070A0-EFA9-B874-0577-82A8599EF98F}|dbs2webapp.Infrastructure\\dbs2webapp.Infrastructure.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp.infrastructure\\mapping\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E91070A0-EFA9-B874-0577-82A8599EF98F}|dbs2webapp.Infrastructure\\dbs2webapp.Infrastructure.csproj|solutionrelative:dbs2webapp.infrastructure\\mapping\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8FC57F7F-4DFB-CF03-1DB8-1564B39B8536}|dbs2webapp.Api\\dbs2webapp.Api.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp.api\\controllers\\testscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FC57F7F-4DFB-CF03-1DB8-1564B39B8536}|dbs2webapp.Api\\dbs2webapp.Api.csproj|solutionrelative:dbs2webapp.api\\controllers\\testscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8FC57F7F-4DFB-CF03-1DB8-1564B39B8536}|dbs2webapp.Api\\dbs2webapp.Api.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp.api\\controllers\\testresultscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FC57F7F-4DFB-CF03-1DB8-1564B39B8536}|dbs2webapp.Api\\dbs2webapp.Api.csproj|solutionrelative:dbs2webapp.api\\controllers\\testresultscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8FC57F7F-4DFB-CF03-1DB8-1564B39B8536}|dbs2webapp.Api\\dbs2webapp.Api.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp.api\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FC57F7F-4DFB-CF03-1DB8-1564B39B8536}|dbs2webapp.Api\\dbs2webapp.Api.csproj|solutionrelative:dbs2webapp.api\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8FC57F7F-4DFB-CF03-1DB8-1564B39B8536}|dbs2webapp.Api\\dbs2webapp.Api.csproj|d:\\development\\programming\\c#\\dbs2\\dbs2webapp\\dbs2webapp.api\\controllers\\chapterscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -385,115 +385,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "index.html",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Client\\wwwroot\\index.html",
-              "RelativeDocumentMoniker": "dbs2webapp.Client\\wwwroot\\index.html",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Client\\wwwroot\\index.html",
-              "RelativeToolTip": "dbs2webapp.Client\\wwwroot\\index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-04-23T14:50:09.888Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MainLayout.razor",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Client\\Layout\\MainLayout.razor",
-              "RelativeDocumentMoniker": "dbs2webapp.Client\\Layout\\MainLayout.razor",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Client\\Layout\\MainLayout.razor",
-              "RelativeToolTip": "dbs2webapp.Client\\Layout\\MainLayout.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-19T15:19:01.327Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Course.cs",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Domain\\Entities\\Course.cs",
-              "RelativeDocumentMoniker": "dbs2webapp.Domain\\Entities\\Course.cs",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Domain\\Entities\\Course.cs",
-              "RelativeToolTip": "dbs2webapp.Domain\\Entities\\Course.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T13:27:47.133Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Chapter.cs",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Domain\\Entities\\Chapter.cs",
-              "RelativeDocumentMoniker": "dbs2webapp.Domain\\Entities\\Chapter.cs",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Domain\\Entities\\Chapter.cs",
-              "RelativeToolTip": "dbs2webapp.Domain\\Entities\\Chapter.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T15:23:36.463Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Test.cs",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Domain\\Entities\\Test.cs",
-              "RelativeDocumentMoniker": "dbs2webapp.Domain\\Entities\\Test.cs",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Domain\\Entities\\Test.cs",
-              "RelativeToolTip": "dbs2webapp.Domain\\Entities\\Test.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T13:27:39.469Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Question.cs",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Domain\\Entities\\Question.cs",
-              "RelativeDocumentMoniker": "dbs2webapp.Domain\\Entities\\Question.cs",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Domain\\Entities\\Question.cs",
-              "RelativeToolTip": "dbs2webapp.Domain\\Entities\\Question.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T13:27:42.2Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Option.cs",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Domain\\Entities\\Option.cs",
-              "RelativeDocumentMoniker": "dbs2webapp.Domain\\Entities\\Option.cs",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Domain\\Entities\\Option.cs",
-              "RelativeToolTip": "dbs2webapp.Domain\\Entities\\Option.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T13:27:44.535Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TestResult.cs",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Domain\\Entities\\TestResult.cs",
-              "RelativeDocumentMoniker": "dbs2webapp.Domain\\Entities\\TestResult.cs",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Domain\\Entities\\TestResult.cs",
-              "RelativeToolTip": "dbs2webapp.Domain\\Entities\\TestResult.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T13:15:31.779Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "TestAnswer.cs",
               "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Domain\\Entities\\TestAnswer.cs",
               "RelativeDocumentMoniker": "dbs2webapp.Domain\\Entities\\TestAnswer.cs",
@@ -501,12 +397,11 @@
               "RelativeToolTip": "dbs2webapp.Domain\\Entities\\TestAnswer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T13:22:48.073Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-23T13:22:48.073Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "UserCourse.cs",
               "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Domain\\Entities\\UserCourse.cs",
               "RelativeDocumentMoniker": "dbs2webapp.Domain\\Entities\\UserCourse.cs",
@@ -519,7 +414,142 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TestsController.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Api\\Controllers\\TestsController.cs",
+              "RelativeDocumentMoniker": "dbs2webapp.Api\\Controllers\\TestsController.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Api\\Controllers\\TestsController.cs",
+              "RelativeToolTip": "dbs2webapp.Api\\Controllers\\TestsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T15:08:58.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CoursesController.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Api\\Controllers\\CoursesController.cs",
+              "RelativeDocumentMoniker": "dbs2webapp.Api\\Controllers\\CoursesController.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Api\\Controllers\\CoursesController.cs",
+              "RelativeToolTip": "dbs2webapp.Api\\Controllers\\CoursesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T15:08:41.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TestResultsController.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Api\\Controllers\\TestResultsController.cs",
+              "RelativeDocumentMoniker": "dbs2webapp.Api\\Controllers\\TestResultsController.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Api\\Controllers\\TestResultsController.cs",
+              "RelativeToolTip": "dbs2webapp.Api\\Controllers\\TestResultsController.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAADwv4EAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T15:08:50.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TestResult.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Domain\\Entities\\TestResult.cs",
+              "RelativeDocumentMoniker": "dbs2webapp.Domain\\Entities\\TestResult.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Domain\\Entities\\TestResult.cs",
+              "RelativeToolTip": "dbs2webapp.Domain\\Entities\\TestResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T13:15:31.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Option.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Domain\\Entities\\Option.cs",
+              "RelativeDocumentMoniker": "dbs2webapp.Domain\\Entities\\Option.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Domain\\Entities\\Option.cs",
+              "RelativeToolTip": "dbs2webapp.Domain\\Entities\\Option.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T13:27:44.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Question.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Domain\\Entities\\Question.cs",
+              "RelativeDocumentMoniker": "dbs2webapp.Domain\\Entities\\Question.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Domain\\Entities\\Question.cs",
+              "RelativeToolTip": "dbs2webapp.Domain\\Entities\\Question.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T13:27:42.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Test.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Domain\\Entities\\Test.cs",
+              "RelativeDocumentMoniker": "dbs2webapp.Domain\\Entities\\Test.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Domain\\Entities\\Test.cs",
+              "RelativeToolTip": "dbs2webapp.Domain\\Entities\\Test.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T13:27:39.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Chapter.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Domain\\Entities\\Chapter.cs",
+              "RelativeDocumentMoniker": "dbs2webapp.Domain\\Entities\\Chapter.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Domain\\Entities\\Chapter.cs",
+              "RelativeToolTip": "dbs2webapp.Domain\\Entities\\Chapter.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T15:23:36.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Course.cs",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Domain\\Entities\\Course.cs",
+              "RelativeDocumentMoniker": "dbs2webapp.Domain\\Entities\\Course.cs",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Domain\\Entities\\Course.cs",
+              "RelativeToolTip": "dbs2webapp.Domain\\Entities\\Course.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T13:27:47.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Client\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "dbs2webapp.Client\\Layout\\MainLayout.razor",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Client\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "dbs2webapp.Client\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-19T15:19:01.327Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Client\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "dbs2webapp.Client\\wwwroot\\index.html",
+              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Client\\wwwroot\\index.html",
+              "RelativeToolTip": "dbs2webapp.Client\\wwwroot\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-23T14:50:09.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "_Imports.razor",
               "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Client\\_Imports.razor",
               "RelativeDocumentMoniker": "dbs2webapp.Client\\_Imports.razor",
@@ -527,12 +557,11 @@
               "RelativeToolTip": "dbs2webapp.Client\\_Imports.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-19T14:15:33.912Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-19T14:15:33.912Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "App.razor",
               "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Client\\App.razor",
               "RelativeDocumentMoniker": "dbs2webapp.Client\\App.razor",
@@ -540,12 +569,11 @@
               "RelativeToolTip": "dbs2webapp.Client\\App.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-21T15:36:26.362Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-21T15:36:26.362Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "Dockerfile",
               "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Client\\Dockerfile",
               "RelativeDocumentMoniker": "dbs2webapp.Client\\Dockerfile",
@@ -553,12 +581,11 @@
               "RelativeToolTip": "dbs2webapp.Client\\Dockerfile",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-04-19T14:02:49.562Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-19T14:02:49.562Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Client\\Program.cs",
               "RelativeDocumentMoniker": "dbs2webapp.Client\\Program.cs",
@@ -566,12 +593,11 @@
               "RelativeToolTip": "dbs2webapp.Client\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T14:27:17.757Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-19T14:27:17.757Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "nginx.conf",
               "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Client\\nginx.conf",
               "RelativeDocumentMoniker": "dbs2webapp.Client\\nginx.conf",
@@ -579,12 +605,11 @@
               "RelativeToolTip": "dbs2webapp.Client\\nginx.conf",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-04-19T14:06:15.374Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-19T14:06:15.374Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "Dockerfile",
               "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Api\\Dockerfile",
               "RelativeDocumentMoniker": "dbs2webapp.Api\\Dockerfile",
@@ -592,12 +617,11 @@
               "RelativeToolTip": "dbs2webapp.Api\\Dockerfile",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-04-19T13:59:48.658Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-19T13:59:48.658Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Api\\appsettings.json",
               "RelativeDocumentMoniker": "dbs2webapp.Api\\appsettings.json",
@@ -605,12 +629,11 @@
               "RelativeToolTip": "dbs2webapp.Api\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-19T14:50:26.941Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-19T14:50:26.941Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Api\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "dbs2webapp.Api\\Properties\\launchSettings.json",
@@ -618,12 +641,11 @@
               "RelativeToolTip": "dbs2webapp.Api\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-19T14:23:49.294Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-19T14:23:49.294Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Client\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "dbs2webapp.Client\\Layout\\NavMenu.razor",
@@ -631,12 +653,11 @@
               "RelativeToolTip": "dbs2webapp.Client\\Layout\\NavMenu.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-19T15:18:35.888Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-19T15:18:35.888Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "20250423134409_AddTestAnswer.cs",
               "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Infrastructure\\Migrations\\20250423134409_AddTestAnswer.cs",
               "RelativeDocumentMoniker": "dbs2webapp.Infrastructure\\Migrations\\20250423134409_AddTestAnswer.cs",
@@ -644,12 +665,11 @@
               "RelativeToolTip": "dbs2webapp.Infrastructure\\Migrations\\20250423134409_AddTestAnswer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T15:53:33.85Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-23T15:53:33.85Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "AppDbContextFactory.cs",
               "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Infrastructure\\Data\\AppDbContextFactory.cs",
               "RelativeDocumentMoniker": "dbs2webapp.Infrastructure\\Data\\AppDbContextFactory.cs",
@@ -657,12 +677,11 @@
               "RelativeToolTip": "dbs2webapp.Infrastructure\\Data\\AppDbContextFactory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T10:35:28.922Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-23T10:35:28.922Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Api\\Program.cs",
               "RelativeDocumentMoniker": "dbs2webapp.Api\\Program.cs",
@@ -670,12 +689,11 @@
               "RelativeToolTip": "dbs2webapp.Api\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T14:43:28.92Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-19T14:43:28.92Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "LanguageToggle.razor",
               "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Client\\Components\\LanguageToggle.razor",
               "RelativeDocumentMoniker": "dbs2webapp.Client\\Components\\LanguageToggle.razor",
@@ -683,12 +701,11 @@
               "RelativeToolTip": "dbs2webapp.Client\\Components\\LanguageToggle.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-23T14:51:55.51Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-23T14:51:55.51Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "app.css",
               "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Client\\wwwroot\\css\\app.css",
               "RelativeDocumentMoniker": "dbs2webapp.Client\\wwwroot\\css\\app.css",
@@ -700,7 +717,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Infrastructure\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "dbs2webapp.Infrastructure\\Data\\AppDbContext.cs",
@@ -708,12 +725,11 @@
               "RelativeToolTip": "dbs2webapp.Infrastructure\\Data\\AppDbContext.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAIwD4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T10:35:28.16Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-23T10:35:28.16Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "RedirectToLogin.razor",
               "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Client\\Components\\RedirectToLogin.razor",
               "RelativeDocumentMoniker": "dbs2webapp.Client\\Components\\RedirectToLogin.razor",
@@ -749,31 +765,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "CoursesController.cs",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Api\\Controllers\\CoursesController.cs",
-              "RelativeDocumentMoniker": "dbs2webapp.Api\\Controllers\\CoursesController.cs",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Api\\Controllers\\CoursesController.cs",
-              "RelativeToolTip": "dbs2webapp.Api\\Controllers\\CoursesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T15:08:41.913Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 28,
-              "Title": "TestsController.cs",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Api\\Controllers\\TestsController.cs",
-              "RelativeDocumentMoniker": "dbs2webapp.Api\\Controllers\\TestsController.cs",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Api\\Controllers\\TestsController.cs",
-              "RelativeToolTip": "dbs2webapp.Api\\Controllers\\TestsController.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAcwKIAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T15:08:58.334Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
               "Title": "translateInterop.js",
               "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Client\\wwwroot\\translateInterop.js",
               "RelativeDocumentMoniker": "dbs2webapp.Client\\wwwroot\\translateInterop.js",
@@ -809,19 +801,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "TestResultsController.cs",
-              "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Api\\Controllers\\TestResultsController.cs",
-              "RelativeDocumentMoniker": "dbs2webapp.Api\\Controllers\\TestResultsController.cs",
-              "ToolTip": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Api\\Controllers\\TestResultsController.cs",
-              "RelativeToolTip": "dbs2webapp.Api\\Controllers\\TestResultsController.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAAAIEAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T15:08:50.117Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 30,
               "Title": "AutoMapperProfile.cs",
               "DocumentMoniker": "D:\\Development\\Programming\\C#\\dbs2\\dbs2webapp\\dbs2webapp.Infrastructure\\Mapping\\AutoMapperProfile.cs",
               "RelativeDocumentMoniker": "dbs2webapp.Infrastructure\\Mapping\\AutoMapperProfile.cs",

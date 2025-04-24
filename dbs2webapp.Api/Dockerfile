@@ -7,6 +7,7 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /src
 
 COPY ["dbs2webapp.Api/dbs2webapp.Api.csproj", "dbs2webapp.Api/"]
+COPY ["dbs2webapp.Infrastructure/Data/Seed/CustomDbObjects.sql", "./dbs2webapp.Infrastructure/Data/Seed/"]
 RUN dotnet restore "dbs2webapp.Api/dbs2webapp.Api.csproj"
 
 COPY . .
@@ -19,4 +20,7 @@ RUN dotnet publish "dbs2webapp.Api.csproj" -c Release -o /app/publish /p:UseAppH
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+
+COPY ["dbs2webapp.Infrastructure/Data/Seed/CustomDbObjects.sql", "./dbs2webapp.Infrastructure/Data/Seed/"]
+
 ENTRYPOINT ["dotnet", "dbs2webapp.Api.dll"]

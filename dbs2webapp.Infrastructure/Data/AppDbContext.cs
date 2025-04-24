@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using dbs2webapp.Domain.Entities;
+using dbs2webapp.Application.DTOs;
 
 namespace Infrastructure.Data
 {
@@ -20,6 +21,7 @@ namespace Infrastructure.Data
         public DbSet<UserCourse> UserCourses { get; set; }
         public DbSet<TestResult> TestResults { get; set; }
         public DbSet<TestAnswer> TestAnswers { get; set; }
+        public DbSet<CourseSummaryDto> CourseSummaries => Set<CourseSummaryDto>();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -78,6 +80,10 @@ namespace Infrastructure.Data
                   .HasForeignKey(e => e.SelectedOptionId)
                   .OnDelete(DeleteBehavior.Restrict);
             });
+
+            modelBuilder.Entity<CourseSummaryDto>()
+                .HasNoKey()
+                .ToView("vw_CourseSummary");
         }
     }
 }

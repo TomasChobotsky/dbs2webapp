@@ -9,19 +9,20 @@ namespace dbs2webapp.Domain.Entities
     {
         [Key]
         public int Id { get; set; }
-        [Required]
+
+        [Required(ErrorMessage = "Field is required")]
         public int Score { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Field is required")]
         public int TotalQuestions { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Field is required")]
         public DateTime CompletedDate { get; set; } = DateTime.UtcNow;
 
-        [Required]
+        [Required(ErrorMessage = "Field is required")]
         public string? UserId { get; set; }
         [ForeignKey("UserId")]
         public IdentityUser? User { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Field is required")]
         public int TestId { get; set; }
         [ForeignKey("TestId")]
         public Test? Test { get; set; }

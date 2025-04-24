@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
+using dbs2webapp.Application.Interfaces;
 
 namespace Api.Controllers
 {
@@ -14,13 +15,13 @@ namespace Api.Controllers
     [Route("api/[controller]")]
     public class CoursesController : ControllerBase
     {
-        private readonly IBaseRepository<Course> _courseRepo;
+        private readonly ICourseRepository _courseRepo;
         private readonly IBaseRepository<UserCourse> _userCourseRepo;
         private readonly UserManager<IdentityUser> _userManager;
         private readonly IMapper _mapper;
 
         public CoursesController(
-            IBaseRepository<Course> courseRepo,
+            ICourseRepository courseRepo,
             IBaseRepository<UserCourse> userCourseRepo,
             UserManager<IdentityUser> userManager,
             IMapper mapper)
@@ -84,18 +85,13 @@ namespace Api.Controllers
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreateCourseDto dto)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+            var course = _mapper.Map<Course>(dto);
+            course.TeacherId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            course.CreatedDate = DateTime.UtcNow;
 
-            var entity = _mapper.Map<Course>(dto);
-            entity.TeacherId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-            entity.CreatedDate = DateTime.UtcNow;
+            await _courseRepo.SaveViaProcedureAsync(course, isDelete: false);
 
-            await _courseRepo.AddAsync(entity);
-            await _courseRepo.SaveAsync();
-
-            var resultDto = _mapper.Map<CourseDto>(entity);
-            return CreatedAtAction(nameof(GetById), new { id = entity.Id }, resultDto);
+            return Ok();
         }
 
         // PUT: api/courses/{id}
@@ -103,16 +99,16 @@ namespace Api.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] CreateCourseDto dto)
         {
-            var course = await _courseRepo.GetByIdAsync(id);
-            if (course == null)
+            var existing = await _courseRepo.GetByIdAsync(id);
+            if (existing == null)
                 return NotFound();
 
-            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-            if (course.TeacherId != userId && !User.IsInRole("Admin"))
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (existing.TeacherId != userId && !User.IsInRole("Admin"))
                 return Forbid();
 
-            _mapper.Map(dto, course); // Map updated values onto existing entity
-            await _courseRepo.SaveAsync();
+            _mapper.Map(dto, existing);
+            await _courseRepo.SaveViaProcedureAsync(existing, isDelete: false);
 
             return NoContent();
         }
@@ -126,12 +122,11 @@ namespace Api.Controllers
             if (course == null)
                 return NotFound();
 
-            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             if (course.TeacherId != userId && !User.IsInRole("Admin"))
                 return Forbid();
 
-            _courseRepo.Remove(course);
-            await _courseRepo.SaveAsync();
+            await _courseRepo.SaveViaProcedureAsync(course, isDelete: true);
 
             return NoContent();
         }
@@ -185,5 +180,24 @@ namespace Api.Controllers
 
             return Ok();
         }
+
+        [HttpGet("{id}/chapter-count")]
+        public async Task<IActionResult> GetChapterCount(int id)
+        {
+            var exists = await _courseRepo.GetByIdAsync(id);
+            if (exists == null)
+                return NotFound();
+
+            var count = await _courseRepo.GetChapterCountAsync(id);
+            return Ok(new { courseId = id, chapterCount = count });
+        }
+
+        [HttpGet("summary")]
+        public async Task<IActionResult> GetCourseSummaries()
+        {
+            var summaries = await _courseRepo.GetSummariesAsync();
+            return Ok(summaries);
+        }
+
     }
 }
