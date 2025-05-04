@@ -59,11 +59,11 @@
     {
         apiErrors = null;
 
-        // map to the backend DTO (only Email + Password)
-        var dto = new
+        RegisterDto dto = new RegisterDto
         {
             Email = registerModel.Email,
-            Password = registerModel.Password
+            Password = registerModel.Password,
+			ConfirmPassword = registerModel.ConfirmPassword
         };
 
         var response = await Http.PostAsJsonAsync("api/auth/register", dto);
